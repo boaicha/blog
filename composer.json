@@ -1,17 +1,10 @@
 {
-    "name": "bobo/blog",
-    "authors": [
-        {
-            "name": "aicha",
-            "email": "aichabouhouch.ab@gmail.com"
-        }
-    ],
     "autoload": {
         "psr-4": {
             "App\\": "./"
         }
     },
     "require": {
-        "twig/twig": "^3.3"
+        "twig/twig": "3.3"
     }
 }
