@@ -16,6 +16,16 @@ class PostsController extends Controller{
     );
     }
 
+    public function post($id){
+        $post = new PostsModel();
+        $postById = $post->findPostById($id);
+        // var_dump($postById);
+        return $this->view('post', array(
+            'post' => $postById,
+        )
+    );
+    }
+
 }
 
 ?>
