@@ -5,7 +5,8 @@
 
 	//On définit une constante contenant le dossier racine
 	define('ROOT', dirname(__DIR__));
-
+    
+	
 	//On importe les namespace nécessaires
 	use App\Autoloader;
 	use App\Core\Main;

@@ -1,7 +1,7 @@
 <?php 
 	namespace App\Core;
 	
-	// session_start(); 
+
 
 	use App\Controllers;
 //routeur principale

@@ -19,9 +19,7 @@ class InscriptionController extends Controller {
 			$inscription->inscription($username, $password, $name, $prenom); //appelle de la fonction compteValide de la class connexion
 
 		}
-        return $this->view('inscription', array(
-            'prenom' => $prenom,
-        ));
+        return $this->view('inscription' );
 	}
 }
 
