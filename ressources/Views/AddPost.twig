@@ -1,0 +1,122 @@
+{% extends "default.twig" %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+<body>
+{# 
+<center>
+    <form action="public?p=addPost/add" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" id="file">
+        <input type="submit" value="Upload">
+    </form>
+</center> #}
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TITLE</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+
+    <link href="../css/common-css/ionicons.css" rel="stylesheet">
+
+
+    <link href="../css/layout-1/css/styles.css" rel="stylesheet">
+
+    <link href="../css/layout-1/css/responsive.css" rel="stylesheet">
+    <style>
+        .style{
+            text-indent: 30%;
+        }
+    </style>
+</head>
+
+&nbsp;
+&nbsp;
+&nbsp;
+
+
+
+
+<section class="blog-area section" >
+    <div class="container">
+
+        <div class="row">
+
+
+
+            <form action="public?p=addPost/add" method="post" enctype="multipart/form-data">
+                <div class="col-lg-4 col-md-6" style="width: 370px">
+                {# <a href="public?p=annonces/post/{{post.id}}"> #}
+                    <div class="card h-100">
+                        <div class="single-post post-style-1">
+
+                            <div class="blog-image">
+                            <img id="output" width="200" /> 
+                            {# <img src="../css/produit/image/{{post.img}}?>" alt="Blog Image"> #}
+                           
+                            </div>
+                            <input type="text" placeholder="titre" name="titre" id="titre">
+                            {# <label>chapo</label> #}
+                           
+                            </br>
+                             </br>
+                            <input type="text" placeholder="chapo" name="chapo" id="chapo">
+                            </br>
+                             </br>
+                            <input type="date" placeholder="date_mjr" name="date_mjr" id="date_mjr">
+                            </br>
+                             </br>
+                            <input type="date" placeholder="date_modif" name="date_modif" >
+                            </br>
+                            </br>
+                            <input type="file" name="file" id="file" onchange="loadFile(event)">
+                           <input type="submit" name="Upload" value="Upload">
+
+
+                            <div class="blog-info">
+
+                                {# <h4 class="title"><a href="#"><b>{{ post.titre }}</b></a></h4>
+                                <h6 class="title"><a href="#"><b>{{ post.chapo }}</b></a></h6> #}
+
+                                {# <ul class="post-footer">
+                                    <li><a href="#"><i class="ion-laptop"></i><{{ post.date_mjr }}</a></li>
+                                    <li><a href="#"><i class="ion-chatbubble"></i>6</a></li>
+                                    <li><a href="#"><i class="ion-eye"></i>138</a></li>
+                                </ul> #}
+
+                            </div><!-- blog-info -->
+                        </div><!-- single-post -->
+                    </div><!-- card -->
+                    {# <a href="public?p=adminPost/updatePost/{{post.id}}"> #}
+                    {# </a> #}
+&nbsp;
+&nbsp;
+&nbsp;
+
+                </div><!-- col-lg-4 col-md-6 -->
+        
+                </form>
+            </div><!-- card -->
+        </div><!-- col-lg-4 col-md-6 -->
+        </section>
+</center>
+
+<script>
+var loadFile = function(event) {
+    var file = document.getElementById('output');
+    file.src = URL.createObjectURL(event.target.files[0]);
+};
+</script>
+
+
+
+
+{% endblock %}

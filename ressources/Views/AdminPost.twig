@@ -25,11 +25,12 @@
     </style>
 </head>
 <center>
-
+<a href="public?p=addPost">
 <button class="favorite styled"
         type="button">
     ajouter
 </button>
+</a>
 &nbsp;
 &nbsp;
 &nbsp;
@@ -61,7 +62,7 @@
 								<h6 class="title"><a href="#"><b>{{ post.chapo }}</b></a></h6>
 
 								<ul class="post-footer">
-									<li><a href="#"><i class="ion-laptop"></i><{{ post.date_mjr }}</a></li>
+									<li><a href="#"><i class="ion-laptop"></i>{{ post.date_mjr }}</a></li>
 									<li><a href="#"><i class="ion-chatbubble"></i>6</a></li>
 									<li><a href="#"><i class="ion-eye"></i>138</a></li>
 								</ul>
@@ -69,17 +70,11 @@
 							</div><!-- blog-info -->
 						</div><!-- single-post -->
 					</div><!-- card -->
-                    <button class="favorite styled"
-        type="button">
-    modifier
-</button>
+                <a href ="public?p=adminPost/displayPost/{{post.id}}"><button class="favorite styled" type="button">modifier</button></a>
 &nbsp;
 &nbsp;
 &nbsp;
-<button class="favorite styled"
-        type="button">
-    supprimer
-</button>
+<a href="public?p=adminPost/deletePost/{{post.id}}"<button class="favorite styled"type="button"> supprimer</button>
                 </a>
 				</div><!-- col-lg-4 col-md-6 -->
 			

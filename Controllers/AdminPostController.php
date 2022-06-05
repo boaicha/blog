@@ -6,6 +6,8 @@ use App\Models\PostsModel;
 
 class AdminPostController extends Controller{
 
+    private $_suporttedFormats = ['image/png','image/jpeg','image/jpg','image/gif'];
+
 	public function index() {
         $post = new PostsModel();
         $list = $post->listPost();
@@ -14,8 +16,66 @@ class AdminPostController extends Controller{
             'posts' => $list,
         )
     );
+    }
 
-
+    public function displayPost($id) {
+        $modelPost=new PostsModel();
+        $postWithId=$modelPost->findPostById($id);
+        return $this->view('updatePost', array(
+            'post' => $postWithId,
+        ));
 	}
+
+    public function updatePost($id){
+		
+		if(isset($_FILES['file'])){
+			$this->uploadFile($_FILES['file']);
+			$nameFile = $_FILES['file']['name'];
+			if (isset($_POST['Update'])){  //si on a appuyer sur le bouton
+            
+				print_r("Vous etes sur le controlleur");
+				// require('Modele/inscriptionModele.php'); //lienavec lemodele
+				$chapo = $_POST['chapo']; //md5 pour encoder le mot depasse
+
+                $titre = $_POST['titre'];
+				$date_mjr = $_POST['date_mjr'];
+				$date_modif = $_POST['date_modif'];
+                // var_dump($id[0]);
+				
+				$updatePost = new PostsModel();  //instancie la class connexion
+				$updatePost->updatePost($titre, $chapo, $nameFile, $date_mjr, $date_modif, $id[0]); //appelle de la fonction compteValide de la class connexion
+			// var_dump($list);
+		   
+	
+	
+		}
+		}else{
+			die('L\'image n\'a pas été submit');
+		}
+		
+		
+	}
+
+	public function uploadFile($file){
+        if(is_array($file)){
+            if(in_array($file['type'],$this->_suporttedFormats)){
+                move_uploaded_file($file['tmp_name'],'../css/produit/image/'.$file['name']);
+                echo 'L\'image a bien été uploader avec succès ! ';
+            }else{
+                die('Le format n\'est supporté ! ');
+            }
+
+        }else{
+            die('Aucune image n\'a été uploadée !');
+        }
+    }
+
+    public function deletePost($id) {
+        $modelPost=new PostsModel();
+        $modelPost->deletePost($id);
+        return $this->view('adminPosts');
+
+
+}
 }
 
