@@ -21,7 +21,7 @@ class ConnexionModel extends Model {
 			$_SESSION["statut"] = $data["statut"];
 			if ($data["statut"] == "user") {
 				echo("vous etes connecter");
-                header("Location:" . "http://localhost:8080/public?p=annonces");
+                header("Location:" . "http://localhost:8080/public?p=posts");
 			} elseif ($data["statut"] == "admin") {
 				echo("vous etes connecter administrateur");
 				header("Location:" . "http://localhost:8080/public?p=adminPost");
