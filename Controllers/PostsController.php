@@ -4,6 +4,8 @@ namespace App\Controllers;
 
 use App\Models\PostsModel;
 
+use App\Models\CommentModel;
+
 class PostsController extends Controller{
 
     public function index(){
@@ -20,10 +22,19 @@ class PostsController extends Controller{
         $post = new PostsModel();
         $postById = $post->findPostById($id);
         // var_dump($postById);
+        $comment = new CommentModel();
+        $commentById = $comment->displayComment($id);
+        // print_r($_POST);
+        $commentsPost = $_POST['comment'];
+        $dateComment = date("d.m.y"); 
+        $comment->addComment($id[0], $commentsPost, $dateComment);
         return $this->view('post', array(
             'post' => $postById,
+            'comment' => $commentById,
         )
     );
+
+
     }
 
 }

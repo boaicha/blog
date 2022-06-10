@@ -10,7 +10,7 @@ class ConnexionModel extends Model {
 	public function seConnecter($username, $password) {
 		// $bdd= new connexionBdd();
 		$bdd = $this->getDB();
-		$requete = $bdd->prepare('SELECT * FROM user WHERE mail= ? and password = ?');
+		$requete = $dd->prepare('SELECT * FROM user WHERE mail= ? and password = ?');
 		$requete->execute(array($username, $password));
 		$data = $requete->fetch();
 		$nbreUtilisateur = $requete->rowCount();
