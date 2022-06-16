@@ -4,6 +4,8 @@ namespace App\Controllers;
 
 use App\Models\PostsModel;
 
+use App\Models\CommentModel;
+
 class AdminPostController extends Controller{
 
     private $_suporttedFormats = ['image/png','image/jpeg','image/jpg','image/gif'];
@@ -12,7 +14,7 @@ class AdminPostController extends Controller{
         $post = new PostsModel();
         $list = $post->listPost();
         // var_dump($list);
-        return $this->view('AdminPost', array(
+        return $this->view('AdminPosts', array(
             'posts' => $list,
         )
     );
@@ -25,6 +27,7 @@ class AdminPostController extends Controller{
             'post' => $postWithId,
         ));
 	}
+
 
     public function updatePost($id){
 		
@@ -68,6 +71,34 @@ class AdminPostController extends Controller{
         }else{
             die('Aucune image n\'a été uploadée !');
         }
+    }
+
+    
+    public function postAdmin($id){
+        $post = new PostsModel();
+        $postById = $post->findPostById($id);
+        // var_dump($postById);
+        $comment = new CommentModel();
+        // $statutComment = "en cours";
+        // var_dump($id[0]." ".$statutComment);
+        // echo($id[0]);
+        $commentById = $comment->displayCommentAdmin($id[0]);
+        if(!empty($_POST)){
+            $commentsPost = $_POST['comment'];
+            $dateComment = date("d.m.y"); 
+            $comment->addComment($id[0], $commentsPost, $dateComment);
+        }
+        return $this->view('postAdmin', array(
+            'post' => $postById,
+            'comment' => $commentById,
+        )
+    );
+}
+
+    public function valideComment($id){
+        $commentModel = new CommentModel();
+        $commentModel->validateComment($id);
+        return $this->view('adminPosts');
     }
 
     public function deletePost($id) {

@@ -102,10 +102,13 @@
 													{{ commentSing.date }}
 												</span>
 
-												<p class="be-comment-text">
-													{{ commentSing.commentaire }}
-												</p>
+												<form method="POST" action="public?p=adminPost/valideComment/{{commentSing.id}}">
+													<p class="be-comment-text">
+														{{ commentSing.commentaire }}  &nbsp;  &nbsp;  &nbsp; 
+													</p>
+													<button type="submit">Valider</button>
 
+												</form>
 
 											</div>
 										</div>

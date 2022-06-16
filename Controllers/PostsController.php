@@ -8,6 +8,8 @@ use App\Models\CommentModel;
 
 class PostsController extends Controller{
 
+    private String $statutComment; 
+
     public function index(){
         $post = new PostsModel();
         $list = $post->listPost();
@@ -23,7 +25,8 @@ class PostsController extends Controller{
         $postById = $post->findPostById($id);
         // var_dump($postById);
         $comment = new CommentModel();
-        $commentById = $comment->displayComment($id);
+        // $statutComment = "validee";
+        $commentById = $comment->displayCommentUser($id);
         // print_r($_POST);
         $commentsPost = $_POST['comment'];
         $dateComment = date("d.m.y"); 

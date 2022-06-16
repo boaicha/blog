@@ -9,11 +9,9 @@ class AddPostController extends Controller{
 	private $_suporttedFormats = ['image/png','image/jpeg','image/jpg','image/gif'];
 
 	public function index() {
-        
-	
-    return $this->view('AddPost');
+    	return $this->view('AddPost');
 
-}
+	}	
 
 	public function add(){
 		
@@ -34,8 +32,6 @@ class AddPostController extends Controller{
 				$ajoutPost->AddPost($chapo, $titre, $nameFile, $date_mjr, $date_modif); //appelle de la fonction compteValide de la class connexion
 			// var_dump($list);
 		   
-	
-	
 		}
 		}else{
 			die('L\'image n\'a pas été submit');
@@ -44,8 +40,8 @@ class AddPostController extends Controller{
 		
 	}
 
-	public function uploadFile($file){
-        if(is_array($file)){
+	public function uploadFile($file) {
+        if (is_array($file)) {
             if(in_array($file['type'],$this->_suporttedFormats)){
                 move_uploaded_file($file['tmp_name'],'../css/produit/image/'.$file['name']);
                 echo 'L\'image a bien été uploader avec succès ! ';
