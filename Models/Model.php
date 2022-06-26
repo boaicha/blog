@@ -4,13 +4,14 @@ namespace App\Models;
 
 use PDO;
 
-abstract class Model{
+abstract class Model {
 
-    protected function getDB(){
-
-        $bdd = new PDO('mysql:host=localhost;dbname=blog','root','');
-        return $bdd;
-
+    protected function getDB() {
+        return new PDO(
+			'mysql:host=' . $_ENV['DB_HOST'] . ';dbname=' . $_ENV['DB_NAME'],
+	        $_ENV['DB_USER'],
+	        $_ENV['DB_PASSWORD']
+        );
     }
 
 }
