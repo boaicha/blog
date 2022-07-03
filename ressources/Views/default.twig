@@ -47,9 +47,15 @@
             <ul class="nav">
                 <li><a href="?p=posts" title="">Posts</a></li>
                 <li><a href="./about.html" title="">About</a></li>
-                <li><a href="./services.html" title="">Services</a></li>
-                <li><a href="?p=connexion" title="">Se connecter</a></li>
-                <li><a href="./components.html" title="">Components</a></li>
+                {% if session.statut is null %}
+                    <li><a href="?p=connexion">Se connecter</a></li>
+                {% else %}
+                    <li><a href="?p=deconnexion">Deconnecter</a></li>
+                {% endif %}
+
+                {% if session.statut == 'admin' %}
+                    <li><a href="?p=adminPost" title="">Admin</a></li>
+                {% endif %}
 
             </ul>
 

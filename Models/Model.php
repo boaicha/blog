@@ -6,7 +6,7 @@ use PDO;
 
 abstract class Model {
 
-    protected function getDB() {
+    protected function getDB(): PDO {
         return new PDO(
 			'mysql:host=' . $_ENV['DB_HOST'] . ';dbname=' . $_ENV['DB_NAME'],
 	        $_ENV['DB_USER'],

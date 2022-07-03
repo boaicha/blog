@@ -12,10 +12,11 @@ class ConnexionController extends Controller {
 			$password = md5($_POST['password']); //md5 pour encoder le mot depasse
 			$username = $_POST['username']; //mail
 			$connexion = new ConnexionModel();  //instancie la class connexion
-			$connexion->seConnecter($username, $password); //appelle de la fonction compteValide de la class connexion
+            $connexion->seConnecter($username, $password); //appelle de la fonction compteValide de la class connexion
 		}
 		return $this->view('connexion');
 
 	}
+
 }
 
