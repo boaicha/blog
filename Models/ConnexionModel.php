@@ -14,14 +14,17 @@ class ConnexionModel extends Model {
 		$requete->execute(array($username, $password));
 		$data = $requete->fetch();
 		$nbreUtilisateur = $requete->rowCount();
+		$statut = $data["statut"];
 		if ($nbreUtilisateur == 0) {
 			echo("se compte n'existe pas");
 
 		} elseif ($nbreUtilisateur == 1) {
-			$_SESSION["statut"] = $data["statut"];
+			var_dump($data);
+			echo($data["statut"]);
+
 			if ($data["statut"] == "user") {
 				echo("vous etes connecter");
-                header("Location:" . "http://localhost:8080/public?p=annonces");
+                header("Location:" . "http://localhost:8080/public?p=posts");
 			} elseif ($data["statut"] == "admin") {
 				echo("vous etes connecter administrateur");
 				header("Location:" . "http://localhost:8080/public?p=adminPost");
@@ -29,7 +32,7 @@ class ConnexionModel extends Model {
 			}
 
 		}
-		return $_SESSION["statut"];
+		return $statut;
 
 	}
 
