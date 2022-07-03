@@ -13,6 +13,7 @@ abstract class Controller {
 		$twig = new Environment($loader, [
 			'cache' => false,
 		]);
+		$twig->addGlobal('session', $_SESSION);
 		
 		// on affiche la fonction render avec le chemin qui seras defini lors de l' appel de fonction
 		// et en joignant les donneesde la variable data.
