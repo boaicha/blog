@@ -47,9 +47,12 @@
             <ul class="nav">
                 <li><a href="?p=posts" title="">Posts</a></li>
                 <li><a href="./about.html" title="">About</a></li>
-                <li><a href="./services.html" title="">Services</a></li>
                 <li><a href="?p=connexion" title="">Se connecter</a></li>
-                <li><a href="?p=adminPost" title="">Admin</a></li>
+                {% if donnee == admin %}
+                    <li><a href="?p=adminPost" title="">Admin</a></li>
+                {% endif %}
+
+
 
             </ul>
 

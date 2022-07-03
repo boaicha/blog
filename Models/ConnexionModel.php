@@ -14,6 +14,7 @@ class ConnexionModel extends Model {
 		$data = $requete->fetch();
 
 		$nbreUtilisateur = $requete->rowCount();
+		$statut = $data["statut"];
 		if ($nbreUtilisateur == 0) {
 			echo("se compte n'existe pas");
 			return;
