@@ -21,14 +21,16 @@ class PostsController extends Controller {
 	public function post($id) {
 		$post = new PostsModel();
 		$postById = $post->findPostById($id);
-		// var_dump($postById);
+
 		$comment = new CommentModel();
-		// $statutComment = "validee";
 		$commentById = $comment->displayCommentUser($id);
-		// print_r($_POST);
-		$commentsPost = $_POST['comment'];
+
+        // ?? verifie si $_POST n'est pas null et que  $_POST['comment'] existe, alors il affecte
+        //  $_POST['comment'] à $commentsPost sinon $commentsPost = null
+		$commentsPost = $_POST['comment'] ?? null;
 		$dateComment = date("d.m.y");
 		$comment->addComment($id[0], $commentsPost, $dateComment);
+
 		return $this->view('post', array(
 				'post' => $postById,
 				'comment' => $commentById,
