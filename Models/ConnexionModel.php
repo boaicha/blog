@@ -28,7 +28,7 @@ class ConnexionModel extends Model {
 
 			if ($status == self::ROLE_USER) {
 				echo('vous etes connecter');
-				header('Location:http://localhost:8080/public?p=posts');
+				header('Location:http://localhost:8080/public?p=home');
 			} elseif ($status == self::ROLE_ADMIN) {
 				echo('vous etes connecter administrateur');
 				header('Location:http://localhost:8080/public?p=adminPost');
