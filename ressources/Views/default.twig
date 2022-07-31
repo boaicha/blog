@@ -32,7 +32,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a href="./index.html" class="navbar-brand">Blog P5</a>
+        <a href="./index.html" class="navbar-brand"></a>
     </div>
 
     <nav class="sidebar">
@@ -40,15 +40,21 @@
             <div class="site-header hidden-xs">
                 <a class="site-brand" href="./index.html" title="">
                     <img class="img-responsive site-logo" alt="" src="./css/assets/images/mashup-logo.svg">
-                    Blog P5
+                    MOUGNI AICHA &nbsp &nbsp Blog P5
                 </a>
 
             </div>
             <ul class="nav">
                 <li><a href="?p=posts" title="">Posts</a></li>
+
+                <li><a href="../ressources/CV.pdf">Mon CV</a></li>
                 {% if session.statut is null %}
                     <li><a href="?p=connexion">Se connecter</a></li>
                 {% else %}
+                    </br>
+                    </br>
+                    </br>
+                    </br>
                     <li><a href="?p=deconnexion">Deconnecter</a></li>
                 {% endif %}
 
@@ -60,14 +66,16 @@
 
             <nav class="nav-footer">
                 <p class="nav-footer-social-buttons">
-                    <a class="fa-icon" href="//www.linkedin.com/in/
-aicha-mougni-6a45a7242
-" title="">
+                    <a class="fa-icon" href="//www.linkedin.com/in/aicha-mougni-6a45a7242" title="">
                         <i class="fa fa-linkedin"></i>
                     </a>
-                    <a class="fa-icon" href="../ressources/CV.pdf" title="">
-                        <i class="fa fa-id-card"></i>
+                    <a class="fa-icon" href="https://www.facebook.com/profile.php?id=100083737256097" title="">
+                        <i class="fa fa-facebook"></i>
                     </a>
+                    <a class="fa-icon" href="https://twitter.com/AichaMougni" title="">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+
                 </p>
 
             </nav>
