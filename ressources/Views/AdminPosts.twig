@@ -7,16 +7,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>TITLE</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta charset="UTF-8">
-
 	<link href="../css/common-css/ionicons.css" rel="stylesheet">
-
-
 	<link href="../css/layout-1/css/styles.css" rel="stylesheet">
-
 	<link href="../css/layout-1/css/responsive.css" rel="stylesheet">
     <style>
         .style{
@@ -35,17 +27,11 @@
 &nbsp;
 &nbsp;
 
-
-
-
 <section class="blog-area section" >
 	<div class="container">
 
 		<div class="row">
     {% for post in posts %}
-
-
-
 
 				<div class="col-lg-4 col-md-6" style="width: 370px">
                 <a href="public?p=adminPost/postAdmin/{{post.id}}">
@@ -72,8 +58,6 @@
 					</div><!-- card -->
                 <a href ="public?p=adminPost/displayPost/{{post.id}}"><button class="favorite styled" type="button">modifier</button></a>
 &nbsp;
-&nbsp;
-&nbsp;
 <a href="public?p=adminPost/deletePost/{{post.id}}"<button class="favorite styled"type="button"> supprimer</button>
                 </a>
 				</div><!-- col-lg-4 col-md-6 -->
@@ -83,8 +67,6 @@
 		</div><!-- col-lg-4 col-md-6 -->
 		</section>
 </center>
-
-
 
 
 {% endblock %}
