@@ -1,27 +1,10 @@
-{% extends "default.twig" %}
+{% extends "layout.twig" %}
+
+{% block title %}Liste des posts{% endblock %}
+
 {% block content %}
-
-    <head>
-
-
-        <link href="../css/common-css/ionicons.css" rel="stylesheet">
-
-
-        <link href="../css/layout-1/css/styles.css" rel="stylesheet">
-
-        <link href="../css/layout-1/css/responsive.css" rel="stylesheet">
-        <style>
-            .style {
-                text-indent: 30%;
-            }
-        </style>
-    </head>
-    <body>
-
-
     <section class="blog-area section">
         <div class="container">
-
             <div class="row">
                 {% for post in posts %}
 
@@ -47,18 +30,16 @@
                                             <li><a href="#"><i class="ion-eye"></i>138</a></li>
                                         </ul>
 
-                                    </div><!-- blog-info -->
-                                </div><!-- single-post -->
-                            </div><!-- card -->
+                                    </div>
+                                </div>
+                            </div>
                         </a>
-                    </div><!-- col-lg-4 col-md-6 -->
+                    </div>
 
                 {% endfor %}
-            </div><!-- card -->
-        </div><!-- col-lg-4 col-md-6 -->
+            </div>
+        </div>
     </section>
-    </div>
-    <!-- SCIPTS -->
 
     <script src="vue/common-js/jquery-3.1.1.min.js"></script>
 
@@ -67,8 +48,5 @@
     <script src="vue/common-js/bootstrap.js"></script>
 
     <script src="vue/common-js/scripts.js"></script>
-
-
-    </body>
 
 {% endblock %}

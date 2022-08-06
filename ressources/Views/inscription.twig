@@ -1,15 +1,12 @@
-{% extends "default.twig" %}
+{% extends "layout.twig" %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" type="text/css" href="./css/form.css"/>
+{% endblock %}
+
+{% block title %}Inscription {% endblock %}
 
 {% block content %}
-
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-        <link rel="stylesheet" type="text/css" href="./css/form.css"/>
-        <title>inscription</title>
-    </head>
-    <body>
     <div class="style">
         <form method="POST" action="public?p=inscription" id="formulaire" name="formulaire">
             <div class="container">
@@ -31,6 +28,9 @@
                     <br>
                 </div>
             </div>
+            <button class="boutton">
+                <a href="public?p=connexion">Se connecter</a>
+            </button>
         </form>
         {{ prenom }}
     </div>
@@ -77,12 +77,5 @@
         }
 
     </script>
-    <button class="boutton">
-        <a href="public?p=connexion">Se connecter</a>
-    </button>
-    </div>
-    </div>
-    </body>
-    </html>
 
 {% endblock %}
