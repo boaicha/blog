@@ -7,12 +7,10 @@
         <div class="container">
             <div class="row">
                 {% for post in posts %}
-
                     <div class="col-lg-4 col-md-6" style="width: 370px">
                         <a href="public?p=posts/post/{{ post.id }}">
                             <div class="card h-100">
                                 <div class="single-post post-style-1">
-
                                     <div class="blog-image"><img src="../css/produit/image/{{ post.img }}?>"
                                                                  alt="Blog Image"></div>
 
@@ -42,11 +40,8 @@
     </section>
 
     <script src="vue/common-js/jquery-3.1.1.min.js"></script>
-
     <script src="vue/common-js/tether.min.js"></script>
-
     <script src="vue/common-js/bootstrap.js"></script>
-
     <script src="vue/common-js/scripts.js"></script>
 
 {% endblock %}

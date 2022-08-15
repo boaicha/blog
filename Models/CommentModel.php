@@ -20,9 +20,9 @@ class CommentModel extends Model {
 		return $requete->fetchAll();
 	}
 
-	public function displayCommentUser($idPost) {
+	public function listCommentsOfPost($idPost) {
 		$bdd = $this->getDB();
-		$requete = $bdd->prepare('SELECT*FROM commentaire WHERE id_postc = ? AND verification = "validee"');
+		$requete = $bdd->prepare('SELECT * FROM commentaire WHERE id_postc = ? AND verification = "validee"');
 		$requete->execute($idPost);
 		return $requete->fetchAll();
 	}
