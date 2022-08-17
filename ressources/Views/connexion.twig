@@ -1,24 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width,initial-scale=1" name="viewport">
-    <meta content="description" name="description">
-    <meta name="google" content="notranslate"/>
-    <meta content="Mashup templates have been developped by Orson.io team" name="author">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="./css/form.css"/>
 
-    <!-- Disable tap highlight on IE -->
-    <meta name="msapplication-tap-highlight" content="no">
-
-    <link href="./css/assets/apple-icon-180x180.png" rel="apple-touch-icon">
-    <link href="./css/assets/favicon.ico" rel="icon">
-
-    <title>Title page</title>
-
-    <link href="./css/main.82cfd66e.css" rel="stylesheet">
+    <title>Connexion</title>
 </head>
+
 
 
 {% block content %}
@@ -47,60 +35,56 @@
                 <button type="submit" name="connexion" class="btn">Connexion</button>
                 <br>
             </div>
+
         </div>
-    </form>
+    </div>
 
-    {#  Verification password  #}
-    <script>
-        let formulaire = document.getElementById('formulaire');
-
-        formulaire.addEventListener('input', function (e) {
-            let password = document.getElementById('password');
-            let caracteres = /^[a-zA-Z-0-9]+$/;
-
-            if (password.value.trim() == "") {
-                let erreur = document.getElementById('erreur');
-                erreur.innerHTML = "Le champs password est requis.";
-                erreur.style.color = 'red';
-                e.preventDefault();
-            } else if (caracteres.test(password.value) == false) {
-                let erreur = document.getElementById('erreur');
-                erreur.innerHTML = "Le password doit comporter des lettres, des chiffres et des tirets.";
-                erreur.style.color = 'red';
-                e.preventDefault();
-            }
-        });
-
-
-        function ValidateEmail(inputText) {
-            var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-            if (inputText.value.match(mailformat)) {
-                let erreur = document.getElementById('erreur');
-                erreur.innerHTML = "Adresse mail valide.";
-                erreur.style.color = 'green';
-                // alert("Valid email address!");
-                document.formulaire.username.focus();
-                return true;
-            } else {
-                let erreur = document.getElementById('erreur');
-                erreur.innerHTML = "Adresse mail invalide.";
-                erreur.style.color = 'red';
-                // alert("You have entered an invalid email address!");
-                document.formulaire.username.focus();
-                return false;
-            }
-        }
-
-    </script>
-    <!-- ///////////////////////////JS---Verification password---JS//////////////////////////////////////// -->
-    <!-- <center>     -->
     <button class="boutton">
         <a href="public?p=inscription">S'inscrire</a>
     </button>
-    <!-- </center> -->
-    </div>
-    </div>
-    </body>
-    </html>
+</form>
 
-{% endblock %}
+{#  Verification password  #}
+<script>
+    let formulaire = document.getElementById('formulaire');
+
+    formulaire.addEventListener('input', function (e) {
+        let password = document.getElementById('password');
+        let caracteres = /^[a-zA-Z-0-9]+$/;
+
+        if (password.value.trim() == "") {
+            let erreur = document.getElementById('erreur');
+            erreur.innerHTML = "Le champs password est requis.";
+            erreur.style.color = 'red';
+            e.preventDefault();
+        } else if (caracteres.test(password.value) == false) {
+            let erreur = document.getElementById('erreur');
+            erreur.innerHTML = "Le password doit comporter des lettres, des chiffres et des tirets.";
+            erreur.style.color = 'red';
+            e.preventDefault();
+        }
+    });
+
+
+    function ValidateEmail(inputText) {
+        var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        if (inputText.value.match(mailformat)) {
+            let erreur = document.getElementById('erreur');
+            erreur.innerHTML = "Adresse mail valide.";
+            erreur.style.color = 'green';
+            // alert("Valid email address!");
+            document.formulaire.username.focus();
+            return true;
+        } else {
+            let erreur = document.getElementById('erreur');
+            erreur.innerHTML = "Adresse mail invalide.";
+            erreur.style.color = 'red';
+            // alert("You have entered an invalid email address!");
+            document.formulaire.username.focus();
+            return false;
+        }
+    }
+
+</script>
+</body>
+</html>
