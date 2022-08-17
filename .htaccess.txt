@@ -1,0 +1,2 @@
+#prive les utilisateurs de l'acces des fichiers du projet
+Options -Indexes

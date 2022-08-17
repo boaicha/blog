@@ -7,19 +7,35 @@
     <title>Connexion</title>
 </head>
 
-<body>
-<form method="POST" action="public?p=connexion" id="formulaire" name="formulaire">
-    <div class="container" style="display: block; margin-left: auto; margin-right: auto">
-        <div class="brand-logo"></div>
-        <div class="brand-title">SE CONNECTER</div>
-        <div class="inputs">
-            <label>EMAIL</label>
-            <input type="text" placeholder="adresse e-mail" name="username"
-                   onclick="ValidateEmail(document.formulaire.username)">
-            <label>PASSWORD</label>
-            <input type="password" placeholder="mot de passe" name="password" id="password">
-            <button type="submit" name="connexion" class="btn">Connexion</button>
-            <br>
+
+
+{% block content %}
+
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="./css/form.css"/>
+        <title>Se connecter</title>
+    </head>
+
+    <body>
+    <form method="POST" action="public?p=connexion" id="formulaire" name="formulaire">
+        <div class="container">
+            <div class="brand-logo"></div>
+            <div class="brand-title">SE CONNECTER</div>
+            <div class="inputs">
+                <label>EMAIL</label>
+                <input type="text" placeholder="adresse e-mail" name="username"
+                       onclick="ValidateEmail(document.formulaire.username)">
+                <label>PASSWORD</label>
+                <input type="hidden" name="csrf" value="{{csrf}}">
+                <input type="password" placeholder="mot de passe" name="password" id="password">
+                <button type="submit" name="connexion" class="btn">Connexion</button>
+                <br>
+            </div>
+
         </div>
     </div>
 
