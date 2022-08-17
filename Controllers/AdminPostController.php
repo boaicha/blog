@@ -34,11 +34,10 @@ class AdminPostController extends Controller {
 			if (isset($_POST['Update'])) {  //si on a appuyer sur le bouton
 
 				print_r("Vous etes sur le controlleur");
-				$chapo = $_POST['chapo']; //md5 pour encoder le mot depasse
-
-				$titre = $_POST['titre'];
-				$date_mjr = $_POST['date_mjr'];
-				$date_modif = $_POST['date_modif'];
+                $chapo = addslashes(htmlspecialchars($_POST['chapo'])); //md5 pour encoder le mot depasse
+                $titre = addslashes(htmlspecialchars($_POST['titre']));
+                $date_mjr =addslashes( htmlspecialchars($_POST['date_mjr']));
+                $date_modif = addslashes(htmlspecialchars($_POST['date_modif']));
 
 				$updatePost = new PostsModel();  //instancie la class connexion
 				$updatePost->updatePost($titre, $chapo, $nameFile, $date_mjr, $date_modif, $id[0]); //appelle de la fonction compteValide de la class connexion
@@ -72,7 +71,7 @@ class AdminPostController extends Controller {
 		$commentById = $comment->displayCommentAdmin($id[0]);
 
 		if (!empty($_POST)) {
-			$commentsPost = $_POST['comment'];
+			$commentsPost =addslashes(htmlspecialchars($_POST['comment']));
 			$dateComment = date("d.m.y");
 			$comment->addComment($id[0], $commentsPost, $dateComment);
 		}

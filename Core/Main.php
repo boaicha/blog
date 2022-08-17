@@ -33,6 +33,7 @@ class Main {
 			if (!class_exists($controller)) {
 				http_response_code(404);
 				echo "La page recherchée n'existe pas";
+                header("HTTP/1.0 404 Not Found");
 				exit();
 			}
 			// On sauvegarde le 2ème paramètre dans $action si il existe, sinon index

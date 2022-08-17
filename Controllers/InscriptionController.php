@@ -10,10 +10,10 @@ class InscriptionController extends Controller {
 		if (isset($_POST['inscription'])) {
 
 			print_r("Vous etes sur le controlleur");
-			$password = md5($_POST['password']); //md5 pour encoder le mot depasse
-			$username = $_POST['mail']; //mail
-			$name = $_POST['nom'];
-			$prenom = $_POST['prenom'];
+			$password = md5(htmlspecialchars($_POST['password'])); //md5 pour encoder le mot depasse
+			$username = addslashes(htmlspecialchars($_POST['mail'])); //mail
+			$name = addslashes(htmlspecialchars($_POST['nom']));
+			$prenom = addslashes(htmlspecialchars($_POST['prenom']));
 
 			$inscription = new InscriptionModel();  //instancie la class connexion
 			$inscription->inscription($username, $password, $name, $prenom); //appelle de la fonction compteValide de la class connexion

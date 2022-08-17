@@ -27,7 +27,7 @@ class PostsController extends Controller {
 
         // ?? verifie si $_POST n'est pas null et que  $_POST['comment'] existe, alors il affecte
         //  $_POST['comment'] à $commentsPost sinon $commentsPost = null
-		$commentsPost = $_POST['comment'] ?? null;
+		$commentsPost = addslashes(htmlspecialchars($_POST['comment'])) ?? null;
 		$dateComment = date("d.m.y");
 		$comment->addComment($id[0], $commentsPost, $dateComment);
 
