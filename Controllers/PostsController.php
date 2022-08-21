@@ -7,8 +7,9 @@ use App\Models\PostsModel;
 
 class PostsController extends Controller {
 	/**
+	 * route = /posts
 	 * Affichage des la liste des posts
-	 * @return void
+	 * @return void|null
 	 */
 	public function index() {
 		$post = new PostsModel();
@@ -20,9 +21,10 @@ class PostsController extends Controller {
 	}
 
 	/**
+	 * route = /posts/post/id
 	 * Affichage d'un post
 	 * @param $id
-	 * @return void
+	 * @return void|null
 	 */
 	public function post($id) {
 		$postsModel = new PostsModel();
@@ -31,7 +33,8 @@ class PostsController extends Controller {
 		$commentModel = new CommentModel();
 		$comments = $commentModel->listCommentsOfPost($id);
 
-		$commentsPost = addslashes(htmlspecialchars($_POST['commentModel'])) ?? null;
+		$comment = $_POST['commentModel'] ?? null;
+		$commentsPost = addslashes(htmlspecialchars($comment));
 		$dateComment = date("d.m.y");
 		$commentModel->addComment($id[0], $commentsPost, $dateComment);
 

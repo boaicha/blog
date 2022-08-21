@@ -5,6 +5,10 @@ use App\Models\HomeModel;
 
 class HomeController extends Controller
 {
+	/**
+	 * route = /home
+	 * @return null
+	 */
     public function index() {
         $model = new HomeModel();
         $posts = $model->listPost();
