@@ -5,35 +5,67 @@ namespace App\Controllers;
 use App\Models\ConnexionModel;
 
 class ConnexionController extends Controller {
+	const ROLE_ADMIN = 'admin';
 
+	/**
+	 * route = /connexion/index
+	 * @return null
+	 * @throws \Exception
+	 */
 	public function index() {
-        if(!isset($_SESSION)){
-            session_start();
-        }
+		$token = $this->generateToken();
 
-
-        if(empty($_SESSION['key'])){
-            $_SESSION['key'] = bin2hex(random_bytes(32));
-        }
-
-        $csrf = hash_hmac('sha256', 'this is some string', $_SESSION['key']);
-
-		if (isset($_POST['connexion'])) {  //si on a appuyer sur le bouton
-			print_r("Vous etes sur le controlleur");
-            if(hash_equals($csrf, $_POST['csrf'])){
+		if (isset($_POST['connexion'])) {  // Traitement du formulaire envoyé
+            if (hash_equals($token, $_POST['csrf'])){
                 $password = md5(htmlspecialchars($_POST['password'])); //md5 pour encoder le mot depasse
                 $username = addslashes(htmlspecialchars($_POST['username'])); //mail
-                $connexion = new ConnexionModel();  //instancie la class connexion
-                $connexion->seConnecter($username, $password); //appelle de la fonction compteValide de la class connexion
-            }else{
+                $connexionModel = new ConnexionModel();  // instancie la class connexion
+                $user = $connexionModel->findUser($username, $password); //appelle de la fonction compteValide de la class connexion
+
+	            if (!$user) {
+		            echo("se compte n'existe pas");
+		            return;
+	            } else {
+		            $status = $user['statut'];
+		            $_SESSION['statut'] = $status;
+		            $_SESSION['username'] = $username;
+		            $_SESSION['password'] = $password;
+
+		            if ($status == self::ROLE_ADMIN) {
+			            $this->redirectToAdminPage();
+		            } else {
+			            $this->redirectToHomePage();
+		            }
+	            }
+            } else {
                 echo 'CSRF failed';
             }
 
 		}
 		return $this->view('connexion', array(
-            'csrf' => $csrf,
+            'csrf' => $token,
         ));
 
+	}
+
+	private function generateToken() {
+		if (empty($_SESSION['token'])){
+			$_SESSION['token'] = bin2hex(random_bytes(32));
+		}
+
+		return hash_hmac('sha256', 'this is some string', $_SESSION['token']);
+	}
+
+	private function redirectToAdminPage() {
+		$controller = new AdminPostController();
+		$controller->index();
+		exit();
+	}
+
+	private function redirectToHomePage() {
+		$controller = new HomeController();
+		$controller->index();
+		exit();
 	}
 
 }
