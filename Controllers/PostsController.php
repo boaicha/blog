@@ -7,8 +7,15 @@ use App\Models\PostsModel;
 
 class PostsController extends Controller {
 
+
 	private $statutComment;
     private $id;
+
+	/**
+	 * route = /posts
+	 * Affichage des la liste des posts
+	 * @return void|null
+	 */
 
 	public function index() {
 		$post = new PostsModel();
@@ -19,22 +26,27 @@ class PostsController extends Controller {
 		);
 	}
 
+	/**
+	 * route = /posts/post/id
+	 * Affichage d'un post
+	 * @param $id
+	 * @return void|null
+	 */
 	public function post($id) {
-		$post = new PostsModel();
-		$postById = $post->findPostById($id);
+		$postsModel = new PostsModel();
+		$post = $postsModel->findPostById($id);
 
-		$comment = new CommentModel();
-		$commentById = $comment->displayCommentUser($id);
+		$commentModel = new CommentModel();
+		$comments = $commentModel->listCommentsOfPost($id);
 
-        // ?? verifie si $_POST n'est pas null et que  $_POST['comment'] existe, alors il affecte
-        //  $_POST['comment'] à $commentsPost sinon $commentsPost = null
-		$commentsPost = addslashes(htmlspecialchars($_POST['comment'])) ?? null;
+		$comment = $_POST['commentModel'] ?? null;
+		$commentsPost = addslashes(htmlspecialchars($comment));
 		$dateComment = date("d.m.y");
-		$comment->addComment($id[0], $commentsPost, $dateComment);
+		$commentModel->addComment($id[0], $commentsPost, $dateComment);
 
 		return $this->view('post', array(
-				'post' => $postById,
-				'comment' => $commentById,
+				'post' => $post,
+				'comments' => $comments,
 			)
 		);
 

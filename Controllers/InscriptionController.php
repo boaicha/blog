@@ -5,6 +5,10 @@ namespace App\Controllers;
 use App\Models\InscriptionModel;
 
 class InscriptionController extends Controller {
+	/**
+	 * route = /inscription
+	 * @return null
+	 */
 	public function index() {
 		// si on a appuyer sur le bouton
 		if (isset($_POST['inscription'])) {

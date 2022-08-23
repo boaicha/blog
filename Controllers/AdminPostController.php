@@ -7,9 +7,16 @@ use App\Models\PostsModel;
 
 class AdminPostController extends Controller {
 
+	/**
+	 * @var string[]
+	 */
 	private $_suporttedFormats = ['image/png', 'image/jpeg', 'image/jpg', 'image/gif'];
     private $id;
 
+	/**
+	 * route = /adminPost/index
+	 * @return null
+	 */
 	public function index() {
 		$post = new PostsModel();
 		$list = $post->listPost();
@@ -19,6 +26,11 @@ class AdminPostController extends Controller {
 		);
 	}
 
+	/**
+	 * route = /adminPost/displayPost/id
+	 * @param $id
+	 * @return null
+	 */
 	public function displayPost($id) {
 		$modelPost = new PostsModel();
 		$postWithId = $modelPost->findPostById($id);
@@ -27,8 +39,12 @@ class AdminPostController extends Controller {
 		));
 	}
 
+	/**
+	 * route = /adminPost/updatePost/id
+	 * @param $id
+	 * @return void
+	 */
 	public function updatePost($id) {
-
 		if (isset($_FILES['file'])) {
 			$this->uploadFile($_FILES['file']);
 			$nameFile = $_FILES['file']['name'];
