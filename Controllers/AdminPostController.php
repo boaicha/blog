@@ -8,6 +8,7 @@ use App\Models\PostsModel;
 class AdminPostController extends Controller {
 
 	private $_suporttedFormats = ['image/png', 'image/jpeg', 'image/jpg', 'image/gif'];
+    private $id;
 
 	public function index() {
 		$post = new PostsModel();

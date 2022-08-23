@@ -7,6 +7,9 @@ use Twig\Loader\FilesystemLoader;
 
 abstract class Controller {
 
+    private $path;
+    private $datas;
+
 	public function view(string $path, $datas = []) {
 		// la variable loader va contenir le chemin de l'emplacement de tte les vue .
 		$loader = new FilesystemLoader('../ressources/Views');

@@ -6,6 +6,11 @@ class CommentModel extends Model {
 
 	private $idPost;
 	private $statutComment;
+    private $comment;
+    private $date;
+    private $idComment;
+
+
 
 	/**
 	 * fonction pour afficher tout les commentaires d'un post précis

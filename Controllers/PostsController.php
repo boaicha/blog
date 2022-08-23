@@ -8,6 +8,7 @@ use App\Models\PostsModel;
 class PostsController extends Controller {
 
 	private $statutComment;
+    private $id;
 
 	public function index() {
 		$post = new PostsModel();
