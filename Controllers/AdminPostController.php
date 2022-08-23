@@ -11,6 +11,7 @@ class AdminPostController extends Controller {
 	 * @var string[]
 	 */
 	private $_suporttedFormats = ['image/png', 'image/jpeg', 'image/jpg', 'image/gif'];
+    private $id;
 
 	/**
 	 * route = /adminPost/index

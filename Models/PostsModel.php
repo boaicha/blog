@@ -6,6 +6,14 @@ use PDO;
 
 class PostsModel extends Model {
 
+    private $id;
+    private $chapo;
+    private $titre;
+    private $nameFile;
+    private $date_mjr;
+    private $date_modif;
+
+
 	public function listPost() {
 		$bdd = $this->getDB();
 		$requete = $bdd->prepare('SELECT * FROM post');

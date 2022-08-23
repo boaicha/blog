@@ -7,6 +7,7 @@ use App\Models\PostsModel;
 class AddPostController extends Controller {
 
 	private $_suporttedFormats = ['image/png', 'image/jpeg', 'image/jpg', 'image/gif'];
+    private $file;
 
 	public function index() {
 		return $this->view('AddPost');
