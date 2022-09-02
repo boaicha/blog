@@ -6,11 +6,6 @@ use App\Models\CommentModel;
 use App\Models\PostsModel;
 
 class PostsController extends Controller {
-
-
-	private $statutComment;
-    private $id;
-
 	/**
 	 * route = /posts
 	 * Affichage des la liste des posts
@@ -18,8 +13,8 @@ class PostsController extends Controller {
 	 */
 
 	public function index() {
-		$post = new PostsModel();
-		$list = $post->listPost();
+		$postModel = new PostsModel();
+		$list = $postModel->listPost();
 		return $this->view('index', array(
 				'posts' => $list,
 			)
