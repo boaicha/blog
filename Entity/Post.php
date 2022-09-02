@@ -6,91 +6,122 @@ final class Post {
 	private $id;
 	private $titre;
 	private $chapo;
-	private $image;
-	private $date;
-	private $dateModification;
+	private $img;
+	private $date_mjr;
+	private $date_modif;
+    private $id_user;
 
-	/**
-	 * @param $id
-	 * @param $titre
-	 * @param $chapo
-	 * @param $image
-	 * @param $date
-	 * @param $dateModification
-	 */
-	public function __construct($id, $titre, $chapo, $image, $date, $dateModification) {
-		$this->id = $id;
-		$this->titre = $titre;
-		$this->chapo = $chapo;
-		$this->image = $image;
-		$this->date = $date;
-		$this->dateModification = $dateModification;
-	}
+    /**
+     * @return mixed
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
 
-	public function id() {
-		return $this->id;
-	}
+    /**
+     * @param mixed $id
+     */
+    public function setId($id): void
+    {
+        $this->id = $id;
+    }
 
-	/**
-	 * @param mixed $id
-	 */
-	public function setId($id): void {
-		$this->id = $id;
-	}
+    /**
+     * @return mixed
+     */
+    public function getTitre()
+    {
+        return $this->titre;
+    }
 
-	public function titre() {
-		return $this->titre;
-	}
+    /**
+     * @param mixed $titre
+     */
+    public function setTitre($titre): void
+    {
+        $this->titre = $titre;
+    }
 
-	/**
-	 * @param mixed $titre
-	 */
-	public function setTitre($titre): void {
-		$this->titre = $titre;
-	}
+    /**
+     * @return mixed
+     */
+    public function getChapo()
+    {
+        return $this->chapo;
+    }
 
-	public function chapo() {
-		return $this->chapo;
-	}
+    /**
+     * @param mixed $chapo
+     */
+    public function setChapo($chapo): void
+    {
+        $this->chapo = $chapo;
+    }
 
-	/**
-	 * @param mixed $chapo
-	 */
-	public function setChapo($chapo): void {
-		$this->chapo = $chapo;
-	}
+    /**
+     * @return mixed
+     */
+    public function getImg()
+    {
+        return $this->img;
+    }
 
-	public function image() {
-		return $this->image;
-	}
+    /**
+     * @param mixed $img
+     */
+    public function setImg($img): void
+    {
+        $this->img = $img;
+    }
 
-	/**
-	 * @param mixed $image
-	 */
-	public function setImage($image): void {
-		$this->image = $image;
-	}
+    /**
+     * @return mixed
+     */
+    public function getDateMjr()
+    {
+        return $this->date_mjr;
+    }
 
-	public function date() {
-		return $this->date;
-	}
+    /**
+     * @param mixed $date_mjr
+     */
+    public function setDateMjr($date_mjr): void
+    {
+        $this->date_mjr = $date_mjr;
+    }
 
-	/**
-	 * @param mixed $date
-	 */
-	public function setDate($date): void {
-		$this->date = $date;
-	}
+    /**
+     * @return mixed
+     */
+    public function getDateModif()
+    {
+        return $this->date_modif;
+    }
 
-	public function dateModification() {
-		return $this->dateModification;
-	}
+    /**
+     * @param mixed $date_modif
+     */
+    public function setDateModif($date_modif): void
+    {
+        $this->date_modif = $date_modif;
+    }
 
-	/**
-	 * @param mixed $dateModification
-	 */
-	public function setDateModification($dateModification): void {
-		$this->dateModification = $dateModification;
-	}
+    /**
+     * @return mixed
+     */
+    public function getIdUser()
+    {
+        return $this->id_user;
+    }
+
+    /**
+     * @param mixed $id_user
+     */
+    public function setIdUser($id_user): void
+    {
+        $this->id_user = $id_user;
+    }
+
 
 }

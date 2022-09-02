@@ -2,23 +2,16 @@
 
 namespace App\Models;
 
+use App\Entity\Post;
 use PDO;
 
 class PostsModel extends Model {
-
-    private $id;
-    private $chapo;
-    private $titre;
-    private $nameFile;
-    private $date_mjr;
-    private $date_modif;
-
 
 	public function listPost() {
 		$bdd = $this->getDB();
 		$requete = $bdd->prepare('SELECT * FROM post');
 		$requete->execute();
-		return $requete->fetchAll(PDO::FETCH_ASSOC);
+		return $requete->fetchAll(PDO::FETCH_CLASS,Post::class);
 
 	}
 
@@ -31,7 +24,7 @@ class PostsModel extends Model {
 		$bdd = $this->getDB();
 		$requete = $bdd->prepare('SELECT*FROM post WHERE id=?');
 		$requete->execute($id);
-		return $requete->fetch();
+		return $requete->fetchAll(PDO::FETCH_CLASS,Post::class)[0];
 	}
 
 	/**
