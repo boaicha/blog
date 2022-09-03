@@ -35,7 +35,7 @@ class PostsModel extends Model {
 	 * @param $date_modif
 	 * @return void
 	 */
-	public function AddPost($chapo, $titre, $nameFile, $date_mjr, $date_modif) {
+	public function addPost($chapo, $titre, $nameFile, $date_mjr, $date_modif) {
 		$bdd = $this->getDB();
 		$requete = $bdd->prepare('INSERT INTO post (titre,chapo, img, date_mjr, date_modif)  VALUES (?, ?, ?, ?, ?)');
 		$requete->execute(array($titre, $chapo, $nameFile, $date_mjr, $date_modif));
@@ -49,7 +49,6 @@ class PostsModel extends Model {
 	 * @return void
 	 */
 	public function deletePost($id) {
-		// $bdd= new connexionBdd();
 		$bdd = $this->getDB();
 		$requete = $bdd->prepare('DELETE FROM post WHERE id = ?');
 		$requete->execute($id);

@@ -20,7 +20,6 @@ class Main {
 
 			// On redirige vers l'URL dans /
 			header('Location: ' . $uri);
-			exit;
 
 		}
 
@@ -51,7 +50,6 @@ class Main {
 						$action
 					)
 				);
-				exit();
 			}
 		} else {
 			// Ici aucun paramètre n'est défini

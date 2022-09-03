@@ -7,13 +7,6 @@ use PDO ;
 
 class CommentModel extends Model {
 
-	private $idPost;
-	private $statutComment;
-    private $comment;
-    private $date;
-    private $idComment;
-
-
 
 	/**
 	 * fonction pour afficher tout les commentaires d'un post précis
@@ -44,7 +37,7 @@ class CommentModel extends Model {
 		alert("Commentaire validé");
 	}
 
-	public function Addcomment($idPost, $comment, $date) {
+	public function addComment($idPost, $comment, $date) {
 		$bdd = $this->getDB();
 		$requete = $bdd->prepare('INSERT INTO commentaire (id_postc,commentaire,date)  VALUES (?, ?, ?)');
 		$requete->execute(array($idPost, $comment, $date));

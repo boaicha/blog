@@ -11,7 +11,6 @@ class AdminPostController extends Controller {
 	 * @var string[]
 	 */
 	private $_suporttedFormats = ['image/png', 'image/jpeg', 'image/jpg', 'image/gif'];
-    private $id;
 
 	/**
 	 * route = /adminPost/index
@@ -50,7 +49,6 @@ class AdminPostController extends Controller {
 			$nameFile = $_FILES['file']['name'];
 			if (isset($_POST['Update'])) {  //si on a appuyer sur le bouton
 
-				print_r("Vous etes sur le controlleur");
                 $chapo = addslashes(htmlspecialchars($_POST['chapo'])); //md5 pour encoder le mot depasse
                 $titre = addslashes(htmlspecialchars($_POST['titre']));
                 $date_mjr =addslashes( htmlspecialchars($_POST['date_mjr']));
@@ -61,7 +59,7 @@ class AdminPostController extends Controller {
 
 			}
 		} else {
-			die('L\'image n\'a pas été submit');
+			throw new  \Exception('L\'image n\'a pas été submit', 409);
 		}
 
 
@@ -73,11 +71,11 @@ class AdminPostController extends Controller {
 				move_uploaded_file($file['tmp_name'], '../css/produit/image/' . $file['name']);
 				echo 'L\'image a bien été uploader avec succès ! ';
 			} else {
-				die('Le format n\'est supporté ! ');
+				throw new \Exception('Le format n\'est supporté ! ');
 			}
 
 		} else {
-			die('Aucune image n\'a été uploadée !');
+			throw new \Exception('Aucune image n\'a été uploadée !');
 		}
 	}
 
