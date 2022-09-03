@@ -7,7 +7,6 @@ use App\Models\PostsModel;
 class AddPostController extends Controller {
 
 	private $_suporttedFormats = ['image/png', 'image/jpeg', 'image/jpg', 'image/gif'];
-    private $file;
 
 	public function index() {
 		return $this->view('AddPost');
@@ -19,17 +18,16 @@ class AddPostController extends Controller {
 			$nameFile = $_FILES['file']['name'];
 
 			if (isset($_POST['Upload'])) {  //si on a appuyer sur le bouton
-				print_r("Vous etes sur le controlleur");
 				$chapo = addslashes(htmlspecialchars($_POST['chapo'])); //md5 pour encoder le mot depasse
 				$titre = addslashes(htmlspecialchars($_POST['titre']));
 				$date_mjr =addslashes( htmlspecialchars($_POST['date_mjr']));
 				$date_modif = addslashes(htmlspecialchars($_POST['date_modif']));
 
 				$ajoutPost = new PostsModel();  //instancie la class connexion
-				$ajoutPost->AddPost($chapo, $titre, $nameFile, $date_mjr, $date_modif); //appelle de la fonction compteValide de la class connexion
+				$ajoutPost->addPost($chapo, $titre, $nameFile, $date_mjr, $date_modif); //appelle de la fonction compteValide de la class connexion
 			}
 		} else {
-			die('L\'image n\'a pas été submit');
+			throw new \Exception('L\'image n\'a pas été submit', 409);
 		}
 
 	}
@@ -40,11 +38,11 @@ class AddPostController extends Controller {
 				move_uploaded_file($file['tmp_name'], '../css/produit/image/' . $file['name']);
 				echo 'L\'image a bien été uploader avec succès ! ';
 			} else {
-				die('Le format n\'est supporté ! ');
+				throw new \Exception('Le format n\'est supporté ! ', 409);
 			}
 
 		} else {
-			die('Aucune image n\'a été uploadée !');
+			throw new \Exception('Aucune image n\'a été uploadée !', 409);
 		}
 	}
 

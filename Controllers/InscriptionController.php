@@ -13,7 +13,6 @@ class InscriptionController extends Controller {
 		// si on a appuyer sur le bouton
 		if (isset($_POST['inscription'])) {
 
-			print_r("Vous etes sur le controlleur");
 			$password = md5(htmlspecialchars($_POST['password'])); //md5 pour encoder le mot depasse
 			$username = addslashes(htmlspecialchars($_POST['mail'])); //mail
 			$name = addslashes(htmlspecialchars($_POST['nom']));
