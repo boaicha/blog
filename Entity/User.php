@@ -106,5 +106,4 @@ class User{
         $this->statut = $statut;
     }
 
-
 }

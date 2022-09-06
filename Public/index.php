@@ -4,7 +4,7 @@ if (session_status() === PHP_SESSION_NONE) {
 	session_start();
 }
 error_reporting(E_ALL);
-ini_set("display_errors", 1);
+//ini_set("display_errors", 1);
 
 // On définit une constante contenant le dossier racine
 define('ROOT', dirname(__DIR__));
