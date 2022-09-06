@@ -12,4 +12,5 @@ class HomeModel extends Model
         return $requete->fetchAll(PDO::FETCH_ASSOC);
 
     }
+
 }
