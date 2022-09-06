@@ -32,7 +32,7 @@ class Main {
 			$controller = '\\App\\Controllers\\' . ucfirst(array_shift($params)) . 'Controller';
 			if (!class_exists($controller)) {
 				$exceptionController->notFoundAction($_GET['p']);
-				exit();
+				return;
 			}
 			// On sauvegarde le 2ème paramètre dans $action si il existe, sinon index
 			$action = isset($params[0]) ? array_shift($params) : 'index';
