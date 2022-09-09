@@ -46,14 +46,13 @@
 
             </div>
             <ul class="nav">
+                <li><a href="?p=home" title="">Acceuil</a></li>
                 <li><a href="?p=posts" title="">Posts</a></li>
 
                 <li><a href="../ressources/CV.pdf">Mon CV</a></li>
                 {% if session.statut is null %}
                     <li><a href="?p=connexion">Se connecter</a></li>
                 {% else %}
-                    </br>
-                    </br>
                     </br>
                     </br>
                     <li><a href="?p=deconnexion">Deconnecter</a></li>
@@ -67,8 +66,10 @@
 
             <nav class="nav-footer">
                 <p class="nav-footer-social-buttons">
+
                     <a class="fa-icon" href="//www.linkedin.com/in/aicha-mougni-6a45a7242" title="">
                         <i class="fa fa-linkedin"></i>
+
                     </a>
                     <a class="fa-icon" href="https://www.facebook.com/profile.php?id=100083737256097" title="">
                         <i class="fa fa-facebook"></i>
