@@ -107,7 +107,7 @@ class AdminPostController extends Controller {
 	public function deletePost($id) {
 		$modelPost = new PostsModel();
 		$modelPost->deletePost($id);
-		return $this->view('adminPosts');
+		//return $this->view('adminPosts');
 
 	}
 }
