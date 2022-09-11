@@ -32,9 +32,10 @@ class ConnexionController extends Controller {
 		            $_SESSION['password'] = $password;
 
 		            if ($status == self::ROLE_ADMIN) {
-			            $this->redirectToAdminPage();
+                        header("Location:" . "http://localhost:8080/public?p=adminPost");
 		            } else {
-			            $this->redirectToHomePage();
+			            //$this->redirectToHomePage();
+                        header("Location:" . "http://localhost:8080/public?p=home");
 		            }
 	            }
             } else {
