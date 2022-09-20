@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+use App\Entity\Post;
 use App\Models\CommentModel;
 use App\Models\PostsModel;
 
@@ -29,15 +30,18 @@ class PostsController extends Controller {
 	 */
 	public function post($id) {
 		$postsModel = new PostsModel();
+		/** @var Post $post */
 		$post = $postsModel->findPostById($id);
 
 		$commentModel = new CommentModel();
 		$comments = $commentModel->listCommentsOfPost($id);
 
-		$comment = $_POST['commentModel'] ?? null;
-		$commentsPost = addslashes(htmlspecialchars($comment));
-		$dateComment = date("d.m.y");
-		$commentModel->addComment($id[0], $commentsPost, $dateComment);
+		$comment = $_POST['comment'] ?? null;
+		if ($comment) {
+			$commentsPost = addslashes(htmlspecialchars($comment));
+			$dateComment = date("d.m.y");
+			$commentModel->addComment($post->getId(), $commentsPost, $dateComment);
+		}
 
 		return $this->view('post', array(
 				'post' => $post,

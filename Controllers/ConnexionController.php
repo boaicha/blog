@@ -32,10 +32,9 @@ class ConnexionController extends Controller {
 		            $_SESSION['password'] = $password;
 
 		            if ($status == self::ROLE_ADMIN) {
-                        header("Location:" . "http://localhost:8080/public?p=adminPost");
+                        header("Location:" . "/public?p=adminPost");
 		            } else {
-			            //$this->redirectToHomePage();
-                        header("Location:" . "http://localhost:8080/public?p=home");
+                        header("Location:" . "/public?p=home");
 		            }
 	            }
             } else {
@@ -60,11 +59,13 @@ class ConnexionController extends Controller {
 	private function redirectToAdminPage() {
 		$controller = new AdminPostController();
 		$controller->index();
+		exit();
 	}
 
 	private function redirectToHomePage() {
 		$controller = new HomeController();
 		$controller->index();
+		exit();
 	}
 
 }

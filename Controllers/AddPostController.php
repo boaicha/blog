@@ -25,6 +25,8 @@ class AddPostController extends Controller {
 
 				$ajoutPost = new PostsModel();  //instancie la class connexion
 				$ajoutPost->addPost($chapo, $titre, $nameFile, $date_mjr, $date_modif); //appelle de la fonction compteValide de la class connexion
+
+				header('Location:' . '/public?p=adminPost');
 			}
 		} else {
 			throw new \Exception('L\'image n\'a pas été submit', 409);

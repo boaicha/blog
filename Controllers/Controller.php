@@ -7,9 +7,6 @@ use Twig\Loader\FilesystemLoader;
 
 abstract class Controller {
 
-    private $path;
-    private $datas;
-
 	public function view(string $path, $datas = []) {
 		// la variable loader va contenir le chemin de l'emplacement de tte les vue .
 		$loader = new FilesystemLoader('../ressources/Views');
@@ -22,5 +19,16 @@ abstract class Controller {
 		// et en joignant les donneesde la variable data.
 		echo $twig->render($path . '.twig', $datas);
 
+	}
+
+	public function redirect($controller, $action) {
+		if (!class_exists($controller)) {
+			throw new \Exception(sprintf('Controller %s not exists', $controller));
+		}
+		if (!method_exists($controller, $action)) {
+			throw new \Exception(sprintf('Controller %s do not have an action with name %s', $controller, $action));
+		}
+
+		return $controller->$action();
 	}
 }

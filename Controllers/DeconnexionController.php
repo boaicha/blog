@@ -12,7 +12,7 @@ class DeconnexionController extends Controller {
 	 */
     public function index() {
 		$_SESSION['statut'] = null;
-	    header('Location:http://localhost:8080/public?p=connexion');
+	    header("Location:" . "/public?p=posts");
     }
 }
 

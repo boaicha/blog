@@ -33,15 +33,17 @@ class AdminPostController extends Controller {
 	public function displayPost($id) {
 		$modelPost = new PostsModel();
 		$postWithId = $modelPost->findPostById($id);
-		return $this->view('updatePost', array(
+
+		return $this->view('updatePost', [
 			'post' => $postWithId,
-		));
+		]);
 	}
 
 	/**
 	 * route = /adminPost/updatePost/id
 	 * @param $id
 	 * @return void
+	 * @throws \Exception
 	 */
 	public function updatePost($id) {
 		if (isset($_FILES['file'])) {
@@ -56,6 +58,8 @@ class AdminPostController extends Controller {
 
 				$updatePost = new PostsModel();  //instancie la class connexion
 				$updatePost->updatePost($titre, $chapo, $nameFile, $date_mjr, $date_modif, $id[0]); //appelle de la fonction compteValide de la class connexion
+
+				$this->_redirectToHomePage();
 
 			}
 		} else {
@@ -80,35 +84,54 @@ class AdminPostController extends Controller {
 	}
 
 	public function postAdmin($id) {
-		$post = new PostsModel();
-		$postById = $post->findPostById($id);
-		$comment = new CommentModel();
-		$commentById = $comment->displayCommentAdmin($id[0]);
+		$postModel = new PostsModel();
+		$post = $postModel->findPostById($id);
+		$commentModel = new CommentModel();
+		$comments = $commentModel->getCommentByPostId($id[0]);
 
 		if (!empty($_POST)) {
 			$commentsPost =addslashes(htmlspecialchars($_POST['comment']));
-			$dateComment = date("d.m.y");
-			$comment->addComment($id[0], $commentsPost, $dateComment);
+			$commentModel->addComment($post->getId(), $commentsPost, date('d.m.y'));
 		}
 
-		return $this->view('postAdmin', array(
-				'post' => $postById,
-				'comment' => $commentById,
-			)
+		return $this->view('postAdmin', [
+				'post' => $post,
+				'comments' => $comments,
+			]
 		);
 	}
 
 	public function valideComment($id) {
 		$commentModel = new CommentModel();
 		$commentModel->validateComment($id);
-		return $this->view('adminPosts');
+		$this->_redirectToHomePage();
 	}
 
 	public function deletePost($id) {
 		$modelPost = new PostsModel();
-		$modelPost->deletePost($id);
-		//return $this->view('adminPosts');
+		$modelPost->deletePost($id[0]);
 
+		$this->_redirectToHomePage();
+	}
+
+	public function deleteComment($commentId) {
+		$commentModel = new CommentModel();
+		$comment = $commentModel->getCommentById($commentId[0]);
+		if ($comment) {
+			$commentModel->deleteComment($comment->getId());
+			$this->_redirectToPost($comment->getIdPostc());
+		} else {
+			$this->_redirectToHomePage();
+		}
+
+	}
+
+	private function _redirectToHomePage() {
+		header('Location:' . '/public?p=adminPost');
+	}
+
+	private function _redirectToPost($postId) {
+		header('Location:' . '/public?p=adminPost/postAdmin/' . $postId);
 	}
 }
 

@@ -18,7 +18,7 @@ class PostsModel extends Model {
 	/**
 	 * pour la fonction rechercher un post par son identifiant
 	 * @param $id
-	 * @return mixed
+	 * @return Post|null
 	 */
 	public function findPostById($id) {
 		$bdd = $this->getDB();
@@ -39,8 +39,6 @@ class PostsModel extends Model {
 		$bdd = $this->getDB();
 		$requete = $bdd->prepare('INSERT INTO post (titre,chapo, img, date_mjr, date_modif)  VALUES (?, ?, ?, ?, ?)');
 		$requete->execute(array($titre, $chapo, $nameFile, $date_mjr, $date_modif));
-		header("Location:" . "http://localhost:8080/public?p=adminPost");
-
 	}
 
 	/**
@@ -52,7 +50,6 @@ class PostsModel extends Model {
 		$bdd = $this->getDB();
 		$requete = $bdd->prepare('DELETE FROM post WHERE id = ?');
 		$requete->execute($id);
-		header("Location:" . "http://localhost:8080/public?p=adminPost");
 	}
 
 	/**
@@ -68,7 +65,6 @@ class PostsModel extends Model {
 		$bdd = $this->getDB();
 		$requete = $bdd->prepare('UPDATE post SET titre=?, date_modif=?, img=?, chapo=?, date_mjr=? WHERE id = ?');
 		$requete->execute(array($titre, $date_modif, $nameFile, $chapo, $date_mjr, $id));
-		header("Location:" . "http://localhost:8080/public?p=adminPost");
 	}
 
 }
