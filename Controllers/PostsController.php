@@ -34,15 +34,17 @@ class PostsController extends Controller {
 		$post = $postsModel->findPostById($id);
 
 		$commentModel = new CommentModel();
-		$comments = $commentModel->listCommentsOfPost($id);
 
 		$comment = $_POST['comment'] ?? null;
 		if ($comment) {
 			$commentsPost = addslashes(htmlspecialchars($comment));
 			$dateComment = date("d.m.y");
-			$commentModel->addComment($post->getId(), $commentsPost, $dateComment);
+			$userId = $_SESSION['userId'];
+			$commentModel->addComment($post->getId(), $commentsPost, $dateComment, $userId);
 		}
 
+		$comments = $commentModel->listCommentsOfPost($id);
+		// var_dump($comments); die();
 		return $this->view('post', array(
 				'post' => $post,
 				'comments' => $comments,

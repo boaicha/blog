@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+use App\Entity\User;
 use App\Models\ConnexionModel;
 
 class ConnexionController extends Controller {
@@ -22,14 +23,17 @@ class ConnexionController extends Controller {
                 $connexionModel = new ConnexionModel();  // instancie la class connexion
                 $user = $connexionModel->findUser($username, $password); //appelle de la fonction compteValide de la class connexion
 
-	            if (!$user) {
+	            if (!count($user)) {
 		            echo("se compte n'existe pas");
 		            return;
 	            } else {
-		            $status = $user['statut'];
+		            /** @var User $user */
+		            $user = $user[0];
+		            $status = $user->getStatut();
 		            $_SESSION['statut'] = $status;
-		            $_SESSION['username'] = $username;
-		            $_SESSION['password'] = $password;
+		            $_SESSION['username'] = $user->getMail();
+		            $_SESSION['password'] = $user->getPassword();
+		            $_SESSION['userId'] = $user->getId();
 
 		            if ($status == self::ROLE_ADMIN) {
                         header("Location:" . "/public?p=adminPost");

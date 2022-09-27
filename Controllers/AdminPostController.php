@@ -19,6 +19,8 @@ class AdminPostController extends Controller {
 	public function index() {
 		$post = new PostsModel();
 		$list = $post->listPost();
+		// var_dump($list);
+		// die();
 		return $this->view('AdminPosts', array(
 				'posts' => $list,
 			)
@@ -88,6 +90,7 @@ class AdminPostController extends Controller {
 		$post = $postModel->findPostById($id);
 		$commentModel = new CommentModel();
 		$comments = $commentModel->getCommentByPostId($id[0]);
+		// var_dump($comments); die();
 
 		if (!empty($_POST)) {
 			$commentsPost =addslashes(htmlspecialchars($_POST['comment']));

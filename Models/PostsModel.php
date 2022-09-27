@@ -35,10 +35,10 @@ class PostsModel extends Model {
 	 * @param $date_modif
 	 * @return void
 	 */
-	public function addPost($chapo, $titre, $nameFile, $date_mjr, $date_modif) {
+	public function addPost($chapo, $titre, $nameFile, $date_mjr, $date_modif, $userId) {
 		$bdd = $this->getDB();
-		$requete = $bdd->prepare('INSERT INTO post (titre,chapo, img, date_mjr, date_modif)  VALUES (?, ?, ?, ?, ?)');
-		$requete->execute(array($titre, $chapo, $nameFile, $date_mjr, $date_modif));
+		$requete = $bdd->prepare('INSERT INTO post (titre,chapo, img, date_mjr, date_modif, id_user)  VALUES (?, ?, ?, ?, ?, ?)');
+		$requete->execute(array($titre, $chapo, $nameFile, $date_mjr, $date_modif, $userId));
 	}
 
 	/**

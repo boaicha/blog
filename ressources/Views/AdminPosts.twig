@@ -9,7 +9,7 @@
 			</div>
             <div class="row">
                 {% for post in posts %}
-                    <div class="col-lg-4 col-md-6" style="width: 370px">
+                    <div class="col-lg-4 col-md-4" style="width: 370px">
                         <a href="public?p=adminPost/postAdmin/{{ post.id }}">
                             <div class="card h-100">
                                 <div class="single-post post-style-1">
@@ -21,9 +21,9 @@
                                         <h4 class="title"><a href="#"><b>{{ post.titre }}</b></a></h4>
                                         <h6 class="title"><a href="#"><b>{{ post.chapo }}</b></a></h6>
                                         <ul class="post-footer">
-                                            <li><a href="#"><i class="ion-laptop"></i>{{ post.date_mjr }}</a></li>
-                                            <li><a href="#"><i class="ion-chatbubble"></i>6</a></li>
-                                            <li><a href="#"><i class="ion-eye"></i>138</a></li>
+                                            <li><a href="#"><i class="ion-laptop"></i>{{ post.dateMjr }}</a></li>
+{#                                            <li><a href="#"><i class="ion-chatbubble"></i>6</a></li>#}
+{#                                            <li><a href="#"><i class="ion-eye"></i>138</a></li>#}
                                         </ul>
                                     </div>
                                 </div>
