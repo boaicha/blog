@@ -54,7 +54,9 @@ class CommentModel extends Model {
 
 	public function deleteComment($id) {
 		$bdd = $this->getDB();
-		$bdd->exec('DELETE FROM commentaire WHERE id = ' . $id);
+		$lol = $bdd->prepare('DELETE FROM commentaire WHERE id = :id');
+        $lol->bindParam('id', $id,PDO::PARAM_INT);
+        $lol->execute();
 	}
 
 }
