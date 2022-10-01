@@ -9,7 +9,7 @@ class PostsModel extends Model {
 
 	public function listPost() {
 		$bdd = $this->getDB();
-		$requete = $bdd->prepare('SELECT * FROM post');
+		$requete = $bdd->prepare('SELECT * FROM post order by id desc ');
 		$requete->execute();
 		return $requete->fetchAll(PDO::FETCH_CLASS,Post::class);
 
@@ -49,7 +49,7 @@ class PostsModel extends Model {
 	public function deletePost($id) {
 		$bdd = $this->getDB();
 		$requete = $bdd->prepare('DELETE FROM post WHERE id = ?');
-		$requete->execute($id);
+		$requete->execute(array($id));
 	}
 
 	/**
