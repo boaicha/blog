@@ -16,7 +16,7 @@ class CommentModel extends Model {
 	public function getCommentByPostId($idPost) {
 
 		$bdd = $this->getDB();
-		$requete = $bdd->prepare('SELECT * FROM commentaire WHERE id_postc = ? AND verification = "en cours"');
+		$requete = $bdd->prepare('SELECT c.*, CONCAT(u.prenom, " ", u.nom) as userName FROM commentaire c LEFT JOIN user u ON c.id_userc = u.id WHERE c.id_postc = ? AND c.verification = "en cours"');
 		$requete->execute(array($idPost));
 		return $requete->fetchAll(PDO::FETCH_CLASS,Commentaire::class);
 	}
@@ -27,14 +27,14 @@ class CommentModel extends Model {
 	 */
 	public function getCommentById($commentId) {
 		$bdd = $this->getDB();
-		$requete = $bdd->prepare('SELECT * FROM commentaire WHERE id = ?');
+		$requete = $bdd->prepare('SELECT c.*, CONCAT(u.prenom, " ", u.nom) as userName FROM commentaire c LEFT JOIN user u ON c.id_userc = u.id WHERE c.id = ?');
 		$requete->execute([$commentId]);
 		return $requete->fetchAll(PDO::FETCH_CLASS,Commentaire::class)[0];
 	}
 
 	public function listCommentsOfPost($idPost) {
 		$bdd = $this->getDB();
-		$requete = $bdd->prepare('SELECT * FROM commentaire WHERE id_postc = ? AND verification = "validee"');
+		$requete = $bdd->prepare('SELECT c.*, CONCAT(u.prenom, " ", u.nom) as userName FROM commentaire c LEFT JOIN user u ON c.id_userc = u.id WHERE c.id_postc = ? AND c.verification = "validee"');
 		$requete->execute($idPost);
 		return $requete->fetchAll(PDO::FETCH_CLASS,Commentaire::class);
 	}
@@ -46,10 +46,10 @@ class CommentModel extends Model {
 		$requete->fetchAll(PDO::FETCH_CLASS,Commentaire::class)[0];
 	}
 
-	public function addComment($idPost, $comment, $date) {
+	public function addComment($idPost, $comment, $date, $userId) {
 		$bdd = $this->getDB();
-		$requete = $bdd->prepare('INSERT INTO commentaire (id_postc,commentaire,date)  VALUES (?, ?, ?)');
-		$requete->execute(array($idPost, $comment, $date));
+		$requete = $bdd->prepare('INSERT INTO commentaire (id_postc,commentaire,date, id_userc)  VALUES (?, ?, ?, ?)');
+		$requete->execute(array($idPost, $comment, $date, $userId));
 	}
 
 	public function deleteComment($id) {

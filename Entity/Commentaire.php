@@ -2,13 +2,14 @@
 
 namespace App\Entity;
 
-class Commentaire{
+class Commentaire {
     private $id;
     private $commentaire;
     private $date;
     private $id_userc;
     private $id_postc;
     private $verification;
+	private $userName;
 
     /**
      * @return mixed
@@ -105,6 +106,17 @@ class Commentaire{
     {
         $this->verification = $verification;
     }
+
+	public function getUserName() {
+		return $this->userName;
+	}
+
+	/**
+	 * @param mixed $userName
+	 */
+	public function setUserName($userName): void {
+		$this->userName = $userName;
+	}
 
 
 }
