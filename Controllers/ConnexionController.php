@@ -25,7 +25,6 @@ class ConnexionController extends Controller {
 
 	            if (!count($user)) {
 		            echo("se compte n'existe pas");
-		            return;
 	            } else {
 		            /** @var User $user */
 		            $user = $user[0];

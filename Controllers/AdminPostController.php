@@ -132,7 +132,7 @@ class AdminPostController extends Controller {
 		header('Location:' . '/public?p=adminPost');
 	}
 
-	private function _redirectToPost($postId) {
+	private function _redirectToPost(int $postId) {
 		header('Location:' . '/public?p=adminPost/postAdmin/' . $postId);
 	}
 }
