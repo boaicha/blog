@@ -5,7 +5,7 @@ namespace App\Models;
 use App\Entity\User;
 
 class ConnexionModel extends Model {
-	public function findUser(string $username, string $password) {
+	public function findUser(string $username, string $password) : array{
 		$bdd = $this->getDB();
 
 		$requete = $bdd->prepare('SELECT * FROM user WHERE mail = ? and password = ?');

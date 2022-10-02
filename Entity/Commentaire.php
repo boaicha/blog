@@ -107,7 +107,7 @@ class Commentaire {
         $this->verification = $verification;
     }
 
-	public function getUserName() {
+	public function getUserName(): string {
 		return $this->userName;
 	}
 

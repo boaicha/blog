@@ -7,7 +7,7 @@ use PDO;
 
 class PostsModel extends Model {
 
-	public function listPost() {
+	public function listPost(): array {
 		$bdd = $this->getDB();
 		$requete = $bdd->prepare('SELECT * FROM post order by id desc ');
 		$requete->execute();

@@ -51,7 +51,7 @@ class ConnexionController extends Controller {
 
 	}
 
-	private function generateToken() {
+	private function generateToken(): string {
 		if (empty($_SESSION['token'])){
 			$_SESSION['token'] = bin2hex(random_bytes(32));
 		}
@@ -59,13 +59,13 @@ class ConnexionController extends Controller {
 		return hash_hmac('sha256', 'this is some string', $_SESSION['token']);
 	}
 
-	private function redirectToAdminPage() {
+	private function redirectToAdminPage(): string {
 		$controller = new AdminPostController();
 		$controller->index();
 		//exit();
 	}
 
-	private function redirectToHomePage() {
+	private function redirectToHomePage(): string {
 		$controller = new HomeController();
 		$controller->index();
 		//exit();

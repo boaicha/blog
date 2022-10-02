@@ -32,27 +32,27 @@ class CommentModel extends Model {
 		return $requete->fetchAll(PDO::FETCH_CLASS,Commentaire::class)[0];
 	}
 
-	public function listCommentsOfPost(array $idPost) {
+	public function listCommentsOfPost(array $idPost): array {
 		$bdd = $this->getDB();
 		$requete = $bdd->prepare('SELECT c.*, CONCAT(u.prenom, " ", u.nom) as userName FROM commentaire c LEFT JOIN user u ON c.id_userc = u.id WHERE c.id_postc = ? AND c.verification = "validee"');
 		$requete->execute($idPost);
 		return $requete->fetchAll(PDO::FETCH_CLASS,Commentaire::class);
 	}
 
-	public function validateComment(array $idComment) {
+	public function validateComment(array $idComment): void {
 		$bdd = $this->getDB();
 		$requete = $bdd->prepare('UPDATE commentaire SET verification = "validee" WHERE id = ?');
 		$requete->execute($idComment);
 		$requete->fetchAll(PDO::FETCH_CLASS,Commentaire::class)[0];
 	}
 
-	public function addComment(int $idPost, string $comment, string $date, int $userId) {
+	public function addComment(int $idPost, string $comment, string $date, int $userId): void {
 		$bdd = $this->getDB();
 		$requete = $bdd->prepare('INSERT INTO commentaire (id_postc,commentaire,date, id_userc)  VALUES (?, ?, ?, ?)');
 		$requete->execute(array($idPost, $comment, $date, $userId));
 	}
 
-	public function deleteComment(int $id) {
+	public function deleteComment(int $id): void {
 		$bdd = $this->getDB();
 		$lol = $bdd->prepare('DELETE FROM commentaire WHERE id = :id');
         $lol->bindParam('id', $id,PDO::PARAM_INT);

@@ -2,12 +2,13 @@
 
 namespace App\Controllers;
 
+use Couchbase\View;
 use Twig\Environment;
 use Twig\Loader\FilesystemLoader;
 
 abstract class Controller {
 
-	public function view(string $path, array $datas = []) {
+	public function view(string $path, array $datas = []): void {
 		// la variable loader va contenir le chemin de l'emplacement de tte les vue .
 		$loader = new FilesystemLoader('../ressources/Views');
 		$twig = new Environment($loader, [
@@ -21,7 +22,7 @@ abstract class Controller {
 
 	}
 
-	public function redirect(string $controller, string $action) {
+	public function redirect(string $controller, string $action): string {
 		if (!class_exists($controller)) {
 			throw new \Exception(sprintf('Controller %s not exists', $controller));
 		}

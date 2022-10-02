@@ -71,7 +71,7 @@ class AdminPostController extends Controller {
 
 	}
 
-	public function uploadFile(array $file) {
+	public function uploadFile(array $file): void {
 		if (is_array($file)) {
 			if (in_array($file['type'], $this->_suporttedFormats)) {
 				move_uploaded_file($file['tmp_name'], '../css/produit/image/' . $file['name']);
@@ -85,7 +85,7 @@ class AdminPostController extends Controller {
 		}
 	}
 
-	public function postAdmin(array $id) {
+	public function postAdmin(array $id): array {
 		$postModel = new PostsModel();
 		$post = $postModel->findPostById($id);
 		$commentModel = new CommentModel();
@@ -104,19 +104,19 @@ class AdminPostController extends Controller {
 		);
 	}
 
-	public function valideComment(array $id) {
+	public function valideComment(array $id): void {
 		$commentModel = new CommentModel();
 		$commentModel->validateComment($id);
 		$this->_redirectToHomePage();
 	}
 
-	public function deletePost(array $id) {
+	public function deletePost(array $id): void {
 		$modelPost = new PostsModel();
 		$modelPost->deletePost($id[0]);
 		$this->_redirectToHomePage();
 	}
 
-	public function deleteComment(array $commentId) {
+	public function deleteComment(array $commentId): void {
 		$commentModel = new CommentModel();
 		$comment = $commentModel->getCommentById($commentId[0]);
 		if ($comment) {
@@ -128,11 +128,11 @@ class AdminPostController extends Controller {
 
 	}
 
-	private function _redirectToHomePage() {
+	private function _redirectToHomePage(): string {
 		header('Location:' . '/public?p=adminPost');
 	}
 
-	private function _redirectToPost(int $postId) {
+	private function _redirectToPost(int $postId): string {
 		header('Location:' . '/public?p=adminPost/postAdmin/' . $postId);
 	}
 }

@@ -5,7 +5,7 @@ namespace App\Core;
 use App\Controllers;
 
 class Main {
-	public function start() {
+	public function start() : void{
 		// On récupère l'adresse
 		$uri = $_SERVER['REQUEST_URI'];
 		$exceptionController = new Controllers\ExceptionController();

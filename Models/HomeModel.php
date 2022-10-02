@@ -5,7 +5,7 @@ use PDO;
 
 class HomeModel extends Model
 {
-    public function listPost() {
+    public function listPost(): array {
         $bdd = $this->getDB();
         $requete = $bdd->prepare('SELECT * FROM post LIMIT 2');
         $requete->execute();
