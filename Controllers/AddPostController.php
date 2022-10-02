@@ -35,7 +35,7 @@ class AddPostController extends Controller {
 
 	}
 
-	public function uploadFile($file) {
+	public function uploadFile(array $file) {
 		if (is_array($file)) {
 			if (in_array($file['type'], $this->_suporttedFormats)) {
 				move_uploaded_file($file['tmp_name'], '../css/produit/image/' . $file['name']);

@@ -20,7 +20,7 @@ class PostsModel extends Model {
 	 * @param $id
 	 * @return Post|null
 	 */
-	public function findPostById($id) {
+	public function findPostById(array $id) {
 		$bdd = $this->getDB();
 		$requete = $bdd->prepare('SELECT*FROM post WHERE id=?');
 		$requete->execute($id);
@@ -35,7 +35,7 @@ class PostsModel extends Model {
 	 * @param $date_modif
 	 * @return void
 	 */
-	public function addPost($chapo, $titre, $nameFile, $date_mjr, $date_modif, $userId) {
+	public function addPost(string $chapo, string $titre, string $nameFile, string $date_mjr, string $date_modif, int $userId) {
 		$bdd = $this->getDB();
 		$requete = $bdd->prepare('INSERT INTO post (titre,chapo, img, date_mjr, date_modif, id_user)  VALUES (?, ?, ?, ?, ?, ?)');
 		$requete->execute(array($titre, $chapo, $nameFile, $date_mjr, $date_modif, $userId));
@@ -46,7 +46,7 @@ class PostsModel extends Model {
 	 * @param $id
 	 * @return void
 	 */
-	public function deletePost($id) {
+	public function deletePost(int $id) {
 		$bdd = $this->getDB();
 		$requete = $bdd->prepare('DELETE FROM post WHERE id = ?');
 		$requete->execute(array($id));
@@ -61,7 +61,7 @@ class PostsModel extends Model {
 	 * @param $id
 	 * @return void
 	 */
-	public function updatePost($titre, $chapo, $nameFile, $date_mjr, $date_modif, $id) {
+	public function updatePost(string $titre, string $chapo, string $nameFile, string $date_mjr, string $date_modif, int $id) {
 		$bdd = $this->getDB();
 		$requete = $bdd->prepare('UPDATE post SET titre=?, date_modif=?, img=?, chapo=?, date_mjr=? WHERE id = ?');
 		$requete->execute(array($titre, $date_modif, $nameFile, $chapo, $date_mjr, $id));

@@ -22,7 +22,7 @@ final class Post {
     /**
      * @param mixed $id
      */
-    public function setId($id): void
+    public function setId(int $id): void
     {
         $this->id = $id;
     }
@@ -38,7 +38,7 @@ final class Post {
     /**
      * @param mixed $titre
      */
-    public function setTitre($titre): void
+    public function setTitre(string $titre): void
     {
         $this->titre = $titre;
     }
@@ -54,7 +54,7 @@ final class Post {
     /**
      * @param mixed $chapo
      */
-    public function setChapo($chapo): void
+    public function setChapo(string $chapo): void
     {
         $this->chapo = $chapo;
     }
@@ -70,7 +70,7 @@ final class Post {
     /**
      * @param mixed $img
      */
-    public function setImg($img): void
+    public function setImg(string $img): void
     {
         $this->img = $img;
     }
@@ -86,7 +86,7 @@ final class Post {
     /**
      * @param mixed $date_mjr
      */
-    public function setDateMjr($date_mjr): void
+    public function setDateMjr(string $date_mjr): void
     {
         $this->date_mjr = $date_mjr;
     }
@@ -102,7 +102,7 @@ final class Post {
     /**
      * @param mixed $date_modif
      */
-    public function setDateModif($date_modif): void
+    public function setDateModif(string $date_modif): void
     {
         $this->date_modif = $date_modif;
     }
@@ -118,7 +118,7 @@ final class Post {
     /**
      * @param mixed $id_user
      */
-    public function setIdUser($id_user): void
+    public function setIdUser(int $id_user): void
     {
         $this->id_user = $id_user;
     }

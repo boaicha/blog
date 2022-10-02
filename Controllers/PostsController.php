@@ -28,7 +28,7 @@ class PostsController extends Controller {
 	 * @param $id
 	 * @return void|null
 	 */
-	public function post($id) {
+	public function post(array $id) {
 		$postsModel = new PostsModel();
 		/** @var Post $post */
 		$post = $postsModel->findPostById($id);

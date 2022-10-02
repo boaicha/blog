@@ -22,7 +22,7 @@ class Commentaire {
     /**
      * @param mixed $id
      */
-    public function setId($id): void
+    public function setId(int $id): void
     {
         $this->id = $id;
     }
@@ -38,7 +38,7 @@ class Commentaire {
     /**
      * @param mixed $commentaire
      */
-    public function setCommentaire($commentaire): void
+    public function setCommentaire(string $commentaire): void
     {
         $this->commentaire = $commentaire;
     }
@@ -54,7 +54,7 @@ class Commentaire {
     /**
      * @param mixed $date
      */
-    public function setDate($date): void
+    public function setDate(string $date): void
     {
         $this->date = $date;
     }
@@ -70,7 +70,7 @@ class Commentaire {
     /**
      * @param mixed $id_userc
      */
-    public function setIdUserc($id_userc): void
+    public function setIdUserc(int $id_userc): void
     {
         $this->id_userc = $id_userc;
     }
@@ -86,7 +86,7 @@ class Commentaire {
     /**
      * @param mixed $id_postc
      */
-    public function setIdPostc($id_postc): void
+    public function setIdPostc(int $id_postc): void
     {
         $this->id_postc = $id_postc;
     }
@@ -102,7 +102,7 @@ class Commentaire {
     /**
      * @param mixed $verification
      */
-    public function setVerification($verification): void
+    public function setVerification(string $verification): void
     {
         $this->verification = $verification;
     }
@@ -114,7 +114,7 @@ class Commentaire {
 	/**
 	 * @param mixed $userName
 	 */
-	public function setUserName($userName): void {
+	public function setUserName(string $userName): void {
 		$this->userName = $userName;
 	}
 

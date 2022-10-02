@@ -13,7 +13,7 @@ class CommentModel extends Model {
 	 * @param $idPost
 	 * @return Commentaire[]
 	 */
-	public function getCommentByPostId($idPost) {
+	public function getCommentByPostId(int $idPost) {
 
 		$bdd = $this->getDB();
 		$requete = $bdd->prepare('SELECT c.*, CONCAT(u.prenom, " ", u.nom) as userName FROM commentaire c LEFT JOIN user u ON c.id_userc = u.id WHERE c.id_postc = ? AND c.verification = "en cours"');
@@ -25,34 +25,34 @@ class CommentModel extends Model {
 	 * @param $commentId
 	 * @return Commentaire|null
 	 */
-	public function getCommentById($commentId) {
+	public function getCommentById(int $commentId) {
 		$bdd = $this->getDB();
 		$requete = $bdd->prepare('SELECT c.*, CONCAT(u.prenom, " ", u.nom) as userName FROM commentaire c LEFT JOIN user u ON c.id_userc = u.id WHERE c.id = ?');
 		$requete->execute([$commentId]);
 		return $requete->fetchAll(PDO::FETCH_CLASS,Commentaire::class)[0];
 	}
 
-	public function listCommentsOfPost($idPost) {
+	public function listCommentsOfPost(array $idPost) {
 		$bdd = $this->getDB();
 		$requete = $bdd->prepare('SELECT c.*, CONCAT(u.prenom, " ", u.nom) as userName FROM commentaire c LEFT JOIN user u ON c.id_userc = u.id WHERE c.id_postc = ? AND c.verification = "validee"');
 		$requete->execute($idPost);
 		return $requete->fetchAll(PDO::FETCH_CLASS,Commentaire::class);
 	}
 
-	public function validateComment($idComment) {
+	public function validateComment(array $idComment) {
 		$bdd = $this->getDB();
 		$requete = $bdd->prepare('UPDATE commentaire SET verification = "validee" WHERE id = ?');
 		$requete->execute($idComment);
 		$requete->fetchAll(PDO::FETCH_CLASS,Commentaire::class)[0];
 	}
 
-	public function addComment($idPost, $comment, $date, $userId) {
+	public function addComment(int $idPost, string $comment, string $date, int $userId) {
 		$bdd = $this->getDB();
 		$requete = $bdd->prepare('INSERT INTO commentaire (id_postc,commentaire,date, id_userc)  VALUES (?, ?, ?, ?)');
 		$requete->execute(array($idPost, $comment, $date, $userId));
 	}
 
-	public function deleteComment($id) {
+	public function deleteComment(int $id) {
 		$bdd = $this->getDB();
 		$lol = $bdd->prepare('DELETE FROM commentaire WHERE id = :id');
         $lol->bindParam('id', $id,PDO::PARAM_INT);

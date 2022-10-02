@@ -63,13 +63,13 @@ class ConnexionController extends Controller {
 	private function redirectToAdminPage() {
 		$controller = new AdminPostController();
 		$controller->index();
-		exit();
+		//exit();
 	}
 
 	private function redirectToHomePage() {
 		$controller = new HomeController();
 		$controller->index();
-		exit();
+		//exit();
 	}
 
 }

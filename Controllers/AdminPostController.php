@@ -10,7 +10,7 @@ class AdminPostController extends Controller {
 	/**
 	 * @var string[]
 	 */
-	private $_suporttedFormats = ['image/png', 'image/jpeg', 'image/jpg', 'image/gif'];
+	private array $_suporttedFormats = ['image/png', 'image/jpeg', 'image/jpg', 'image/gif'];
 
 	/**
 	 * route = /adminPost/index
@@ -32,7 +32,7 @@ class AdminPostController extends Controller {
 	 * @param $id
 	 * @return null
 	 */
-	public function displayPost($id) {
+	public function displayPost(array $id) {
 		$modelPost = new PostsModel();
 		$postWithId = $modelPost->findPostById($id);
 
@@ -47,7 +47,7 @@ class AdminPostController extends Controller {
 	 * @return void
 	 * @throws \Exception
 	 */
-	public function updatePost($id) {
+	public function updatePost(array $id) {
 		if (isset($_FILES['file'])) {
 			$this->uploadFile($_FILES['file']);
 			$nameFile = $_FILES['file']['name'];
@@ -71,7 +71,7 @@ class AdminPostController extends Controller {
 
 	}
 
-	public function uploadFile($file) {
+	public function uploadFile(array $file) {
 		if (is_array($file)) {
 			if (in_array($file['type'], $this->_suporttedFormats)) {
 				move_uploaded_file($file['tmp_name'], '../css/produit/image/' . $file['name']);
@@ -85,7 +85,7 @@ class AdminPostController extends Controller {
 		}
 	}
 
-	public function postAdmin($id) {
+	public function postAdmin(array $id) {
 		$postModel = new PostsModel();
 		$post = $postModel->findPostById($id);
 		$commentModel = new CommentModel();
@@ -104,20 +104,19 @@ class AdminPostController extends Controller {
 		);
 	}
 
-	public function valideComment($id) {
+	public function valideComment(array $id) {
 		$commentModel = new CommentModel();
 		$commentModel->validateComment($id);
 		$this->_redirectToHomePage();
 	}
 
-	public function deletePost($id) {
+	public function deletePost(array $id) {
 		$modelPost = new PostsModel();
 		$modelPost->deletePost($id[0]);
-
 		$this->_redirectToHomePage();
 	}
 
-	public function deleteComment($commentId) {
+	public function deleteComment(array $commentId) {
 		$commentModel = new CommentModel();
 		$comment = $commentModel->getCommentById($commentId[0]);
 		if ($comment) {

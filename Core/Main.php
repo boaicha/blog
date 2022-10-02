@@ -20,7 +20,7 @@ class Main {
 
 			// On redirige vers l'URL dans /
 			header('Location: ' . $uri);
-			exit();
+			//exit();
 		}
 
 		// On sépare les paramètres et on les met dans le tableau $params
@@ -32,7 +32,7 @@ class Main {
 			$controller = '\\App\\Controllers\\' . ucfirst(array_shift($params)) . 'Controller';
 			if (!class_exists($controller)) {
 				$exceptionController->notFoundAction($_GET['p']);
-				exit();
+				//exit();
 			}
 			// On sauvegarde le 2ème paramètre dans $action si il existe, sinon index
 			$action = isset($params[0]) ? array_shift($params) : 'index';
@@ -50,7 +50,7 @@ class Main {
 						$action
 					)
 				);
-				exit();
+				//exit();
 			}
 		} else {
 			// Ici aucun paramètre n'est défini

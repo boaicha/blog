@@ -21,7 +21,7 @@ class User{
     /**
      * @param mixed $id
      */
-    public function setId($id): void
+    public function setId(int $id): void
     {
         $this->id = $id;
     }
@@ -37,7 +37,7 @@ class User{
     /**
      * @param mixed $nom
      */
-    public function setNom($nom): void
+    public function setNom(string $nom): void
     {
         $this->nom = $nom;
     }
@@ -53,7 +53,7 @@ class User{
     /**
      * @param mixed $prenom
      */
-    public function setPrenom($prenom): void
+    public function setPrenom(string $prenom): void
     {
         $this->prenom = $prenom;
     }
@@ -69,7 +69,7 @@ class User{
     /**
      * @param mixed $mail
      */
-    public function setMail($mail): void
+    public function setMail(string $mail): void
     {
         $this->mail = $mail;
     }
@@ -85,7 +85,7 @@ class User{
     /**
      * @param mixed $password
      */
-    public function setPassword($password): void
+    public function setPassword(string $password): void
     {
         $this->password = $password;
     }
@@ -101,7 +101,7 @@ class User{
     /**
      * @param mixed $statut
      */
-    public function setStatut($statut): void
+    public function setStatut(string $statut): void
     {
         $this->statut = $statut;
     }

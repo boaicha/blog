@@ -8,7 +8,7 @@ class InscriptionModel extends Model {
 	private $name;
 	private $prenom;
 
-	public function inscription($username, $password, $name, $prenom) {
+	public function inscription(string $username, string $password, string $name, string $prenom) {
 		$bdd = $this->getDB();
 		$requete = $bdd->prepare('INSERT INTO user (mail, password,nom,prenom)  VALUES (?, ?, ?, ?)');
 		$requete->execute(array($username, $password, $name, $prenom));
