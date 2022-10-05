@@ -8,8 +8,8 @@ class AddPostController extends Controller {
 
 	private $_suporttedFormats = ['image/png', 'image/jpeg', 'image/jpg', 'image/gif'];
 
-	public function index(): array {
-		return $this->view('AddPost');
+	public function index(): void {
+		$this->view('AddPost');
 	}
 
 	public function add(): void {

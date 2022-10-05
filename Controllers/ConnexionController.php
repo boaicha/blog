@@ -13,7 +13,7 @@ class ConnexionController extends Controller {
 	 * @return null
 	 * @throws \Exception
 	 */
-	public function index() {
+	public function index():void {
 		$token = $this->generateToken();
 
 		if (isset($_POST['connexion'])) {  // Traitement du formulaire envoyé
@@ -45,7 +45,7 @@ class ConnexionController extends Controller {
             }
 
 		}
-		return $this->view('connexion', array(
+		$this->view('connexion', array(
             'csrf' => $token,
         ));
 

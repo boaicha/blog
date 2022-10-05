@@ -16,12 +16,12 @@ class AdminPostController extends Controller {
 	 * route = /adminPost/index
 	 * @return null
 	 */
-	public function index() {
+	public function index(): void {
 		$post = new PostsModel();
 		$list = $post->listPost();
 		// var_dump($list);
 		// die();
-		return $this->view('AdminPosts', array(
+		$this->view('AdminPosts', array(
 				'posts' => $list,
 			)
 		);
@@ -32,11 +32,11 @@ class AdminPostController extends Controller {
 	 * @param $id
 	 * @return null
 	 */
-	public function displayPost(array $id) {
+	public function displayPost(array $id): void {
 		$modelPost = new PostsModel();
 		$postWithId = $modelPost->findPostById($id);
 
-		return $this->view('updatePost', [
+		$this->view('updatePost', [
 			'post' => $postWithId,
 		]);
 	}
@@ -85,7 +85,7 @@ class AdminPostController extends Controller {
 		}
 	}
 
-	public function postAdmin(array $id): array {
+	public function postAdmin(array $id): void {
 		$postModel = new PostsModel();
 		$post = $postModel->findPostById($id);
 		$commentModel = new CommentModel();
@@ -97,7 +97,7 @@ class AdminPostController extends Controller {
 			$commentModel->addComment($post->getId(), $commentsPost, date('d.m.y'));
 		}
 
-		return $this->view('postAdmin', [
+		$this->view('postAdmin', [
 				'post' => $post,
 				'comments' => $comments,
 			]

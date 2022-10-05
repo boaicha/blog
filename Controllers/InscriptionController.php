@@ -9,7 +9,7 @@ class InscriptionController extends Controller {
 	 * route = /inscription
 	 * @return null
 	 */
-	public function index() {
+	public function index(): void {
 		// si on a appuyer sur le bouton
 		if (isset($_POST['inscription'])) {
 
@@ -23,6 +23,6 @@ class InscriptionController extends Controller {
 
 		}
 
-		return $this->view('inscription');
+		$this->view('inscription');
 	}
 }

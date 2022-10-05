@@ -9,10 +9,10 @@ class HomeController extends Controller
 	 * route = /home
 	 * @return null
 	 */
-    public function index() {
+    public function index(): void {
         $model = new HomeModel();
         $posts = $model->listPost();
-        return $this->view('home', array(
+        $this->view('home', array(
             'posts' => $posts
         ));
     }

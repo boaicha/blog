@@ -13,10 +13,10 @@ class PostsController extends Controller {
 	 * @return void|null
 	 */
 
-	public function index() {
+	public function index(): void {
 		$postModel = new PostsModel();
 		$list = $postModel->listPost();
-		return $this->view('index', array(
+		$this->view('index', array(
 				'posts' => $list,
 			)
 		);
@@ -28,7 +28,7 @@ class PostsController extends Controller {
 	 * @param $id
 	 * @return void|null
 	 */
-	public function post(array $id) {
+	public function post(array $id): void {
 		$postsModel = new PostsModel();
 		/** @var Post $post */
 		$post = $postsModel->findPostById($id);
@@ -45,7 +45,7 @@ class PostsController extends Controller {
 
 		$comments = $commentModel->listCommentsOfPost($id);
 		// var_dump($comments); die();
-		return $this->view('post', array(
+		$this->view('post', array(
 				'post' => $post,
 				'comments' => $comments,
 			)
