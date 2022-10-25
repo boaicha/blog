@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba63a7e5-7e07-47d2-9b37-96d421357ead" name="Changes" comment="Merge">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet/composer.lock" beforeDir="false" />
-    </list>
+    <list default="true" id="ba63a7e5-7e07-47d2-9b37-96d421357ead" name="Changes" comment="" />
     <list id="2506889e-42f3-4a66-9f7b-98eee9d2fa2d" name="Local Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +99,7 @@
       <workItem from="1663498659861" duration="8533000" />
       <workItem from="1663661134363" duration="5390000" />
       <workItem from="1664265933077" duration="30439000" />
-      <workItem from="1666705074881" duration="3143000" />
+      <workItem from="1666705074881" duration="3808000" />
     </task>
     <task id="LOCAL-00001" summary="retirer menu connexion">
       <created>1656630395416</created>
@@ -322,7 +318,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666712945372</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="BG-025: Correction analyse insight">
+      <created>1666713810496</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1666713810497</updated>
+    </task>
+    <task id="LOCAL-00033" summary="BG-025: Correction analyse insight #2">
+      <created>1666713930215</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1666713930215</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,8 +364,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="retirer menu connexion" />
-    <MESSAGE value="BG-007: Retirer menu connexion" />
     <MESSAGE value="BG-008: Ajout de fichier readme.md et ignorer le dossier vendor dans git" />
     <MESSAGE value="BG-009: Correction des requetes de la base de schemas de la bdd" />
     <MESSAGE value="BG-010: Lien vers le Cv et LinkedIn &amp; suppression d'élément inutile" />
@@ -379,7 +387,9 @@
     <MESSAGE value="BG-024: type probleme analyse 4" />
     <MESSAGE value="BG-024: regroupement des fichiers" />
     <MESSAGE value="Merge" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge" />
+    <MESSAGE value="BG-025: Correction analyse insight" />
+    <MESSAGE value="BG-025: Correction analyse insight #2" />
+    <option name="LAST_COMMIT_MESSAGE" value="BG-025: Correction analyse insight #2" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
