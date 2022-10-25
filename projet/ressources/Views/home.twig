@@ -1,0 +1,75 @@
+{% extends "default.twig" %}
+{% block content %}
+    <head>
+        <link href="../css/common-css/ionicons.css" rel="stylesheet">
+        <link href="../css/home.css" rel="stylesheet">
+        <link href="../css/layout-1/css/styles.css" rel="stylesheet">
+        <link href="../css/layout-1/css/responsive.css" rel="stylesheet">
+        <style>
+            .style {
+                text-indent: 30%;
+            }
+        </style>
+    </head>
+    <body>
+
+
+    <section class="blog-area section">
+        <div class="container">
+            <strong><h2>Mon apprentissage. Mon blog.</h2></strong>
+        </br>
+<img src="../ressources/CV.png">
+            <div class="row">
+                {% for post in posts %}
+
+                    <div class="col-lg-4 col-md-6" style="width: 370px">
+                        <a href="public?p=posts/post/{{ post.id }}">
+                            <div class="card h-100">
+                                <div class="single-post post-style-1">
+
+                                    <div class="blog-image"><img src="../css/produit/image/{{ post.img }}?>"
+                                                                 alt="Blog Image"></div>
+
+                                    <a class="avatar" href="#"><img src="../css/images/icons8-team-355979.jpg"
+                                                                    alt="Profile Image"></a>
+
+                                    <div class="blog-info">
+
+                                        <h4 class="title"><a href="#"><b>{{ post.titre }}</b></a></h4>
+                                        <h6 class="title"><a href="#"><b>{{ post.chapo }}</b></a></h6>
+
+                                        <ul class="post-footer">
+                                            <li><a href="#"><i class="ion-laptop"></i>{{ post.date_mjr }}</a></li>
+                                        </ul>
+
+                                    </div><!-- blog-info -->
+                                </div><!-- single-post -->
+                            </div><!-- card -->
+                        </a>
+                    </div><!-- col-lg-4 col-md-6 -->
+
+                {% endfor %}
+                <ul class="wrapper">
+                    <li class="icon facebook">
+
+                        <a href="http://localhost:8080/public?p=posts"><span><i class="">Lire la suite ...</i></span></a>
+                    </li>
+
+                </ul>
+            </div><!-- card -->
+        </div><!-- col-lg-4 col-md-6 -->
+    </section>
+    </div>
+    <!-- SCIPTS -->
+
+    <script src="vue/common-js/jquery-3.1.1.min.js"></script>
+
+    <script src="vue/common-js/tether.min.js"></script>
+
+    <script src="vue/common-js/bootstrap.js"></script>
+
+    <script src="vue/common-js/scripts.js"></script>
+
+
+    </body>
+{% endblock %}
