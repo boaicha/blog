@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ba63a7e5-7e07-47d2-9b37-96d421357ead" name="Changes" comment="" />
+    <list id="2506889e-42f3-4a66-9f7b-98eee9d2fa2d" name="Local Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="BG-023_version_twig" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="2B12UdA2CEpLnj0lrgLf8ojaaMC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Git.Branch.Popup.ShowAllRemotes&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp4/htdocs/blog&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.CommitDialog&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp4\htdocs\blog" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="projet" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner directory="$PROJECT_DIR$/projet" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.projet" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ba63a7e5-7e07-47d2-9b37-96d421357ead" name="Changes" comment="" />
+      <changelist id="2506889e-42f3-4a66-9f7b-98eee9d2fa2d" name="Local Changes" comment="" />
+      <created>1656059295092</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1656059295092</updated>
+      <workItem from="1656059300067" duration="2529000" />
+      <workItem from="1656235189860" duration="1650000" />
+      <workItem from="1656629255058" duration="10033000" />
+      <workItem from="1656841890017" duration="9381000" />
+      <workItem from="1657699474161" duration="22775000" />
+      <workItem from="1659649657547" duration="6832000" />
+      <workItem from="1660250554709" duration="4419000" />
+      <workItem from="1660550686611" duration="2018000" />
+      <workItem from="1660640466232" duration="12290000" />
+      <workItem from="1661676843200" duration="31956000" />
+      <workItem from="1662743931917" duration="11954000" />
+      <workItem from="1663498659861" duration="8533000" />
+      <workItem from="1663661134363" duration="5390000" />
+      <workItem from="1664265933077" duration="30439000" />
+      <workItem from="1666705074881" duration="2180000" />
+    </task>
+    <task id="LOCAL-00001" summary="retirer menu connexion">
+      <created>1656630395416</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1656630395416</updated>
+    </task>
+    <task id="LOCAL-00002" summary="BG-007: Retirer menu connexion">
+      <created>1656838247070</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1656838247070</updated>
+    </task>
+    <task id="LOCAL-00003" summary="BG-008: Ajout de fichier readme.md et ignorer le dossier vendor dans git">
+      <created>1656843897611</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1656843897611</updated>
+    </task>
+    <task id="LOCAL-00004" summary="BG-009: Correction des requetes de la base de schemas de la bdd">
+      <created>1657702197137</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1657702197137</updated>
+    </task>
+    <task id="LOCAL-00005" summary="BG-010: Lien vers le Cv et LinkedIn &amp; suppression d'élément inutile">
+      <created>1659043969257</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1659043969257</updated>
+    </task>
+    <task id="LOCAL-00006" summary="BG-011: Modification du menu">
+      <created>1659298801891</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1659298801891</updated>
+    </task>
+    <task id="LOCAL-00007" summary="BG-012: Créer la page d'accueil &quot;HOME&quot;">
+      <created>1659302104926</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1659302104926</updated>
+    </task>
+    <task id="LOCAL-00008" summary="BG-013: Revu des fichier twig">
+      <created>1659653351353</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1659653351353</updated>
+    </task>
+    <task id="LOCAL-00009" summary="BG-013: Revu des fichier twig post et updatepost">
+      <created>1660252382738</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1660252382738</updated>
+    </task>
+    <task id="LOCAL-00010" summary="BG-014: Sécuriser l'application">
+      <created>1660737107107</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1660737107107</updated>
+    </task>
+    <task id="LOCAL-00011" summary="BG-014: vérification du code">
+      <created>1661280251091</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1661280251091</updated>
+    </task>
+    <task id="LOCAL-00012" summary="BG-017: Revue du code">
+      <created>1662152541913</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1662152541913</updated>
+    </task>
+    <task id="LOCAL-00013" summary="fix/BG-019: Correction retour analyse syfonyinsight">
+      <created>1662455202846</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1662455202846</updated>
+    </task>
+    <task id="LOCAL-00014" summary="BG-020: ajout bouton acceuil et revue du code">
+      <created>1662747622616</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1662747622616</updated>
+    </task>
+    <task id="LOCAL-00015" summary="BG-020: ajout bouton acceuil et revue du code #2">
+      <created>1662912035845</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1662912035845</updated>
+    </task>
+    <task id="LOCAL-00016" summary="fx/BG-019: suppression fonctionnel mais commentaire non fonctionnel #3">
+      <created>1663516155298</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1663516155298</updated>
+    </task>
+    <task id="LOCAL-00017" summary="fx/BG-019: suppression fonctionnel mais commentaire non fonctionnel #4">
+      <created>1663516729028</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1663516729028</updated>
+    </task>
+    <task id="LOCAL-00018" summary="BG-022: Reglage du probleme de suppression d'un post.">
+      <created>1664616863577</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1664616863577</updated>
+    </task>
+    <task id="LOCAL-00019" summary="BG-022: Reglage du probleme de suppression d'un post.">
+      <created>1664626580430</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1664626580430</updated>
+    </task>
+    <task id="LOCAL-00020" summary="BG-022: Reglage du probleme de suppression d'un post.">
+      <created>1664626653372</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1664626653372</updated>
+    </task>
+    <task id="LOCAL-00021" summary="BG-022: relier parametre a valeur suppression commentaire">
+      <created>1664628145601</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1664628145601</updated>
+    </task>
+    <task id="LOCAL-00022" summary="BG-023: Favicon probleme analyse">
+      <created>1664629188754</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1664629188754</updated>
+    </task>
+    <task id="LOCAL-00023" summary="BG-023: Favicon probleme analyse">
+      <created>1664629878930</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1664629878930</updated>
+    </task>
+    <task id="LOCAL-00024" summary="BG-024: type probleme analyse">
+      <created>1664732719237</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1664732719237</updated>
+    </task>
+    <task id="LOCAL-00025" summary="BG-024: type probleme analyse">
+      <created>1664733052322</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1664733052322</updated>
+    </task>
+    <task id="LOCAL-00026" summary="BG-024: type probleme analyse">
+      <created>1664733289821</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1664733289821</updated>
+    </task>
+    <task id="LOCAL-00027" summary="BG-024: type probleme analyse 3">
+      <created>1664735085924</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1664735085924</updated>
+    </task>
+    <task id="LOCAL-00028" summary="BG-024: type probleme analyse 4">
+      <created>1664998515046</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1664998515046</updated>
+    </task>
+    <task id="LOCAL-00029" summary="BG-024: regroupement des fichiers">
+      <created>1666709727366</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1666709727366</updated>
+    </task>
+    <task id="LOCAL-00030" summary="BG-024: regroupement des fichiers">
+      <created>1666709854509</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1666709854509</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="fix/BG-019" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="retirer menu connexion" />
+    <MESSAGE value="BG-007: Retirer menu connexion" />
+    <MESSAGE value="BG-008: Ajout de fichier readme.md et ignorer le dossier vendor dans git" />
+    <MESSAGE value="BG-009: Correction des requetes de la base de schemas de la bdd" />
+    <MESSAGE value="BG-010: Lien vers le Cv et LinkedIn &amp; suppression d'élément inutile" />
+    <MESSAGE value="BG-011: Modification du menu" />
+    <MESSAGE value="BG-012: Créer la page d'accueil &quot;HOME&quot;" />
+    <MESSAGE value="BG-013: Revu des fichier twig" />
+    <MESSAGE value="BG-013: Revu des fichier twig post et updatepost" />
+    <MESSAGE value="BG-014: Sécuriser l'application" />
+    <MESSAGE value="BG-014: vérification du code" />
+    <MESSAGE value="BG-017: Revue du code" />
+    <MESSAGE value="fix/BG-019: Correction retour analyse syfonyinsight" />
+    <MESSAGE value="BG-020: ajout bouton acceuil et revue du code" />
+    <MESSAGE value="BG-020: ajout bouton acceuil et revue du code #2" />
+    <MESSAGE value="fx/BG-019: suppression fonctionnel mais commentaire non fonctionnel #3" />
+    <MESSAGE value="fx/BG-019: suppression fonctionnel mais commentaire non fonctionnel #4" />
+    <MESSAGE value="BG-022: Reglage du probleme de suppression d'un post." />
+    <MESSAGE value="BG-022: relier parametre a valeur suppression commentaire" />
+    <MESSAGE value="BG-023: Favicon probleme analyse" />
+    <MESSAGE value="BG-024: type probleme analyse" />
+    <MESSAGE value="BG-024: type probleme analyse 3" />
+    <MESSAGE value="BG-024: type probleme analyse 4" />
+    <MESSAGE value="BG-024: regroupement des fichiers" />
+    <option name="LAST_COMMIT_MESSAGE" value="BG-024: regroupement des fichiers" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
