@@ -99,7 +99,7 @@
       <workItem from="1663498659861" duration="8533000" />
       <workItem from="1663661134363" duration="5390000" />
       <workItem from="1664265933077" duration="30439000" />
-      <workItem from="1666705074881" duration="3808000" />
+      <workItem from="1666705074881" duration="4474000" />
     </task>
     <task id="LOCAL-00001" summary="retirer menu connexion">
       <created>1656630395416</created>
@@ -332,7 +332,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666713930215</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="BG-025: ajout du lien de l'analyse synfony insight">
+      <created>1666714603626</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1666714603626</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -364,7 +371,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="BG-008: Ajout de fichier readme.md et ignorer le dossier vendor dans git" />
     <MESSAGE value="BG-009: Correction des requetes de la base de schemas de la bdd" />
     <MESSAGE value="BG-010: Lien vers le Cv et LinkedIn &amp; suppression d'élément inutile" />
     <MESSAGE value="BG-011: Modification du menu" />
@@ -389,7 +395,8 @@
     <MESSAGE value="Merge" />
     <MESSAGE value="BG-025: Correction analyse insight" />
     <MESSAGE value="BG-025: Correction analyse insight #2" />
-    <option name="LAST_COMMIT_MESSAGE" value="BG-025: Correction analyse insight #2" />
+    <MESSAGE value="BG-025: ajout du lien de l'analyse synfony insight" />
+    <option name="LAST_COMMIT_MESSAGE" value="BG-025: ajout du lien de l'analyse synfony insight" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
