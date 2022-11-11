@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba63a7e5-7e07-47d2-9b37-96d421357ead" name="Changes" comment="" />
-    <list id="2506889e-42f3-4a66-9f7b-98eee9d2fa2d" name="Local Changes" comment="" />
+    <list default="true" id="ba63a7e5-7e07-47d2-9b37-96d421357ead" name="Changes" comment="BG-030:correction bug pour fonctionnement du projet.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet/Controllers/AdminPostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Controllers/AdminPostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet/Models/CommentModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Models/CommentModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet/Models/InscriptionModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Models/InscriptionModel.php" afterDir="false" />
+    </list>
+    <list id="2506889e-42f3-4a66-9f7b-98eee9d2fa2d" name="Local Changes" comment="BG-030: ajout fichier composer.lock">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,10 +28,28 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="BG-31" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/.idea/workspace.xml">
+      <ranges>
+        <range start1="3" end1="5" start2="3" end2="14" changelist="ba63a7e5-7e07-47d2-9b37-96d421357ead" />
+        <range start1="20" end1="21" start2="29" end2="30" changelist="ba63a7e5-7e07-47d2-9b37-96d421357ead" />
+        <range start1="25" end1="25" start2="34" end2="52" changelist="ba63a7e5-7e07-47d2-9b37-96d421357ead" />
+        <range start1="51" end1="52" start2="78" end2="79" changelist="ba63a7e5-7e07-47d2-9b37-96d421357ead" />
+        <range start1="64" end1="64" start2="91" end2="93" changelist="ba63a7e5-7e07-47d2-9b37-96d421357ead" />
+        <range start1="68" end1="70" start2="97" end2="99" changelist="ba63a7e5-7e07-47d2-9b37-96d421357ead" />
+        <range start1="74" end1="75" start2="103" end2="108" changelist="ba63a7e5-7e07-47d2-9b37-96d421357ead" />
+        <range start1="102" end1="102" start2="135" end2="137" changelist="ba63a7e5-7e07-47d2-9b37-96d421357ead" />
+        <range start1="341" end1="342" start2="376" end2="391" changelist="ba63a7e5-7e07-47d2-9b37-96d421357ead" />
+        <range start1="353" end1="353" start2="402" end2="407" changelist="2506889e-42f3-4a66-9f7b-98eee9d2fa2d" />
+        <range start1="373" end1="375" start2="427" end2="427" changelist="ba63a7e5-7e07-47d2-9b37-96d421357ead" />
+        <range start1="398" end1="399" start2="450" end2="453" changelist="ba63a7e5-7e07-47d2-9b37-96d421357ead" />
+      </ranges>
+    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -49,7 +77,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/xampp4/htdocs/blog&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/blogP5/blog&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.CommitDialog&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
@@ -62,17 +90,23 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\blogP5\blog" />
+      <recent name="C:\xampp\htdocs\blogP5\blog\Public" />
       <recent name="C:\xampp4\htdocs\blog" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="projet" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner directory="$PROJECT_DIR$/projet" />
+    <configuration name="src" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner directory="$PROJECT_DIR$/src" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.projet" />
+        <item itemvalue="PHPUnit.src" />
+        <item itemvalue="PHPUnit.src" />
+        <item itemvalue="PHPUnit.src" />
+        <item itemvalue="PHPUnit.src" />
+        <item itemvalue="PHPUnit.src" />
       </list>
     </recent_temporary>
   </component>
@@ -100,6 +134,8 @@
       <workItem from="1663661134363" duration="5390000" />
       <workItem from="1664265933077" duration="30439000" />
       <workItem from="1666705074881" duration="4474000" />
+      <workItem from="1667995256180" duration="821000" />
+      <workItem from="1668173410321" duration="10744000" />
     </task>
     <task id="LOCAL-00001" summary="retirer menu connexion">
       <created>1656630395416</created>
@@ -339,7 +375,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666714603626</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="BG-030:correction bug pour fonctionnement du projet.">
+      <created>1668176576881</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1668176576881</updated>
+    </task>
+    <task id="LOCAL-00036" summary="BG-030: ajout fichier composer.lock">
+      <created>1668177473873</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1668177473873</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -371,8 +421,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="BG-009: Correction des requetes de la base de schemas de la bdd" />
-    <MESSAGE value="BG-010: Lien vers le Cv et LinkedIn &amp; suppression d'élément inutile" />
     <MESSAGE value="BG-011: Modification du menu" />
     <MESSAGE value="BG-012: Créer la page d'accueil &quot;HOME&quot;" />
     <MESSAGE value="BG-013: Revu des fichier twig" />
@@ -396,7 +444,9 @@
     <MESSAGE value="BG-025: Correction analyse insight" />
     <MESSAGE value="BG-025: Correction analyse insight #2" />
     <MESSAGE value="BG-025: ajout du lien de l'analyse synfony insight" />
-    <option name="LAST_COMMIT_MESSAGE" value="BG-025: ajout du lien de l'analyse synfony insight" />
+    <MESSAGE value="BG-030:correction bug pour fonctionnement du projet." />
+    <MESSAGE value="BG-030: ajout fichier composer.lock" />
+    <option name="LAST_COMMIT_MESSAGE" value="BG-030: ajout fichier composer.lock" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

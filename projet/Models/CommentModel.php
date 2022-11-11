@@ -58,5 +58,11 @@ class CommentModel extends Model {
         $lol->bindParam('id', $id,PDO::PARAM_INT);
         $lol->execute();
 	}
+    public function deleteCommentsByPostId(int $idPost): void {
+
+        $bdd = $this->getDB();
+        $requete = $bdd->prepare('DELETE FROM commentaire WHERE id_postc = ?');
+        $requete->execute(array($idPost));
+    }
 
 }

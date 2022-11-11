@@ -112,6 +112,8 @@ class AdminPostController extends Controller {
 
 	public function deletePost(array $id): void {
 		$modelPost = new PostsModel();
+        $commentPost = new CommentModel();
+        $commentPost->deleteCommentsByPostId($id[0]);
 		$modelPost->deletePost($id[0]);
 		$this->_redirectToHomePage();
 	}
