@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba63a7e5-7e07-47d2-9b37-96d421357ead" name="Changes" comment="BG-031:correction bug pour fonctionnement du projet.">
+    <list default="true" id="ba63a7e5-7e07-47d2-9b37-96d421357ead" name="Changes" comment="BG-031:correction bug pour fonctionnement du projet #2.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="2506889e-42f3-4a66-9f7b-98eee9d2fa2d" name="Local Changes" comment="BG-030: ajout fichier composer.lock">
@@ -31,13 +31,13 @@
   <component name="LineStatusTrackerManager">
     <file path="$PROJECT_DIR$/.idea/workspace.xml">
       <ranges>
-        <range start1="3" end1="11" start2="3" end2="4" changelist="ba63a7e5-7e07-47d2-9b37-96d421357ead" />
-        <range start1="35" end1="53" start2="28" end2="28" changelist="ba63a7e5-7e07-47d2-9b37-96d421357ead" />
-        <range start1="137" end1="138" start2="112" end2="113" changelist="ba63a7e5-7e07-47d2-9b37-96d421357ead" />
-        <range start1="391" end1="392" start2="366" end2="374" changelist="ba63a7e5-7e07-47d2-9b37-96d421357ead" />
-        <range start1="403" end1="403" start2="385" end2="390" changelist="2506889e-42f3-4a66-9f7b-98eee9d2fa2d" />
-        <range start1="423" end1="424" start2="410" end2="410" changelist="ba63a7e5-7e07-47d2-9b37-96d421357ead" />
-        <range start1="448" end1="449" start2="434" end2="436" changelist="ba63a7e5-7e07-47d2-9b37-96d421357ead" />
+        <range start1="3" end1="4" start2="3" end2="4" changelist="ba63a7e5-7e07-47d2-9b37-96d421357ead" />
+        <range start1="33" end1="40" start2="33" end2="40" changelist="ba63a7e5-7e07-47d2-9b37-96d421357ead" />
+        <range start1="127" end1="128" start2="127" end2="128" changelist="ba63a7e5-7e07-47d2-9b37-96d421357ead" />
+        <range start1="388" end1="389" start2="388" end2="403" changelist="ba63a7e5-7e07-47d2-9b37-96d421357ead" />
+        <range start1="400" end1="400" start2="414" end2="419" changelist="2506889e-42f3-4a66-9f7b-98eee9d2fa2d" />
+        <range start1="420" end1="421" start2="439" end2="439" changelist="ba63a7e5-7e07-47d2-9b37-96d421357ead" />
+        <range start1="445" end1="446" start2="463" end2="465" changelist="ba63a7e5-7e07-47d2-9b37-96d421357ead" />
       </ranges>
     </file>
   </component>
@@ -125,7 +125,7 @@
       <workItem from="1664265933077" duration="30439000" />
       <workItem from="1666705074881" duration="4474000" />
       <workItem from="1667995256180" duration="821000" />
-      <workItem from="1668173410321" duration="11466000" />
+      <workItem from="1668173410321" duration="13079000" />
     </task>
     <task id="LOCAL-00001" summary="retirer menu connexion">
       <created>1656630395416</created>
@@ -386,7 +386,21 @@
       <option name="project" value="LOCAL" />
       <updated>1668189933745</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="BG-031:correction bug pour fonctionnement du projet #2.">
+      <created>1668191209167</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1668191209167</updated>
+    </task>
+    <task id="LOCAL-00039" summary="BG-031:correction bug pour fonctionnement du projet #2.">
+      <created>1668191257669</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1668191257669</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -418,7 +432,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="BG-012: Créer la page d'accueil &quot;HOME&quot;" />
     <MESSAGE value="BG-013: Revu des fichier twig" />
     <MESSAGE value="BG-013: Revu des fichier twig post et updatepost" />
     <MESSAGE value="BG-014: Sécuriser l'application" />
@@ -443,7 +456,8 @@
     <MESSAGE value="BG-030:correction bug pour fonctionnement du projet." />
     <MESSAGE value="BG-030: ajout fichier composer.lock" />
     <MESSAGE value="BG-031:correction bug pour fonctionnement du projet." />
-    <option name="LAST_COMMIT_MESSAGE" value="BG-031:correction bug pour fonctionnement du projet." />
+    <MESSAGE value="BG-031:correction bug pour fonctionnement du projet #2." />
+    <option name="LAST_COMMIT_MESSAGE" value="BG-031:correction bug pour fonctionnement du projet #2." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
