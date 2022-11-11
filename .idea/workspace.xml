@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="518a9cdf-744e-4557-a392-e5a46a609780" name="Changes" comment="clean main">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="518a9cdf-744e-4557-a392-e5a46a609780" name="Changes" comment="application fonctionnel" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -383,7 +381,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668191257669</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="application fonctionnel">
+      <created>1668198607348</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1668198607348</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -415,7 +420,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="BG-013: Revu des fichier twig" />
     <MESSAGE value="BG-013: Revu des fichier twig post et updatepost" />
     <MESSAGE value="BG-014: Sécuriser l'application" />
     <MESSAGE value="BG-014: vérification du code" />
@@ -440,7 +444,8 @@
     <MESSAGE value="BG-030: ajout fichier composer.lock" />
     <MESSAGE value="BG-031:correction bug pour fonctionnement du projet." />
     <MESSAGE value="BG-031:correction bug pour fonctionnement du projet #2." />
-    <option name="LAST_COMMIT_MESSAGE" value="BG-031:correction bug pour fonctionnement du projet #2." />
+    <MESSAGE value="application fonctionnel" />
+    <option name="LAST_COMMIT_MESSAGE" value="application fonctionnel" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

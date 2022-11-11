@@ -1,0 +1,90 @@
+{% extends "layout.twig" %}
+{% block stylesheets %}
+	<link href="../css/comment.css" rel="stylesheet">
+{% endblock %}
+
+{% block title %}Details posts{% endblock %}
+{% block content %}
+	<section class="blog-area section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-6" style="width: 370px">
+					<a href="public?p=posts/post/{{post.id}}">
+						<div class="card h-100">
+							<div class="single-post post-style-1">
+								<div class="blog-image"><img src="../css/produit/image/{{post.img}}?>" alt="Blog Image"></div>
+								<a class="avatar" href="#"><img src="../css/images/icons8-team-355979.jpg" alt="Profile Image"></a>
+								<div class="blog-info">
+									<h4 class="title">
+										<a href="#">
+											<b>{{ post.titre }}</b>
+										</a>
+									</h4>
+									<h6 class="title">
+										<a href="#">
+											<b>{{ post.chapo }}</b>
+										</a>
+									</h6>
+									<ul class="post-footer">
+										<li>
+											<a href="#">
+												<i class="ion-laptop"></i>
+												{{post.dateMjr}}</a>
+										</li>
+{#										<li>#}
+{#											<a href="#"><i class="ion-chatbubble"></i>6</a>#}
+{#										</li>#}
+{#										<li>#}
+{#											<a href="#"><i class="ion-eye"></i>138</a>#}
+{#										</li>#}
+									</ul>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+				<div class="container">
+					<div class="be-comment-block">
+						<h1 class="comments-title">Comments ({{ comments | length }})</h1>
+						{% for comment in comments %}
+							<div class="be-comment">
+								<div class="be-img-comment">
+									<a href="blog-detail-2.html">
+										<img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="be-ava-comment">
+									</a>
+								</div>
+								<div class="be-comment-content">
+									<span class="be-comment-name">
+										<a href="blog-detail-2.html">{{ comment.userName }}</a>
+									</span>
+									<span class="be-comment-time">
+										<i class="fa fa-clock-o"></i>
+										{{ comment.date }}
+									</span>
+
+									<p class="be-comment-text">
+										{{ comment.commentaire }}
+									</p>
+								</div>
+							</div>
+						{% endfor %}
+						</br>
+						</br>
+
+						<form method="POST" action="public?p=posts/post/{{post.id}}">
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="form-group">
+										<textarea name="comment" class="form-input" required="" placeholder="Your text"></textarea>
+									</div>
+								</div>
+								<button type="submit" value="your_value" class="btn btn-primary pull-right">Go</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+{% endblock %}
