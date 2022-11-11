@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba63a7e5-7e07-47d2-9b37-96d421357ead" name="Changes" comment="BG-031:correction bug pour fonctionnement du projet #2.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
-    <list id="2506889e-42f3-4a66-9f7b-98eee9d2fa2d" name="Local Changes" comment="BG-030: ajout fichier composer.lock">
+    <list default="true" id="ba63a7e5-7e07-47d2-9b37-96d421357ead" name="Changes" comment="BG-031:correction bug pour fonctionnement du projet #3.">
       <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
+    <list id="2506889e-42f3-4a66-9f7b-98eee9d2fa2d" name="Local Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,28 +16,15 @@
     <execution />
   </component>
   <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="origin/main" />
+    <option name="BRANCH" value="origin/BG-025_Correction_analyse_insight" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="BG-31" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/.idea/workspace.xml">
-      <ranges>
-        <range start1="3" end1="4" start2="3" end2="4" changelist="ba63a7e5-7e07-47d2-9b37-96d421357ead" />
-        <range start1="33" end1="40" start2="33" end2="40" changelist="ba63a7e5-7e07-47d2-9b37-96d421357ead" />
-        <range start1="127" end1="128" start2="127" end2="128" changelist="ba63a7e5-7e07-47d2-9b37-96d421357ead" />
-        <range start1="388" end1="389" start2="388" end2="403" changelist="ba63a7e5-7e07-47d2-9b37-96d421357ead" />
-        <range start1="400" end1="400" start2="414" end2="419" changelist="2506889e-42f3-4a66-9f7b-98eee9d2fa2d" />
-        <range start1="420" end1="421" start2="439" end2="439" changelist="ba63a7e5-7e07-47d2-9b37-96d421357ead" />
-        <range start1="445" end1="446" start2="463" end2="465" changelist="ba63a7e5-7e07-47d2-9b37-96d421357ead" />
-      </ranges>
-    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
