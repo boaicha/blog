@@ -28,7 +28,8 @@ class Main {
 
 		// Si au moins 1 paramètre existe
 		if ($params[0] != "") {
-			// On sauvegarde le 1er paramètre dans $controller en mettant sa 1ère lettre en majuscule, en ajoutant le namespace des controleurs et en ajoutant "Controller" à la fin
+			// On sauvegarde le 1er paramètre dans $controller en mettant sa 1ère lettre en majuscule, en ajoutant le
+            // namespace des controleurs et en ajoutant "Controller" à la fin
 			$controller = '\\App\\Controllers\\' . ucfirst(array_shift($params)) . 'Controller';
 			if (!class_exists($controller)) {
 				$exceptionController->notFoundAction($_GET['p']);
