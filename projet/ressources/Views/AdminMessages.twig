@@ -1,0 +1,37 @@
+{% extends "layout.twig" %}
+{% block content %}
+    <section class="blog-area section">
+        <div class="container">
+            <div style="text-align: left">
+
+            </div>
+            <div class="row">
+                {% for message in messages %}
+                    <div class="col-lg-4 col-md-4" style="">
+                        <a href="public?p=adminPost/postAdmin/{{ message.id }}">
+                            <div class="card h-100">
+                                <div class="single-post post-style-1 h-100">
+                                    <div class="blog-image"><img src="../css/images/message.png?>"
+                                                                 alt="Blog Image"></div>
+                                    <a class="avatar" href="#"><img src="../css/images/message.png"
+                                                                    alt="Profile Image"></a>
+                                    <div class="blog-info">
+                                        <h4 class="title"><a href="#"><b>{{ message.email }}</b></a></h4>
+                                        <h6 class="title"><a href="#"><b>{{ message.objet }}</b></a></h6>
+                                        <h6 class="title"><a href="#"><b>{{ message.message }}</b></a></h6>
+                                        <ul class="post-footer">
+                                            <li><a href="#"><i class="ion-laptop"></i>{{ post.dateMjr }}</a></li>
+                                            {#                                            <li><a href="#"><i class="ion-chatbubble"></i>6</a></li>#}
+                                            {#                                            <li><a href="#"><i class="ion-eye"></i>138</a></li>#}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+{% endblock %}

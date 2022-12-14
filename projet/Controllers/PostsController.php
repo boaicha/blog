@@ -43,6 +43,7 @@ class PostsController extends Controller {
 			$commentModel->addComment($post->getId(), $commentsPost, $dateComment, $userId);
 		}
 
+
 		$comments = $commentModel->listCommentsOfPost($id);
 		// var_dump($comments); die();
 		$this->view('post', array(

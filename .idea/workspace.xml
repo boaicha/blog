@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="518a9cdf-744e-4557-a392-e5a46a609780" name="Changes" comment="application fonctionnel #2">
+      <change afterPath="$PROJECT_DIR$/projet/Controllers/ContactController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projet/Models/ContactModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projet/ressources/Views/AdminMessages.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projet/ressources/Views/contact.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet/Core/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Core/Main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet/Controllers/PostsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Controllers/PostsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet/Models/PostsModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Models/PostsModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet/ressources/Views/default.twig" beforeDir="false" afterPath="$PROJECT_DIR$/projet/ressources/Views/default.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet/ressources/Views/index.twig" beforeDir="false" afterPath="$PROJECT_DIR$/projet/ressources/Views/index.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet/ressources/Views/layout.twig" beforeDir="false" afterPath="$PROJECT_DIR$/projet/ressources/Views/layout.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet/ressources/Views/post.twig" beforeDir="false" afterPath="$PROJECT_DIR$/projet/ressources/Views/post.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +120,9 @@
       <workItem from="1668173410321" duration="13079000" />
       <workItem from="1668359941005" duration="8832000" />
       <workItem from="1669127990587" duration="5049000" />
-      <workItem from="1669314725240" duration="213000" />
+      <workItem from="1669314725240" duration="10461000" />
+      <workItem from="1669539740759" duration="3621000" />
+      <workItem from="1669660264249" duration="16460000" />
     </task>
     <task id="LOCAL-00001" summary="retirer menu connexion">
       <created>1656630395416</created>
@@ -400,7 +411,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668198795270</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="application fonctionnel #2">
+      <created>1669381747811</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1669381747811</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
