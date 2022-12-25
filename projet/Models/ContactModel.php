@@ -7,7 +7,7 @@ use PDO;
 
 class ContactModel extends Model{
 
-    public function addMessage(string $nom, string $email, string $objet, string $message, int $idUser){
+    public function addMessage(string $nom, string $email, string $objet, string $message, int $idUser): void{
 
         $bdd = $this->getDB();
         $requete = $bdd->prepare('INSERT INTO message (email, objet, message, idUser, nom) VALUES (?,?,?,?,?)');

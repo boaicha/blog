@@ -18,7 +18,7 @@ class ContactController extends Controller {
         require 'PHPMailer/src/SMTP.php';
 
 // Create an instance; Pass true to enable exceptions
-        $mail = new PHPMailer;
+        $mail = new PHPMailer();
 
 // Server settings
 //$mail->SMTPDebug = SMTP::DEBUG_SERVER;    //Enable verbose debug output
@@ -32,7 +32,7 @@ class ContactController extends Controller {
 
 
 // Sender info
-        $mail->setFrom($_POST['email'], 'SenderName');
+        $mail->setFrom($_POST['email'], $_POST['email']);
 //$mail->addReplyTo('reply@example.com', 'SenderName');
 
 // Add a recipient
