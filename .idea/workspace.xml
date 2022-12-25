@@ -4,7 +4,6 @@
     <list default="true" id="518a9cdf-744e-4557-a392-e5a46a609780" name="Changes" comment="version final">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projet/Controllers/ContactController.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Controllers/ContactController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet/Models/ContactModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Models/ContactModel.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +113,7 @@
       <workItem from="1669127990587" duration="5049000" />
       <workItem from="1669314725240" duration="10461000" />
       <workItem from="1669539740759" duration="3621000" />
-      <workItem from="1669660264249" duration="20439000" />
+      <workItem from="1669660264249" duration="20896000" />
     </task>
     <task id="LOCAL-00001" summary="retirer menu connexion">
       <created>1656630395416</created>
@@ -424,7 +423,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671988413663</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="version final">
+      <created>1671989176841</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1671989176841</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

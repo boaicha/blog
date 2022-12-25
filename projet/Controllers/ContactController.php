@@ -7,6 +7,8 @@ use App\Models\ContactModel;
 
 class ContactController extends Controller {
 
+    private PHPMailer $mail;
+
     public function index(): void {
         $this->view('contact');
     }
@@ -18,7 +20,7 @@ class ContactController extends Controller {
         require 'PHPMailer/src/SMTP.php';
 
 // Create an instance; Pass true to enable exceptions
-        $mail = new PHPMailer();
+         $mail = new PHPMailer();
 
 // Server settings
 //$mail->SMTPDebug = SMTP::DEBUG_SERVER;    //Enable verbose debug output
