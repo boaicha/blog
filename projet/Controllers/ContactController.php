@@ -14,6 +14,9 @@ class ContactController extends Controller {
     }
 
     public function send(): void {
+        require 'PHPMailer/src/Exception.php';
+        require 'PHPMailer/src/PHPMailer.php';
+        require 'PHPMailer/src/SMTP.php';
         // Include library files
 
 // Create an instance; Pass true to enable exceptions
