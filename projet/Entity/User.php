@@ -13,7 +13,7 @@ class User{
     /**
      * @return mixed
      */
-    public function getId()
+    public function getId(): int
     {
         return $this->id;
     }
@@ -29,7 +29,7 @@ class User{
     /**
      * @return mixed
      */
-    public function getNom()
+    public function getNom(): String
     {
         return $this->nom;
     }
@@ -45,7 +45,7 @@ class User{
     /**
      * @return mixed
      */
-    public function getPrenom()
+    public function getPrenom(): String
     {
         return $this->prenom;
     }
@@ -61,7 +61,7 @@ class User{
     /**
      * @return mixed
      */
-    public function getMail()
+    public function getMail(): String
     {
         return $this->mail;
     }
@@ -77,7 +77,7 @@ class User{
     /**
      * @return mixed
      */
-    public function getPassword()
+    public function getPassword(): String
     {
         return $this->password;
     }
@@ -93,7 +93,7 @@ class User{
     /**
      * @return mixed
      */
-    public function getStatut()
+    public function getStatut(): String
     {
         return $this->statut;
     }
