@@ -1,0 +1,18 @@
+{% extends "layout.twig" %}
+
+{% block title %} CONTACT {% endblock %}
+
+{% block stylesheets %}
+<center>
+    <form method="post" action="public?p=contact/send">
+        <pre>
+            <label>Nom: <input type="text" name="nom"/></label>
+            <label>Email:<input type="text" name="email"/></label>
+            <label>objet:<input type="text" name="objet"/></label>
+           <label>Message:<br/><textarea name="message" rows="6" cols="42" placeholder="Saisissez votre message ici "></textarea></label>
+            <input type="submit" name="send" value ="envoyer"/>
+        </pre>
+    </form>
+</center>
+
+{% endblock %}

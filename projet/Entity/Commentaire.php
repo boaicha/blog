@@ -14,7 +14,7 @@ class Commentaire {
     /**
      * @return mixed
      */
-    public function getId()
+    public function getId():int
     {
         return $this->id;
     }
@@ -30,7 +30,7 @@ class Commentaire {
     /**
      * @return mixed
      */
-    public function getCommentaire()
+    public function getCommentaire(): String
     {
         return $this->commentaire;
     }
@@ -46,7 +46,7 @@ class Commentaire {
     /**
      * @return mixed
      */
-    public function getDate()
+    public function getDate(): String
     {
         return $this->date;
     }
@@ -62,7 +62,7 @@ class Commentaire {
     /**
      * @return mixed
      */
-    public function getIdUserc()
+    public function getIdUserc(): int
     {
         return $this->id_userc;
     }
@@ -78,7 +78,7 @@ class Commentaire {
     /**
      * @return mixed
      */
-    public function getIdPostc()
+    public function getIdPostc(): int
     {
         return $this->id_postc;
     }
@@ -94,7 +94,7 @@ class Commentaire {
     /**
      * @return mixed
      */
-    public function getVerification()
+    public function getVerification(): String
     {
         return $this->verification;
     }

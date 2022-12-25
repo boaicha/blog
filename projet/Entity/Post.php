@@ -14,7 +14,7 @@ final class Post {
     /**
      * @return mixed
      */
-    public function getId()
+    public function getId(): int
     {
         return $this->id;
     }
@@ -30,7 +30,7 @@ final class Post {
     /**
      * @return mixed
      */
-    public function getTitre()
+    public function getTitre(): String
     {
         return $this->titre;
     }
@@ -46,7 +46,7 @@ final class Post {
     /**
      * @return mixed
      */
-    public function getChapo()
+    public function getChapo(): String
     {
         return $this->chapo;
     }
@@ -62,7 +62,7 @@ final class Post {
     /**
      * @return mixed
      */
-    public function getImg()
+    public function getImg(): String
     {
         return $this->img;
     }
@@ -78,7 +78,7 @@ final class Post {
     /**
      * @return mixed
      */
-    public function getDateMjr()
+    public function getDateMjr(): String
     {
         return $this->date_mjr;
     }
@@ -94,7 +94,7 @@ final class Post {
     /**
      * @return mixed
      */
-    public function getDateModif()
+    public function getDateModif(): String
     {
         return $this->date_modif;
     }
@@ -110,7 +110,7 @@ final class Post {
     /**
      * @return mixed
      */
-    public function getIdUser()
+    public function getIdUser(): int
     {
         return $this->id_user;
     }

@@ -9,7 +9,9 @@ class PostsModel extends Model {
 
 	public function listPost(): array {
 		$bdd = $this->getDB();
-		$requete = $bdd->prepare('SELECT * FROM post order by id desc ');
+		$requete = $bdd->prepare('SELECT post.id,post.img ,post.chapo,post.titre,post.date_mjr,post.id_user,user.nom
+FROM post
+INNER JOIN user ON user.id = post.id_user order by post.id desc ');
 		$requete->execute();
 		return $requete->fetchAll(PDO::FETCH_CLASS,Post::class);
 
@@ -22,7 +24,9 @@ class PostsModel extends Model {
 	 */
 	public function findPostById(array $id) {
 		$bdd = $this->getDB();
-		$requete = $bdd->prepare('SELECT*FROM post WHERE id=?');
+		$requete = $bdd->prepare('SELECT post.id,post.img ,post.chapo,post.titre,post.date_mjr,post.id_user,user.nom
+FROM post
+INNER JOIN user ON user.id = post.id_user WHERE post.id=?');
 		$requete->execute($id);
 		return $requete->fetchAll(PDO::FETCH_CLASS,Post::class)[0];
 	}
