@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="518a9cdf-744e-4557-a392-e5a46a609780" name="Changes" comment="debug analise insight #2">
+    <list default="true" id="518a9cdf-744e-4557-a392-e5a46a609780" name="Changes" comment="debug analise insight #3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projet/Controllers/ContactController.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Controllers/ContactController.php" afterDir="false" />
     </list>
@@ -113,7 +113,7 @@
       <workItem from="1669127990587" duration="5049000" />
       <workItem from="1669314725240" duration="10461000" />
       <workItem from="1669539740759" duration="3621000" />
-      <workItem from="1669660264249" duration="21403000" />
+      <workItem from="1669660264249" duration="21682000" />
     </task>
     <task id="LOCAL-00001" summary="retirer menu connexion">
       <created>1656630395416</created>
@@ -444,7 +444,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671989794990</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="debug analise insight #3">
+      <created>1671990059850</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1671990059850</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -476,7 +483,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="BG-020: ajout bouton acceuil et revue du code" />
     <MESSAGE value="BG-020: ajout bouton acceuil et revue du code #2" />
     <MESSAGE value="fx/BG-019: suppression fonctionnel mais commentaire non fonctionnel #3" />
     <MESSAGE value="fx/BG-019: suppression fonctionnel mais commentaire non fonctionnel #4" />
@@ -501,7 +507,8 @@
     <MESSAGE value="version final" />
     <MESSAGE value="debug analise insight" />
     <MESSAGE value="debug analise insight #2" />
-    <option name="LAST_COMMIT_MESSAGE" value="debug analise insight #2" />
+    <MESSAGE value="debug analise insight #3" />
+    <option name="LAST_COMMIT_MESSAGE" value="debug analise insight #3" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

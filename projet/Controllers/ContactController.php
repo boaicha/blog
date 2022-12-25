@@ -4,23 +4,22 @@ namespace App\Controllers;
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use App\Models\ContactModel;
+require 'PHPMailer/src/Exception.php';
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
 
 class ContactController extends Controller {
-
-    private PHPMailer $mail;
 
     public function index(): void {
         $this->view('contact');
     }
 
     public function send(): void {
-        require 'PHPMailer/src/Exception.php';
-        require 'PHPMailer/src/PHPMailer.php';
-        require 'PHPMailer/src/SMTP.php';
+
         // Include library files
 
 // Create an instance; Pass true to enable exceptions
-         $mail = new PHPMailer();
+        static $mail = new PHPMailer;
 
 // Server settings
 //$mail->SMTPDebug = SMTP::DEBUG_SERVER;    //Enable verbose debug output
