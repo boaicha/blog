@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="518a9cdf-744e-4557-a392-e5a46a609780" name="Changes" comment="version final">
+    <list default="true" id="518a9cdf-744e-4557-a392-e5a46a609780" name="Changes" comment="debug analise insight">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projet/Controllers/ContactController.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Controllers/ContactController.php" afterDir="false" />
     </list>
@@ -113,7 +113,7 @@
       <workItem from="1669127990587" duration="5049000" />
       <workItem from="1669314725240" duration="10461000" />
       <workItem from="1669539740759" duration="3621000" />
-      <workItem from="1669660264249" duration="20896000" />
+      <workItem from="1669660264249" duration="21137000" />
     </task>
     <task id="LOCAL-00001" summary="retirer menu connexion">
       <created>1656630395416</created>
@@ -430,7 +430,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671989176841</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="debug analise insight">
+      <created>1671989581533</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1671989581533</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -462,7 +469,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="BG-017: Revue du code" />
     <MESSAGE value="fix/BG-019: Correction retour analyse syfonyinsight" />
     <MESSAGE value="BG-020: ajout bouton acceuil et revue du code" />
     <MESSAGE value="BG-020: ajout bouton acceuil et revue du code #2" />
@@ -487,7 +493,8 @@
     <MESSAGE value="application fonctionnel #2" />
     <MESSAGE value="MAIL" />
     <MESSAGE value="version final" />
-    <option name="LAST_COMMIT_MESSAGE" value="version final" />
+    <MESSAGE value="debug analise insight" />
+    <option name="LAST_COMMIT_MESSAGE" value="debug analise insight" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
