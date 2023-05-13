@@ -1,9 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="518a9cdf-744e-4557-a392-e5a46a609780" name="Changes" comment="debug analise insight #3">
+    <list default="true" id="518a9cdf-744e-4557-a392-e5a46a609780" name="Changes" comment="final project version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet/Controllers/AddPostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Controllers/AddPostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet/Controllers/AdminPostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Controllers/AdminPostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet/Controllers/ConnexionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Controllers/ConnexionController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projet/Controllers/ContactController.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Controllers/ContactController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Controllers/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet/Controllers/ExceptionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Controllers/ExceptionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet/Controllers/InscriptionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Controllers/InscriptionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet/Controllers/MainController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet/Controllers/PostsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Controllers/PostsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet/Core/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Core/Main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet/Models/CommentModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Models/CommentModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet/Models/ConnexionModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Models/ConnexionModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet/Models/ContactModel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet/Models/HomeModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Models/HomeModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet/Models/InscriptionModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Models/InscriptionModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet/Models/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Models/Model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet/Models/PostsModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Models/PostsModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet/css/comment.css" beforeDir="false" afterPath="$PROJECT_DIR$/projet/css/comment.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet/ressources/Views/AddPost.twig" beforeDir="false" afterPath="$PROJECT_DIR$/projet/ressources/Views/AddPost.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet/ressources/Views/_newPost.twig" beforeDir="false" afterPath="$PROJECT_DIR$/projet/ressources/Views/_newPost.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet/ressources/Views/connexion.twig" beforeDir="false" afterPath="$PROJECT_DIR$/projet/ressources/Views/connexion.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet/ressources/Views/default.twig" beforeDir="false" afterPath="$PROJECT_DIR$/projet/ressources/Views/default.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet/ressources/Views/home.twig" beforeDir="false" afterPath="$PROJECT_DIR$/projet/ressources/Views/home.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet/ressources/Views/index.twig" beforeDir="false" afterPath="$PROJECT_DIR$/projet/ressources/Views/index.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet/ressources/Views/inscription.twig" beforeDir="false" afterPath="$PROJECT_DIR$/projet/ressources/Views/inscription.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet/ressources/Views/layout.twig" beforeDir="false" afterPath="$PROJECT_DIR$/projet/ressources/Views/layout.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet/ressources/Views/post.twig" beforeDir="false" afterPath="$PROJECT_DIR$/projet/ressources/Views/post.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet/ressources/Views/updatePost.twig" beforeDir="false" afterPath="$PROJECT_DIR$/projet/ressources/Views/updatePost.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +78,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/blogP5/blog&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/blog2&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.CommitDialog&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
@@ -71,7 +98,7 @@
   </component>
   <component name="RunManager">
     <configuration name="src" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner directory="$PROJECT_DIR$/src" />
+      <TestRunner directory="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -114,13 +141,10 @@
       <workItem from="1669314725240" duration="10461000" />
       <workItem from="1669539740759" duration="3621000" />
       <workItem from="1669660264249" duration="21682000" />
-    </task>
-    <task id="LOCAL-00001" summary="retirer menu connexion">
-      <created>1656630395416</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1656630395416</updated>
+      <workItem from="1680250213477" duration="1112000" />
+      <workItem from="1680257869752" duration="67072000" />
+      <workItem from="1681921610301" duration="11883000" />
+      <workItem from="1682796684170" duration="46620000" />
     </task>
     <task id="LOCAL-00002" summary="BG-007: Retirer menu connexion">
       <created>1656838247070</created>
@@ -451,7 +475,21 @@
       <option name="project" value="LOCAL" />
       <updated>1671990059850</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="debug analise insight #4">
+      <created>1671991165664</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1671991165664</updated>
+    </task>
+    <task id="LOCAL-00050" summary="final project version">
+      <created>1671991367264</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1671991367264</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -483,8 +521,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="BG-020: ajout bouton acceuil et revue du code #2" />
-    <MESSAGE value="fx/BG-019: suppression fonctionnel mais commentaire non fonctionnel #3" />
     <MESSAGE value="fx/BG-019: suppression fonctionnel mais commentaire non fonctionnel #4" />
     <MESSAGE value="BG-022: Reglage du probleme de suppression d'un post." />
     <MESSAGE value="BG-022: relier parametre a valeur suppression commentaire" />
@@ -508,7 +544,9 @@
     <MESSAGE value="debug analise insight" />
     <MESSAGE value="debug analise insight #2" />
     <MESSAGE value="debug analise insight #3" />
-    <option name="LAST_COMMIT_MESSAGE" value="debug analise insight #3" />
+    <MESSAGE value="debug analise insight #4" />
+    <MESSAGE value="final project version" />
+    <option name="LAST_COMMIT_MESSAGE" value="final project version" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

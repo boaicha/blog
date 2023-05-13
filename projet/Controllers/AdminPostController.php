@@ -10,6 +10,7 @@ class AdminPostController extends Controller {
 	/**
 	 * @var string[]
 	 */
+    //Variable  prive d'un tableau du format supporté .
 	private array $_suporttedFormats = ['image/png', 'image/jpeg', 'image/jpg', 'image/gif'];
 
 	/**
@@ -17,14 +18,18 @@ class AdminPostController extends Controller {
 	 * @return null
 	 */
 	public function index(): void {
-		$post = new PostsModel();
-		$list = $post->listPost();
-		// var_dump($list);
-		// die();
-		$this->view('AdminPosts', array(
-				'posts' => $list,
-			)
-		);
+        if($_SESSION['statut'] == 'admin') {
+            $post = new PostsModel();
+            $list = $post->listPost();
+            // var_dump($list);
+            // die();
+            $this->view('AdminPosts', array(
+                    'posts' => $list,
+                )
+            );
+        }else{
+            header("Location:" . "/public?p=home");
+        }
 	}
 
 	/**
@@ -32,6 +37,7 @@ class AdminPostController extends Controller {
 	 * @param $id
 	 * @return null
 	 */
+    // afficher les informations d un  poste
 	public function displayPost(array $id): void {
 		$modelPost = new PostsModel();
 		$postWithId = $modelPost->findPostById($id);
@@ -47,6 +53,7 @@ class AdminPostController extends Controller {
 	 * @return void
 	 * @throws \Exception
 	 */
+
 	public function updatePost(array $id) {
 		if (isset($_FILES['file'])) {
 			$this->uploadFile($_FILES['file']);
@@ -72,7 +79,9 @@ class AdminPostController extends Controller {
 	}
 
 	public function uploadFile(array $file): void {
+        //Si la variable de $file est une liste
 		if (is_array($file)) {
+            //?
 			if (in_array($file['type'], $this->_suporttedFormats)) {
 				move_uploaded_file($file['tmp_name'], '../css/produit/image/' . $file['name']);
 				echo 'L\'image a bien été uploader avec succès ! ';
@@ -130,11 +139,11 @@ class AdminPostController extends Controller {
 
 	}
 
-	private function _redirectToHomePage(): string {
+	private function _redirectToHomePage(): void {
 		header('Location:' . '/public?p=adminPost');
 	}
 
-	private function _redirectToPost(int $postId): string {
+	private function _redirectToPost(int $postId): void {
 		header('Location:' . '/public?p=adminPost/postAdmin/' . $postId);
 	}
 }

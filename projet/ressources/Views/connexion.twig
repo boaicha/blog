@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   {#affichage des accents #}
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    {#relier cette page au fichier css. #}
     <link rel="stylesheet" type="text/css" href="./css/form.css"/>
 
     <title>Connexion</title>
@@ -15,7 +17,7 @@
         <div class="inputs">
             <label>EMAIL</label>
             <input type="text" placeholder="adresse e-mail" name="username"
-                   onclick="ValidateEmail(document.formulaire.username)">
+            {# onclick="ValidateEmail(document.formulaire.username)">#}
             <label>PASSWORD</label>
             <input type="password" placeholder="mot de passe" name="password" id="password">
             <input type="text" style="display: none" name="csrf" id="csrf" value="{{ csrf }}">
@@ -30,7 +32,7 @@
 </form>
 
 {#  Verification password  #}
-<script>
+{# <script>
     let formulaire = document.getElementById('formulaire');
 
     formulaire.addEventListener('input', function (e) {
@@ -50,7 +52,7 @@
         }
     });
 
-
+    {#  Verification email  #}{#
     function ValidateEmail(inputText) {
         var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
         if (inputText.value.match(mailformat)) {
@@ -70,6 +72,6 @@
         }
     }
 
-</script>
+</script>#}
 </body>
 </html>

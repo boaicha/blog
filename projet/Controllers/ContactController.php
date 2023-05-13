@@ -3,7 +3,6 @@
 namespace App\Controllers;
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-use App\Models\ContactModel;
 require 'PHPMailer/src/Exception.php';
 require 'PHPMailer/src/PHPMailer.php';
 require 'PHPMailer/src/SMTP.php';
@@ -16,7 +15,7 @@ class ContactController extends Controller {
 
     public function send(): void {
 
-        // Include library files
+        // Inclure des fichier de la librairie
 
 // Create an instance; Pass true to enable exceptions
         static $mail = new PHPMailer;
@@ -32,7 +31,7 @@ class ContactController extends Controller {
         $mail->Port = 465;
 
 
-// Sender info
+// envoyer info donner au mail
         $mail->setFrom($_POST['email'], $_POST['email']);
 //$mail->addReplyTo('reply@example.com', 'SenderName');
 
@@ -64,16 +63,6 @@ class ContactController extends Controller {
         }
 
 
-
-    public function message(): void{
-
-        $message = new ContactModel();
-        $list = $message->listMessage();
-        $this->view('AdminMessages', array(
-            'messages' => $list,
-        ));
-
-    }
 
 }
 

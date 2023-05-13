@@ -11,6 +11,14 @@ body{
     border:1px solid #ffffff;
     width: 56%;
     margin-left: 400px;
+
+
+}
+@media(max-width: 800px) {
+    .be-comment-block{
+        width: 330px;
+        margin-left: 10px;
+    }
 }
 
 .comments-title {

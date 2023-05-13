@@ -15,12 +15,12 @@
                 <div class="inputs">
                     <label>NOM</label>
                     <input type="text" placeholder="nom" name="nom"
-                           onclick="ValidateEmail(document.formulaire.username)">
+                           {# onclick="ValidateEmail(document.formulaire.username)">#}
                     <label>PRENOM</label>
                     <input type="text" placeholder="prenom" name="prenom" id="prenom">
                     <label>EMAIL</label>
                     <input type="text" placeholder="adresse e-mail" name="mail"
-                           onclick="ValidateEmail(document.formulaire.username)">
+                    {# onclick="ValidateEmail(document.formulaire.username)">#}
                     <label>PASSWORD</label>
                     <input type="password" placeholder="mot de passe" name="password" id="password">
                     </br>
@@ -36,7 +36,7 @@
     </div>
 
     {# Verification password #}
-    <script>
+    {# <script>
         let formulaire = document.getElementById('formulaire');
 
         formulaire.addEventListener('input', function (e) {
@@ -76,6 +76,6 @@
             }
         }
 
-    </script>
+    </script>#}
 
 {% endblock %}

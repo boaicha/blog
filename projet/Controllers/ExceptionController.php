@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 class ExceptionController extends Controller
 {
+    //action pas trouvé
     public function notFoundAction(string $url) : void{
         $this->view('404', array(
             'url' => $url

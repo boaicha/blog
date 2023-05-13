@@ -18,7 +18,7 @@ class Main {
             // On envoie une redirection permanente
             http_response_code(301);
 
-            // On redirige vers l'URL dans /
+            // On redirige vers l'URL dans le bon format /
             header('Location: ' . $uri);
             //exit();
         }

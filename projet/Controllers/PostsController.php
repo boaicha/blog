@@ -15,6 +15,7 @@ class PostsController extends Controller {
 
 	public function index(): void {
 		$postModel = new PostsModel();
+        // J appel la fonction listPost.
 		$list = $postModel->listPost();
 		$this->view('index', array(
 				'posts' => $list,
@@ -28,22 +29,29 @@ class PostsController extends Controller {
 	 * @param $id
 	 * @return void|null
 	 */
+    //
 	public function post(array $id): void {
 		$postsModel = new PostsModel();
 		/** @var Post $post */
 		$post = $postsModel->findPostById($id);
 
 		$commentModel = new CommentModel();
-
+        //on stock dans $comment le commentaire s il y en a un .
 		$comment = $_POST['comment'] ?? null;
 		if ($comment) {
 			$commentsPost = addslashes(htmlspecialchars($comment));
 			$dateComment = date("d.m.y");
 			$userId = $_SESSION['userId'];
-			$commentModel->addComment($post->getId(), $commentsPost, $dateComment, $userId);
+            //si le statut est un user alors on ajoute le commentaire a la base de donnée.
+            if($_SESSION['statut'] == 'user'){
+                $commentModel->addComment($post->getId(), $commentsPost, $dateComment, $userId);
+            }else{
+                header("Location:" . "/public?p=home");
+            }
+
 		}
 
-
+        //permet d afficher la liste des commentaire du post dans post.twig .
 		$comments = $commentModel->listCommentsOfPost($id);
 		// var_dump($comments); die();
 		$this->view('post', array(

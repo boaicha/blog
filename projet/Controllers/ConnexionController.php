@@ -16,16 +16,17 @@ class ConnexionController extends Controller {
 	public function index():void {
 		$token = $this->generateToken();
 
-		if (isset($_POST['connexion'])) {  // Traitement du formulaire envoyé
+		if (isset($_POST['connexion'])) {  // si on appuie ou valider le bouton connexion dans le formulaire
             if (hash_equals($token, $_POST['csrf'])){
-                $password = md5(htmlspecialchars($_POST['password'])); //md5 pour encoder le mot depasse
-                $username = addslashes(htmlspecialchars($_POST['username'])); //mail
+                $password = md5(htmlspecialchars(trim($_POST['password']))); //md5 pour encoder le mot depasse
+                $username = addslashes(htmlspecialchars(trim($_POST['username']))); //mail retirer les espaces ajout de slash si (').sous format html
                 $connexionModel = new ConnexionModel();  // instancie la class connexion
                 $user = $connexionModel->findUser($username, $password); //appelle de la fonction compteValide de la class connexion
 
 	            if (!count($user)) {
 		            echo("se compte n'existe pas");
 	            } else {
+                    // S il trouve le user.
 		            /** @var User $user */
 		            $user = $user[0];
 		            $status = $user->getStatut();
@@ -59,17 +60,6 @@ class ConnexionController extends Controller {
 		return hash_hmac('sha256', 'this is some string', $_SESSION['token']);
 	}
 
-	private function redirectToAdminPage(): string {
-		$controller = new AdminPostController();
-		$controller->index();
-		//exit();
-	}
-
-	private function redirectToHomePage(): string {
-		$controller = new HomeController();
-		$controller->index();
-		//exit();
-	}
 
 }
 

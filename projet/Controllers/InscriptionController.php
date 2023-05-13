@@ -13,16 +13,18 @@ class InscriptionController extends Controller {
 		// si on a appuyer sur le bouton
 		if (isset($_POST['inscription'])) {
 
-			$password = md5(htmlspecialchars($_POST['password'])); //md5 pour encoder le mot depasse
-			$username = addslashes(htmlspecialchars($_POST['mail'])); //mail
-			$name = addslashes(htmlspecialchars($_POST['nom']));
-			$prenom = addslashes(htmlspecialchars($_POST['prenom']));
+			$password = md5(htmlspecialchars(trim($_POST['password']))); //md5 pour encoder le mot depasse
+			$username = addslashes(htmlspecialchars(trim($_POST['mail']))); //mail
+			$name = addslashes(htmlspecialchars(trim($_POST['nom'])));
+			$prenom = addslashes(htmlspecialchars(trim($_POST['prenom'])));
 
-			$inscription = new InscriptionModel();  //instancie la class connexion
-			$inscription->inscription($username, $password, $name, $prenom); //appelle de la fonction compteValide de la class connexion
+			$inscription = new InscriptionModel();  //instancie la classe InscriptionModel
+			$inscription->inscription($username, $password, $name, $prenom); //appelle de la fonction inscription de la class InscriptionModel
+            $this->view('connexion');
+		}else{
+            $this->view('inscription');
+        }
 
-		}
 
-		$this->view('inscription');
 	}
 }
