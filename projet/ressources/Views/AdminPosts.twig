@@ -4,11 +4,11 @@
         <div class="container">
 			<div style="text-align: left">
 				<a href="public?p=addPost">
-					<button class="favorite styled" type="button">Nouveau post</button>
+					<button class="favorite styled" type="button">Nouvel article</button>
 				</a>
 			</div>
             <div class="row">
-                {% for post in posts %}
+                {% for  post in posts %}
                     <div class="col-lg-4 col-md-4" style="">
                         <a href="public?p=adminPost/postAdmin/{{ post.id }}">
                             <div class="card h-100">
@@ -18,6 +18,8 @@
                                     <div class="blog-info">
                                         <h4 class="title"><a href="#"><b>{{ post.titre }}</b></a></h4>
                                         <h6 class="title"><a href="#"><b>{{ post.chapo }}</b></a></h6>
+                                        <h6 class="title"><a href="#"><b>{{ post.descriptif }}</b></a></h6>
+
                                         <ul class="post-footer">
                                             <li><a href="#"><i class="ion-laptop"></i>{{ post.dateMjr }}</a></li>
 {#                                            <li><a href="#"><i class="ion-chatbubble"></i>6</a></li>#}
@@ -28,11 +30,11 @@
                             </div>
 
                             <a href="public?p=adminPost/displayPost/{{ post.id }}">
-                                <button class="favorite styled" type="button">modifier</button>
+                                <button class="favorite styled" type="button">Modifier</button>
                             </a>
                             &nbsp;
                             <a href="public?p=adminPost/deletePost/{{ post.id }}">
-                                <button class="favorite styled" type="button"> supprimer</button>
+                                <button class="favorite styled" type="button"> Supprimer</button>
                             </a>
                         </a>
                     </div>

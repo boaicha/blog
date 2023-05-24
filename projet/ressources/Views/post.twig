@@ -3,11 +3,11 @@
 	<link href="../css/comment.css" rel="stylesheet">
 {% endblock %}
 
-{% block title %}Details posts{% endblock %}
+{% block title %}Details  articles{% endblock %}
 {% block content %}
 	<section class="blog-area section">
 		<div class="container">
-			}#Partie qui permet d'afficher le post .#}
+			{#Partie qui permet d'afficher le  article .#}
 			<div class="row">
 				<div class="col-lg-4 col-md-6" style="width: 370px">
 					<a href="public?p=posts/post/{{post.id}}">
@@ -23,6 +23,11 @@
 									<h6 class="title">
 										<a href="#">
 											<b>{{ post.chapo }}</b>
+										</a>
+									</h6>
+									<h6 class="title">
+										<a href="#">
+											<b>{{ post.descriptif }}</b>
 										</a>
 									</h6>
 									<h6 class="userName">
@@ -51,9 +56,9 @@
 				<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 				<div class="container">
 					<div class="be-comment-block">
-						}#compteur de commentaire .#}
-						<h1 class="comments-title">Comments ({{ comments | length }})</h1>
-						}#Partie qui permet d'afficher la liste des commentaires.#}
+						{#compteur de commentaire .#}
+						<h1 class="comments-title">Commentaire ({{ comments | length }})</h1>
+						{#Partie qui permet d'afficher la liste des commentaires.#}
 						{% for comment in comments %}
 							<div class="be-comment">
 								<div class="be-img-comment">
@@ -78,7 +83,7 @@
 						{% endfor %}
 						</br>
 						</br>
-						}#Partie qui permet d'ajouter le commentaire .#}
+						{#Partie qui permet d'ajouter le commentaire .#}
 
 						<form method="POST" action="public?p=posts/post/{{post.id}}">
 							<div class="row">
@@ -87,7 +92,7 @@
 										<textarea name="comment" class="form-input" required="" placeholder="Your text"></textarea>
 									</div>
 								</div>
-								<button type="submit" value="your_value" class="btn btn-primary pull-right">Go</button>
+								<button type="submit" value="your_value" class="btn btn-primary pull-right">Valider</button>
 							</div>
 						</form>
 					</div>

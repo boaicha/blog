@@ -8,11 +8,11 @@ use PDO ;
 class CommentModel extends Model {
 
 	/**
-	 * fonction pour afficher tout les commentaires d'un post précis
+	 * fonction pour afficher tout les commentaires d'un  article précis
 	 * @param $idPost
 	 * @return Commentaire[]
 	 */
-    //Recuperer les commentaires par id du post
+    //Recuperer les commentaires par id du  article
 	public function getCommentByPostId(int $idPost) {
         //$bdd Represente'instanciation PDO retourner par getDB .
 
@@ -33,14 +33,14 @@ class CommentModel extends Model {
 		$requete->execute([$commentId]);
 		return $requete->fetchAll(PDO::FETCH_CLASS,Commentaire::class)[0];
 	}
-    //Recuperer la liste des commentaires du post
+    //Recuperer la liste des commentaires du  article
 	public function listCommentsOfPost(array $idPost): array {
 		$bdd = $this->getDB();
 		$requete = $bdd->prepare('SELECT c.*, CONCAT(u.prenom, " ", u.nom) as userName FROM commentaire c LEFT JOIN user u ON c.id_userc = u.id WHERE c.id_postc = ? AND c.verification = "validee"');
 		$requete->execute($idPost);
 		return $requete->fetchAll(PDO::FETCH_CLASS,Commentaire::class);
 	}
-    //recuperer les commentaires validés .
+    //valider  le commentaires saisi par l'admin .
 	public function validateComment(array $idComment): void {
 		$bdd = $this->getDB();
 		$requete = $bdd->prepare('UPDATE commentaire SET verification = "validee" WHERE id = ?');
@@ -62,7 +62,7 @@ class CommentModel extends Model {
         $lol->bindParam('id', $id,PDO::PARAM_INT);
         $lol->execute();
 	}
-    //Effaces les commentaires par id du post .
+    //Effaces les commentaires par id de l article .
     public function deleteCommentsByPostId(int $idPost): void {
 
         $bdd = $this->getDB();

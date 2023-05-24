@@ -14,6 +14,7 @@ abstract class Controller {
 			'cache' => false,
 		]);
         //les valeurs de $session sont accessible depuis le mot cle session dans les fichiers twig.
+        //Ce qui nous permet de rendre accessible les variable globale depuis les vue twig
 		$twig->addGlobal('session', $_SESSION);
 		
 		// on appel la fonction render avec le chemin qui seras defini lors de l' appel de fonction

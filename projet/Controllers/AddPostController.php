@@ -23,10 +23,12 @@ class AddPostController extends Controller {
 				$titre = addslashes(htmlspecialchars($_POST['titre']));
 				$date_mjr =addslashes( htmlspecialchars($_POST['date_mjr']));
 				$date_modif = addslashes(htmlspecialchars($_POST['date_modif']));
-				$userId = $_SESSION['userId'];
+                $descriptif = addslashes(htmlspecialchars($_POST['descriptif']));
+
+                $userId = $_SESSION['userId'];
 
 				$ajoutPost = new PostsModel();  //instancie la class connexion
-				$ajoutPost->addPost($chapo, $titre, $nameFile, $date_mjr, $date_modif, $userId); //appelle de la fonction compteValide de la class connexion
+				$ajoutPost->addPost($chapo, $titre, $nameFile, $date_mjr, $date_modif,$descriptif,$userId); //appelle de la fonction compteValide de la class connexion
 
 				header('Location:' . '/public?p=adminPost'); // redirection vers adminPost
 			}

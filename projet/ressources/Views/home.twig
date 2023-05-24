@@ -20,7 +20,7 @@
         </br>
 <img src="../ressources/CV.png">
             <div class="row">
-                {% for post in posts %}
+                {% for  post in  posts %}
 
                     <div class="col-lg-4 col-md-6" style="width: 370px">
                         <a href="public?p=posts/post/{{ post.id }}">
@@ -33,13 +33,14 @@
 
                                         <h4 class="title"><a href="#"><b>{{ post.titre }}</b></a></h4>
                                         <h6 class="title"><a href="#"><b>{{ post.chapo }}</b></a></h6>
+                                        <h6 class="title"><a href="#"><b>{{ post.descriptif }}</b></a></h6>
 
                                         <ul class="post-footer">
                                             <li><a href="#"><i class="ion-laptop"></i>{{ post.date_mjr }}</a></li>
                                         </ul>
 
                                     </div><!-- blog-info -->
-                                </div><!-- single-post -->
+                                </div><!-- single- article -->
                             </div><!-- card -->
                         </a>
                     </div><!-- col-lg-4 col-md-6 -->

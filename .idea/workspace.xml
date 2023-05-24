@@ -1,27 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="518a9cdf-744e-4557-a392-e5a46a609780" name="Changes" comment="final project version">
+    <list default="true" id="518a9cdf-744e-4557-a392-e5a46a609780" name="Changes" comment="ajout de commentaire">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagrammes/Diagrammes d'utilisation.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagrammes/Diagrammes de classes.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagrammes/Diagrammes de sequence.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/projet/Controllers/AddPostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Controllers/AddPostController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projet/Controllers/AdminPostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Controllers/AdminPostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet/Controllers/ConnexionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Controllers/ConnexionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet/Controllers/ContactController.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Controllers/ContactController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projet/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Controllers/Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet/Controllers/ExceptionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Controllers/ExceptionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet/Controllers/InscriptionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Controllers/InscriptionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet/Controllers/MainController.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/projet/Controllers/PostsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Controllers/PostsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet/Core/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Core/Main.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projet/Models/CommentModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Models/CommentModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet/Models/ConnexionModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Models/ConnexionModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet/Models/ContactModel.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/projet/Models/HomeModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Models/HomeModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet/Models/InscriptionModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Models/InscriptionModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet/Models/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Models/Model.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projet/Models/PostsModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Models/PostsModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet/css/comment.css" beforeDir="false" afterPath="$PROJECT_DIR$/projet/css/comment.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet/ressources/Views/AddPost.twig" beforeDir="false" afterPath="$PROJECT_DIR$/projet/ressources/Views/AddPost.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet/ressources/Views/AdminPosts.twig" beforeDir="false" afterPath="$PROJECT_DIR$/projet/ressources/Views/AdminPosts.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projet/ressources/Views/_newPost.twig" beforeDir="false" afterPath="$PROJECT_DIR$/projet/ressources/Views/_newPost.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projet/ressources/Views/connexion.twig" beforeDir="false" afterPath="$PROJECT_DIR$/projet/ressources/Views/connexion.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projet/ressources/Views/default.twig" beforeDir="false" afterPath="$PROJECT_DIR$/projet/ressources/Views/default.twig" afterDir="false" />
@@ -30,6 +22,7 @@
       <change beforePath="$PROJECT_DIR$/projet/ressources/Views/inscription.twig" beforeDir="false" afterPath="$PROJECT_DIR$/projet/ressources/Views/inscription.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projet/ressources/Views/layout.twig" beforeDir="false" afterPath="$PROJECT_DIR$/projet/ressources/Views/layout.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projet/ressources/Views/post.twig" beforeDir="false" afterPath="$PROJECT_DIR$/projet/ressources/Views/post.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet/ressources/Views/postAdmin.twig" beforeDir="false" afterPath="$PROJECT_DIR$/projet/ressources/Views/postAdmin.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projet/ressources/Views/updatePost.twig" beforeDir="false" afterPath="$PROJECT_DIR$/projet/ressources/Views/updatePost.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +40,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="BG-033" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -144,14 +137,7 @@
       <workItem from="1680250213477" duration="1112000" />
       <workItem from="1680257869752" duration="67072000" />
       <workItem from="1681921610301" duration="11883000" />
-      <workItem from="1682796684170" duration="46620000" />
-    </task>
-    <task id="LOCAL-00002" summary="BG-007: Retirer menu connexion">
-      <created>1656838247070</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1656838247070</updated>
+      <workItem from="1682796684170" duration="76629000" />
     </task>
     <task id="LOCAL-00003" summary="BG-008: Ajout de fichier readme.md et ignorer le dossier vendor dans git">
       <created>1656843897611</created>
@@ -489,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671991367264</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="ajout de commentaire">
+      <created>1684006247153</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1684006247154</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -521,7 +514,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="fx/BG-019: suppression fonctionnel mais commentaire non fonctionnel #4" />
     <MESSAGE value="BG-022: Reglage du probleme de suppression d'un post." />
     <MESSAGE value="BG-022: relier parametre a valeur suppression commentaire" />
     <MESSAGE value="BG-023: Favicon probleme analyse" />
@@ -546,7 +538,8 @@
     <MESSAGE value="debug analise insight #3" />
     <MESSAGE value="debug analise insight #4" />
     <MESSAGE value="final project version" />
-    <option name="LAST_COMMIT_MESSAGE" value="final project version" />
+    <MESSAGE value="ajout de commentaire" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout de commentaire" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

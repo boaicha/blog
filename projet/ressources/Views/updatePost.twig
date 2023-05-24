@@ -1,22 +1,26 @@
 {% extends "layout.twig" %}
-{% block title %}Modification d'un post {% endblock %}
+{% block title %}Modification d'un  article {% endblock %}
 
 {% block content %}
     <section class="blog-area section">
         <div class="container">
             <div class="row">
-                <form method="post" action="public?p=adminPost/updatePost/{{ post.id }}" enctype="multipart/form-data">
+
+                <form method="post" action="public?p=adminPost/updatePost/{{ post.id }}" enctype="multipart/form-data" style="margin-left: 25em;">
                     <div class="col-lg-4 col-md-6" style="width: 370px">
                         <div class="card h-100">
                             <div class="single-post post-style-1">
 
                                 <div class="blog-image">
                                     <img id="output" width="200"/></div>
-                                <input type="text" value="{{ post.titre }}" name="titre" id="titre">
+                                <input type="text"size="40" value="{{ post.titre }}" name="titre" id="titre">
                                 </br></br>
-                                <input type="text" value="{{ post.chapo }}" name="chapo" id="chapo">
+                                <input type="text"size="40" value="{{ post.chapo }}" name="chapo" id="chapo">
+                                </br></br>
+                                <textarea rows="5" cols="40" value="{{ post.descriptif }}" name="descriptif" id="descriptif"></textarea>
                                 </br></br>
                                 <input type="file" name="file" id="file" onchange="loadFile(event)">
+                                </br></br>
                                 <input type="submit" name="Update" class="btn" value="Valider">
                                 <div class="blog-info">
                                 </div>

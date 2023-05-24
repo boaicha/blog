@@ -64,9 +64,11 @@ class AdminPostController extends Controller {
                 $titre = addslashes(htmlspecialchars($_POST['titre']));
                 $date_mjr =addslashes( htmlspecialchars($_POST['date_mjr']));
                 $date_modif = addslashes(htmlspecialchars($_POST['date_modif']));
+                $descriptif = addslashes(htmlspecialchars($_POST['descriptif']));
+
 
 				$updatePost = new PostsModel();  //instancie la class connexion
-				$updatePost->updatePost($titre, $chapo, $nameFile, $date_mjr, $date_modif, $id[0]); //appelle de la fonction compteValide de la class connexion
+				$updatePost->updatePost($titre, $chapo, $nameFile, $date_mjr, $descriptif, $date_modif, $id[0]); //appelle de la fonction compteValide de la class connexion
 
 				$this->_redirectToHomePage();
 
@@ -100,8 +102,8 @@ class AdminPostController extends Controller {
 		$commentModel = new CommentModel();
 		$comments = $commentModel->getCommentByPostId($id[0]);
 		// var_dump($comments); die();
-
-		if (!empty($_POST)) {
+        //si le champ commentaire est bien rempli
+		if (!empty($_POST['comment'])) {
 			$commentsPost =addslashes(htmlspecialchars($_POST['comment']));
 			$commentModel->addComment($post->getId(), $commentsPost, date('d.m.y'));
 		}

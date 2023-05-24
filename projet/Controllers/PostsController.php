@@ -25,14 +25,14 @@ class PostsController extends Controller {
 
 	/**
 	 * route = /posts/post/id
-	 * Affichage d'un post
+	 * Affichage d'un article
 	 * @param $id
 	 * @return void|null
 	 */
     //
 	public function post(array $id): void {
 		$postsModel = new PostsModel();
-		/** @var Post $post */
+		/** @var  article $post */
 		$post = $postsModel->findPostById($id);
 
 		$commentModel = new CommentModel();
@@ -46,12 +46,16 @@ class PostsController extends Controller {
             if($_SESSION['statut'] == 'user'){
                 $commentModel->addComment($post->getId(), $commentsPost, $dateComment, $userId);
             }else{
-                header("Location:" . "/public?p=home");
+
+               // header("Location:" . "/public?p=home");
+                echo '<script type="text/javascript">
+                    window.onload = function () { alert("Veuillez vous connecter"); }
+                </script>';
             }
 
 		}
 
-        //permet d afficher la liste des commentaire du post dans post.twig .
+        //permet d afficher la liste des commentaire du  article dans post.twig .
 		$comments = $commentModel->listCommentsOfPost($id);
 		// var_dump($comments); die();
 		$this->view('post', array(
