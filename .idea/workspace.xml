@@ -1,30 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="518a9cdf-744e-4557-a392-e5a46a609780" name="Changes" comment="ajout de commentaire">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diagrammes/Diagrammes d'utilisation.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/diagrammes/Diagrammes de classes.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/diagrammes/Diagrammes de sequence.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet/Controllers/AddPostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Controllers/AddPostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet/Controllers/AdminPostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Controllers/AdminPostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Controllers/Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet/Controllers/PostsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Controllers/PostsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet/Models/CommentModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Models/CommentModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet/Models/HomeModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Models/HomeModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet/Models/PostsModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Models/PostsModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet/ressources/Views/AdminPosts.twig" beforeDir="false" afterPath="$PROJECT_DIR$/projet/ressources/Views/AdminPosts.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet/ressources/Views/_newPost.twig" beforeDir="false" afterPath="$PROJECT_DIR$/projet/ressources/Views/_newPost.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet/ressources/Views/connexion.twig" beforeDir="false" afterPath="$PROJECT_DIR$/projet/ressources/Views/connexion.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet/ressources/Views/default.twig" beforeDir="false" afterPath="$PROJECT_DIR$/projet/ressources/Views/default.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet/ressources/Views/home.twig" beforeDir="false" afterPath="$PROJECT_DIR$/projet/ressources/Views/home.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet/ressources/Views/index.twig" beforeDir="false" afterPath="$PROJECT_DIR$/projet/ressources/Views/index.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet/ressources/Views/inscription.twig" beforeDir="false" afterPath="$PROJECT_DIR$/projet/ressources/Views/inscription.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet/ressources/Views/layout.twig" beforeDir="false" afterPath="$PROJECT_DIR$/projet/ressources/Views/layout.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet/ressources/Views/post.twig" beforeDir="false" afterPath="$PROJECT_DIR$/projet/ressources/Views/post.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet/ressources/Views/postAdmin.twig" beforeDir="false" afterPath="$PROJECT_DIR$/projet/ressources/Views/postAdmin.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet/ressources/Views/updatePost.twig" beforeDir="false" afterPath="$PROJECT_DIR$/projet/ressources/Views/updatePost.twig" afterDir="false" />
-    </list>
+    <list default="true" id="518a9cdf-744e-4557-a392-e5a46a609780" name="Changes" comment="ajout de commentaire" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,7 +12,7 @@
     <execution />
   </component>
   <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="origin/BG-025_Correction_analyse_insight" />
+    <option name="BRANCH" value="origin/BG-034" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
