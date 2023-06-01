@@ -21,7 +21,7 @@ class ConnexionController extends Controller {
                 $password = md5(htmlspecialchars(trim($_POST['password']))); //md5 pour encoder le mot depasse
                 $username = addslashes(htmlspecialchars(trim($_POST['username']))); //mail retirer les espaces ajout de slash si (').sous format html
                 $connexionModel = new ConnexionModel();  // instancie la class connexion
-                $user = $connexionModel->findUser($username, $password); //appelle de la fonction compteValide de la class connexion
+                $user = $connexionModel->findUser($username, $password); //appelle de la fonction findUser de la class connexion
 
 	            if (!count($user)) {
 		            echo("se compte n'existe pas");

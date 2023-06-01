@@ -18,7 +18,7 @@
 
                                         <h4 class="title"><a href="#"><b>{{ post.titre }}</b></a></h4>
                                         <h6 class="title"><a href="#"><b>{{ post.chapo }}</b></a></h6>
-                                        <h6 class="title"><a href="#"><b>{{ post.descriptif }}</b></a></h6>
+                                        <h6 class="title"><a href="#"><b>{{ post.descriptif | slice(0, 35) }}...</b></a></h6>
                                         <h6 class="title"><a href="#"><b>{{ post.nom }}</b></a></h6>
 
                                         <ul class="post-footer">
