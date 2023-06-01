@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="518a9cdf-744e-4557-a392-e5a46a609780" name="Changes" comment="modification des vues">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet/Controllers/AdminPostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Controllers/AdminPostController.php" afterDir="false" />
+    <list default="true" id="518a9cdf-744e-4557-a392-e5a46a609780" name="Changes" comment="modification de updatePost">
       <change beforePath="$PROJECT_DIR$/projet/Entity/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Entity/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet/ressources/Views/updatePost.twig" beforeDir="false" afterPath="$PROJECT_DIR$/projet/ressources/Views/updatePost.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,14 +119,7 @@
       <workItem from="1682796684170" duration="76629000" />
       <workItem from="1685001360369" duration="2876000" />
       <workItem from="1685004747970" duration="4235000" />
-      <workItem from="1685601589274" duration="3595000" />
-    </task>
-    <task id="LOCAL-00005" summary="BG-010: Lien vers le Cv et LinkedIn &amp; suppression d'élément inutile">
-      <created>1659043969257</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1659043969257</updated>
+      <workItem from="1685601589274" duration="3957000" />
     </task>
     <task id="LOCAL-00006" summary="BG-011: Modification du menu">
       <created>1659298801891</created>
@@ -467,7 +457,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685602645200</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="modification de updatePost">
+      <created>1685605353505</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1685605353505</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -499,7 +496,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="BG-023: Favicon probleme analyse" />
     <MESSAGE value="BG-024: type probleme analyse" />
     <MESSAGE value="BG-024: type probleme analyse 3" />
     <MESSAGE value="BG-024: type probleme analyse 4" />
@@ -524,7 +520,8 @@
     <MESSAGE value="ajout de commentaire" />
     <MESSAGE value="modification des diagrammes" />
     <MESSAGE value="modification des vues" />
-    <option name="LAST_COMMIT_MESSAGE" value="modification des vues" />
+    <MESSAGE value="modification de updatePost" />
+    <option name="LAST_COMMIT_MESSAGE" value="modification de updatePost" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
