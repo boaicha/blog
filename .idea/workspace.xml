@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="518a9cdf-744e-4557-a392-e5a46a609780" name="Changes" comment="modification de updatePost">
+    <list default="true" id="518a9cdf-744e-4557-a392-e5a46a609780" name="Changes" comment="modification de updatePost#2">
       <change beforePath="$PROJECT_DIR$/projet/Entity/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Entity/Post.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -119,14 +119,7 @@
       <workItem from="1682796684170" duration="76629000" />
       <workItem from="1685001360369" duration="2876000" />
       <workItem from="1685004747970" duration="4235000" />
-      <workItem from="1685601589274" duration="3957000" />
-    </task>
-    <task id="LOCAL-00006" summary="BG-011: Modification du menu">
-      <created>1659298801891</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1659298801891</updated>
+      <workItem from="1685601589274" duration="4141000" />
     </task>
     <task id="LOCAL-00007" summary="BG-012: Créer la page d'accueil &quot;HOME&quot;">
       <created>1659302104926</created>
@@ -464,7 +457,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685605353505</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="modification de updatePost#2">
+      <created>1685605595602</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1685605595602</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -496,7 +496,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="BG-024: type probleme analyse" />
     <MESSAGE value="BG-024: type probleme analyse 3" />
     <MESSAGE value="BG-024: type probleme analyse 4" />
     <MESSAGE value="BG-024: regroupement des fichiers" />
@@ -521,7 +520,8 @@
     <MESSAGE value="modification des diagrammes" />
     <MESSAGE value="modification des vues" />
     <MESSAGE value="modification de updatePost" />
-    <option name="LAST_COMMIT_MESSAGE" value="modification de updatePost" />
+    <MESSAGE value="modification de updatePost#2" />
+    <option name="LAST_COMMIT_MESSAGE" value="modification de updatePost#2" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
