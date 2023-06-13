@@ -13,8 +13,8 @@ class InscriptionModel extends Model {
 		$bdd = $this->getDB();
 		$requete = $bdd->prepare('INSERT INTO user (mail, password,nom,prenom)  VALUES (?, ?, ?, ?)');
 		$requete->execute(array($username, $password, $name, $prenom));
-		$message = "vous etes inscrit";
-		echo($message);
+		$message = "vous êtes inscrit";
+        echo ('<p><center><strong>' . $message . '</strong></center></p>');
 	}
 
 }

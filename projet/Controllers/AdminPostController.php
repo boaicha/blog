@@ -55,24 +55,31 @@ class AdminPostController extends Controller {
 	 */
 
 	public function updatePost(array $id) {
-		if (isset($_FILES['file'])) {
-			$this->uploadFile($_FILES['file']);
-			$nameFile = $_FILES['file']['name'];
-			if (isset($_POST['Update'])) {  //si on a appuyer sur le bouton
+        $modelPost = new PostsModel();
+        $postWithId = $modelPost->findPostById($id);
+        $array = get_object_vars($postWithId);
 
+		if (isset($_FILES['file'])) {
+            if($_FILES['file'] != null && $_FILES['file']['tmp_name'] != "") {
+                $this->uploadFile($_FILES['file']);
+                $nameFile = $_FILES['file']['name'];
+            }else{
+                $nameFile = $array["img"];
+            }
+			if (isset($_POST['Update'])) {  //si on a appuyer sur le bouton
                 $chapo = addslashes(htmlspecialchars($_POST['chapo'])); //md5 pour encoder le mot depasse
                 $titre = addslashes(htmlspecialchars($_POST['titre']));
-                $date_mjr =addslashes( htmlspecialchars($_POST['date_mjr']));
+                $date_mjr = addslashes(htmlspecialchars($_POST['date_mjr']));
                 $date_modif = addslashes(htmlspecialchars($_POST['date_modif']));
                 $descriptif = addslashes(htmlspecialchars($_POST['descriptif']));
 
 
-				$updatePost = new PostsModel();  //instancie la class connexion
-				$updatePost->updatePost($titre, $chapo, $nameFile, $date_mjr, $descriptif, $date_modif, $id[0]); //appelle de la fonction compteValide de la class connexion
-
+                $updatePost = new PostsModel();  //instancie la class connexion
+                $updatePost->updatePost($titre, $chapo, $nameFile, $date_mjr, $descriptif, $date_modif, $id[0]); //appelle de la fonction compteValide de la class connexion
+            }
 				$this->_redirectToHomePage();
 
-			}
+
 		} else {
 			throw new  \Exception('L\'image n\'a pas été submit', 409);
 		}

@@ -25,8 +25,8 @@ class ContactController extends Controller {
         $mail->isSMTP();                            // Set mailer to use SMTP
         $mail->Host = 'smtp.gmail.com';           // Specify main and backup SMTP servers
         $mail->SMTPAuth = true;                     // Enable SMTP authentication
-        $mail->Username = 'projetsbouhouch@gmail.com';       // SMTP username
-        $mail->Password = 'wxpuczvqtgkblkee';         // SMTP password
+        $mail->Username = $_ENV['MAIL'];       // SMTP username
+        $mail->Password = $_ENV['MAIL_PASSWORD'];         // SMTP password
         $mail->SMTPSecure = 'ssl';                  // Enable TLS encryption, ssl also accepted
         $mail->Port = 465;
 

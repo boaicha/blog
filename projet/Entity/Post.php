@@ -6,7 +6,7 @@ final class Post {
 	private $id;
 	private $titre;
 	private $chapo;
-	private $img;
+	public $img;
 	private $date_mjr;
 	private $date_modif;
     private $id_user;
