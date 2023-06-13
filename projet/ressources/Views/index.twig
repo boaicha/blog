@@ -18,8 +18,8 @@
 
                                         <h4 class="title"><a href="#"><b>{{ post.titre }}</b></a></h4>
                                         <h6 class="title"><a href="#"><b>{{ post.chapo }}</b></a></h6>
-                                        <h6 class="title"><a href="#"><b>{{ post.descriptif | slice(0, 35) }}...</b></a></h6>
-                                        <h6 class="title"><a href="#"><b>{{ post.nom }}</b></a></h6>
+                                        <h6 class="title"><a href="#"><b>{{ post.descriptif | slice(0, 80) }}...</b></a></h6>
+                                        <h6 class="title"><a href="#"><b>Auteur : {{ post.nom }}</b></a></h6>
 
                                         <ul class="post-footer">
                                             <li><i class="ion-laptop"></i>{{ post.dateMjr }}</li>
