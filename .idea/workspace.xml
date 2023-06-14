@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="518a9cdf-744e-4557-a392-e5a46a609780" name="Changes" comment="modification des diagrammes">
+    <list default="true" id="518a9cdf-744e-4557-a392-e5a46a609780" name="Changes" comment="Ajout de commentaire.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyse Symfony.txt" beforeDir="false" afterPath="$PROJECT_DIR$/analyse Symfony.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projet/.env" beforeDir="false" afterPath="$PROJECT_DIR$/projet/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projet/.htaccess.txt" beforeDir="false" afterPath="$PROJECT_DIR$/projet/.htaccess.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projet/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/projet/composer.json" afterDir="false" />
@@ -123,13 +124,6 @@
       <workItem from="1685001360369" duration="2876000" />
       <workItem from="1685004747970" duration="4235000" />
       <workItem from="1685601589274" duration="732000" />
-    </task>
-    <task id="LOCAL-00004" summary="BG-009: Correction des requetes de la base de schemas de la bdd">
-      <created>1657702197137</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1657702197137</updated>
     </task>
     <task id="LOCAL-00005" summary="BG-010: Lien vers le Cv et LinkedIn &amp; suppression d'élément inutile">
       <created>1659043969257</created>
@@ -467,7 +461,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684956789737</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Ajout de commentaire.">
+      <created>1686764317584</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1686764317584</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -499,7 +500,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="BG-022: relier parametre a valeur suppression commentaire" />
     <MESSAGE value="BG-023: Favicon probleme analyse" />
     <MESSAGE value="BG-024: type probleme analyse" />
     <MESSAGE value="BG-024: type probleme analyse 3" />
@@ -524,7 +524,8 @@
     <MESSAGE value="final project version" />
     <MESSAGE value="ajout de commentaire" />
     <MESSAGE value="modification des diagrammes" />
-    <option name="LAST_COMMIT_MESSAGE" value="modification des diagrammes" />
+    <MESSAGE value="Ajout de commentaire." />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout de commentaire." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

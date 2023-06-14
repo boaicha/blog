@@ -10,4 +10,4 @@
         "vlucas/phpdotenv": "^5.4"
     }
 }
-//Ce fichier stock toute les dependance du projet sans avoir a physiquement les installer.
+//Ce fichier stock toute les dependance du projet sans avoir a physiquement les installer
