@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="518a9cdf-744e-4557-a392-e5a46a609780" name="Changes" comment="Ajout de commentaire.">
+    <list default="true" id="518a9cdf-744e-4557-a392-e5a46a609780" name="Changes" comment="ajustements de vue et du .env">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analyse Symfony.txt" beforeDir="false" afterPath="$PROJECT_DIR$/analyse Symfony.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet/.env" beforeDir="false" afterPath="$PROJECT_DIR$/projet/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet/.htaccess.txt" beforeDir="false" afterPath="$PROJECT_DIR$/projet/.htaccess.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/projet/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet/Controllers/AdminPostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/projet/Controllers/AdminPostController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +20,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="BG-033" />
+        <entry key="$PROJECT_DIR$" value="BG-035" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -123,35 +120,13 @@
       <workItem from="1682796684170" duration="76629000" />
       <workItem from="1685001360369" duration="2876000" />
       <workItem from="1685004747970" duration="4235000" />
-      <workItem from="1685601589274" duration="732000" />
-    </task>
-    <task id="LOCAL-00005" summary="BG-010: Lien vers le Cv et LinkedIn &amp; suppression d'élément inutile">
-      <created>1659043969257</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1659043969257</updated>
-    </task>
-    <task id="LOCAL-00006" summary="BG-011: Modification du menu">
-      <created>1659298801891</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1659298801891</updated>
-    </task>
-    <task id="LOCAL-00007" summary="BG-012: Créer la page d'accueil &quot;HOME&quot;">
-      <created>1659302104926</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1659302104926</updated>
-    </task>
-    <task id="LOCAL-00008" summary="BG-013: Revu des fichier twig">
-      <created>1659653351353</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1659653351353</updated>
+      <workItem from="1685601589274" duration="8362000" />
+      <workItem from="1686204255146" duration="4691000" />
+      <workItem from="1686679842493" duration="960000" />
+      <workItem from="1686680814802" duration="12000" />
+      <workItem from="1686680854262" duration="721000" />
+      <workItem from="1686698843599" duration="290000" />
+      <workItem from="1686759324601" duration="1215000" />
     </task>
     <task id="LOCAL-00009" summary="BG-013: Revu des fichier twig post et updatepost">
       <created>1660252382738</created>
@@ -461,14 +436,42 @@
       <option name="project" value="LOCAL" />
       <updated>1684956789737</updated>
     </task>
-    <task id="LOCAL-00053" summary="Ajout de commentaire.">
-      <created>1686764317584</created>
+    <task id="LOCAL-00053" summary="modification des vues">
+      <created>1685602645200</created>
       <option name="number" value="00053" />
       <option name="presentableId" value="LOCAL-00053" />
       <option name="project" value="LOCAL" />
-      <updated>1686764317584</updated>
+      <updated>1685602645200</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="modification de updatePost">
+      <created>1685605353505</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1685605353505</updated>
+    </task>
+    <task id="LOCAL-00055" summary="modification de updatePost#2">
+      <created>1685605595602</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1685605595602</updated>
+    </task>
+    <task id="LOCAL-00056" summary="modification de updatePost#3">
+      <created>1685605954227</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1685605954227</updated>
+    </task>
+    <task id="LOCAL-00057" summary="ajustements de vue et du .env">
+      <created>1686698939116</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1686698939116</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -500,10 +503,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="BG-023: Favicon probleme analyse" />
-    <MESSAGE value="BG-024: type probleme analyse" />
-    <MESSAGE value="BG-024: type probleme analyse 3" />
-    <MESSAGE value="BG-024: type probleme analyse 4" />
     <MESSAGE value="BG-024: regroupement des fichiers" />
     <MESSAGE value="Merge" />
     <MESSAGE value="BG-025: Correction analyse insight" />
@@ -524,8 +523,12 @@
     <MESSAGE value="final project version" />
     <MESSAGE value="ajout de commentaire" />
     <MESSAGE value="modification des diagrammes" />
-    <MESSAGE value="Ajout de commentaire." />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout de commentaire." />
+    <MESSAGE value="modification des vues" />
+    <MESSAGE value="modification de updatePost" />
+    <MESSAGE value="modification de updatePost#2" />
+    <MESSAGE value="modification de updatePost#3" />
+    <MESSAGE value="ajustements de vue et du .env" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajustements de vue et du .env" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

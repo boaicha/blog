@@ -6,11 +6,11 @@
 <center>
     <form method="post" action="public?p=contact/send">
         <pre>
-            <label>Nom: <input type="text" name="nom"/></label>
-            <label>Email:<input type="text" name="email"/></label>
-            <label>objet:<input type="text" name="objet"/></label>
-           <label>Message:<br/><textarea name="message" rows="6" cols="42" placeholder="Saisissez votre message ici "></textarea></label>
-            <input type="submit" name="send" value ="envoyer"/>
+            <label>Nom: <input type="text" name="nom" required /></label>
+            <label>Email:<input type="email" name="email" required /></label>
+            <label>Objet:<input type="text" name="objet" required /></label>
+           <label>Message:<br/><textarea name="message"  required rows="6" cols="42" placeholder="Saisissez votre message ici "></textarea></label>
+            <input type="submit" name="send" value ="Envoyer"/>
         </pre>
     </form>
 </center>
