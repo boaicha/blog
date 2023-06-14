@@ -60,7 +60,7 @@ class AdminPostController extends Controller {
         $array = get_object_vars($postWithId);
 
 		if (isset($_FILES['file'])) {
-            if($_FILES['file'] != null && $_FILES['file']['tmp_name'] != "") {
+            if($_FILES['file'] !== null && $_FILES['file']['tmp_name'] != "") {
                 $this->uploadFile($_FILES['file']);
                 $nameFile = $_FILES['file']['name'];
             }else{
