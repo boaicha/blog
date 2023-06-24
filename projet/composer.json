@@ -7,7 +7,7 @@
     },
     "require": {
         "twig/twig": "3.4.3",
-        "vlucas/phpdotenv": "^5.4"
+        "vlucas/phpdotenv": "^5.4",
+        "phpmailer/phpmailer": "^6.8"
     }
 }
-//Ce fichier stock toute les dependance du projet sans avoir a physiquement les installer
