@@ -18,29 +18,32 @@ class ConnexionController extends Controller {
 
 		if (isset($_POST['connexion'])) {  // si on appuie ou valider le bouton connexion dans le formulaire
             if (hash_equals($token, $_POST['csrf'])){
-                $password = md5(htmlspecialchars(trim($_POST['password']))); //md5 pour encoder le mot depasse
+                $password = htmlspecialchars(trim($_POST['password']));
+                //var_dump($password);
                 $username = addslashes(htmlspecialchars(trim($_POST['username']))); //mail retirer les espaces ajout de slash si (').sous format html
                 $connexionModel = new ConnexionModel();  // instancie la class connexion
-                $user = $connexionModel->findUser($username, $password); //appelle de la fonction findUser de la class connexion
+                $user = $connexionModel->findUser($username); //appelle de la fonction findUser de la class connexion
+                if(password_verify($password, $user->getPassword())) {
+                        // S il trouve le user.
+                        /** @var User $user */
+                        //$user = $user[0];
+                        $status = $user->getStatut();
+                        $_SESSION['statut'] = $status;
+                        $_SESSION['username'] = $user->getMail();
+                        $_SESSION['password'] = $user->getPassword();
+                        $_SESSION['userId'] = $user->getId();
 
-	            if (!count($user)) {
-		            echo("se compte n'existe pas");
-	            } else {
-                    // S il trouve le user.
-		            /** @var User $user */
-		            $user = $user[0];
-		            $status = $user->getStatut();
-		            $_SESSION['statut'] = $status;
-		            $_SESSION['username'] = $user->getMail();
-		            $_SESSION['password'] = $user->getPassword();
-		            $_SESSION['userId'] = $user->getId();
+                        if ($status == self::ROLE_ADMIN) {
+                            header("Location:" . "/public?p=adminPost");
+                        } else {
+                            header("Location:" . "/public?p=home");
+                        }
 
-		            if ($status == self::ROLE_ADMIN) {
-                        header("Location:" . "/public?p=adminPost");
-		            } else {
-                        header("Location:" . "/public?p=home");
-		            }
-	            }
+                }else{
+                    echo("se compte n'existe pas");
+                    var_dump(password_verify($password, $user->getPassword()));
+                    var_dump($user);
+                }
             } else {
                 echo 'CSRF failed';
             }
