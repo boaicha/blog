@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mer. 14 juin 2023 à 20:22
+-- Généré le : lun. 24 juil. 2023 à 12:41
 -- Version du serveur : 10.4.25-MariaDB
 -- Version de PHP : 8.1.10
 
@@ -43,15 +43,13 @@ CREATE TABLE `article` (
 --
 
 INSERT INTO `article` (`id`, `titre`, `date_modif`, `img`, `id_user`, `chapo`, `date_mjr`, `descriptif`) VALUES
-                                                                                                             (21, 'Irland', '2023-06-13', 'Oman.jpg', 2, 'Falaise', '2022-12-06', 'Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l&#039;imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux d'),
-                                                                                                             (25, 'Oman', '2023-06-13', 'Oman.jpg', 2, 'Mescate', '2023-01-01', 'Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l&#039;imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux d'),
-                                                                                                             (48, 'Al hambra', '2023-06-13', 'al hambra.jpg', 2, 'Vamos2', '2023-01-01', 'Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l&#039;imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux d'),
-                                                                                                             (49, 'Hawai', '2023-06-13', 'honolulu-oahu_489.jpg', 2, 'Vamos 2023', '2023-03-31', 'Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l&#039;imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux d'),
-                                                                                                             (57, 'guelmim', '2023-06-13', 'IMAGE LAS VEGAS.jpg', 2, 'porte du sahara', '2023-05-19', 'Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l&#039;imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux d'),
-                                                                                                             (58, 'la havane', '2023-06-13', 'la havane.jpg', 2, '​Bienvenue à La Havane', '2023-05-22', 'Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l&#039;imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux d'),
-                                                                                                             (59, 'cuba', '2023-06-13', 'cuba.jpg', 2, 'Entre terre et mer', '2023-05-22', 'Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l&#039;imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux d'),
-                                                                                                             (60, 'Al hambra', '2023-06-13', 'image malibu.jpg', 2, 'ESSA', '2023-05-25', 'Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l&#039;imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux d'),
-                                                                                                             (61, 'Funchal', '2023-06-13', 'funchal.jpg', 2, 'Madeir', '2023-06-01', 'Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l&#039;imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux d');
+                                                                                                             (64, 'Oman5', NULL, 'mescate.jpeg', 45, 'Mescate', '2023-07-24', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i'),
+                                                                                                             (65, 'Amsterdam', NULL, 'Amsterdam.jpg', 45, 'Pays bas', '2023-07-24', 'Les Pays-Bas, malgré leur petite taille, possèdent les atouts des grands états de ce monde. C’est une contrée généreuse aux canaux paisibles et aux champs fleuris. Ses moulins à vent, ses fromages, ses poissons marinés, ses sabots ainsi que sa porcelaine '),
+                                                                                                             (66, 'japon', NULL, 'japon.jpg', 45, 'Cerisier en fleur', '2023-07-24', 'Juillet marque le début des matsuri, les festivals d&#039;été au Japon. De nombreux hanabi (feux d&#039;artifice ?) ont régulièrement lieu dans les villes, au bord de l&#039;eau ou dans la montagne et de préférence les week-ends. Les Japonais profitent de'),
+                                                                                                             (67, 'Bahamas', '2023-07-24', '55491-Bahamas.jpg', 45, 'Séjour aux Bahamas ', '2023-07-24', 'Au sud de l’île de Grand Bahama, séjournez au Viva Wyndham Fortuna Beach, un véritable coin de paradis. La formule All-inclusive vous permettra de vous détendre et de profiter '),
+                                                                                                             (68, 'Floride', NULL, 'floride.jpeg', 45, 'Charme historique et plages sauvages', '2023-07-24', 'Amelia Island n’est pas vraiment une destination secrète, l’île ayant été classée parmi les plus belles au monde par les lecteurs du magazine Condé Nast. Elle est pourtant certainement l’une des destinations de vacances les moins mentionnées de Floride. C'),
+                                                                                                             (70, 'hawai', NULL, 'hawai.jpg', 45, 'La plage de Poʻipū est l&#039;un des meilleur', '2023-07-24', 'Concurrent surprise sur la liste, la plage de Poʻipū place Kauaʻi en tête de liste alors que les visiteurs continuent de se rassembler sur ses rives éblouissantes. L&#039;endroit idéal pour la plupart des activités océaniques, ici vous pouvez plonger avec'),
+                                                                                                             (71, 'Alhambra', NULL, 'alhambra.jpg', 45, 'Magnifique visite de plus de 3 heures à comme', '2023-07-24', 'Magnifique visite de plus de 3 heures à commencer tôt avec un guide. La mienne s appelle lola et parle un super français. Nous a inspiré de tout l art de ces palais et de leur histoire. Monument, décoration, jardins. ...tout est somptueux et le temps n à ');
 
 -- --------------------------------------------------------
 
@@ -73,19 +71,15 @@ CREATE TABLE `commentaire` (
 --
 
 INSERT INTO `commentaire` (`id`, `commentaire`, `date`, `id_userc`, `id_postc`, `verification`) VALUES
-                                                                                                    (148, 'Best view', '2025-12-22', 6, 21, 'validee'),
-                                                                                                    (155, 'ppp', '2001-01-23', 6, 25, 'en cours'),
-                                                                                                    (159, 'superbe plage', '2019-05-23', 13, 49, 'validee'),
-                                                                                                    (160, 'magnifique séjour', '2019-05-23', 13, 49, 'validee'),
-                                                                                                    (163, 'panorama exceptionnel', '2019-05-23', 13, 49, 'validee'),
-                                                                                                    (164, 'essai', '2019-05-23', 13, 48, 'validee'),
-                                                                                                    (167, 'ESSAIIIIIIIII', '2019-05-23', 6, 57, 'validee'),
-                                                                                                    (168, 'essai 22222', '2019-05-23', 6, 57, 'en cours'),
-                                                                                                    (169, 'excellent séjour', '2022-05-23', 13, 49, 'validee'),
-                                                                                                    (170, 'Malgré les difficultés du pays le voyage s es', '2022-05-23', 13, 58, 'validee'),
-                                                                                                    (171, 'super vacance', '2025-05-23', 6, 60, 'validee'),
-                                                                                                    (172, 'GENIAL', '2008-06-23', 6, 61, 'validee'),
-                                                                                                    (174, 'ESSAIE 2222', '2008-06-23', 6, 61, 'validee');
+                                                                                                    (175, 'Juste WoW ! C’est magnifique ! Le détail des ', '2024-07-23', 47, 71, 'validee'),
+                                                                                                    (176, 'Un site magnifique et bien entretenu. Le circ', '2024-07-23', 46, 71, 'validee'),
+                                                                                                    (177, 'Arrive de Malaga. Pas possible de rentrer san', '2024-07-23', 47, 71, 'validee'),
+                                                                                                    (178, 'Hawaii est magique! Et pourtant, l&#039;archi', '2024-07-23', 47, 70, 'validee'),
+                                                                                                    (179, 'Lieu réputé pour ses très nombreux complexes ', '2024-07-23', 47, 68, 'validee'),
+                                                                                                    (180, 'Je me suis laissé tenté par Voyageurs du Mond', '2024-07-23', 47, 67, 'validee'),
+                                                                                                    (181, 'Le Japon est connu pour plusieurs choses:\r\n\r\n', '2024-07-23', 46, 66, 'validee'),
+                                                                                                    (182, 'C’est assez cliché certes, mais vous devez vr', '2024-07-23', 46, 65, 'validee'),
+                                                                                                    (183, 'Sublime et inoubliable voyage à Oman. Voyageu', '2024-07-23', 46, 64, 'validee');
 
 -- --------------------------------------------------------
 
@@ -107,28 +101,9 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `nom`, `prenom`, `mail`, `password`, `statut`) VALUES
-                                                                             (1, 'dupond', 'michele', 'michou@gmail.com', '862752f50fa68ebf41d03f0b00bef0a8', 'user'),
-                                                                             (2, 'admin', 'admin', 'admin@gmail.com', '21232f297a57a5a743894a0e4a801fc3', 'admin'),
-                                                                             (3, 'bouhouch', 'zohra', 'zohra@gmail.com', 'bdc7f4fae58fa4d5b4b48226896aeea9', 'user'),
-                                                                             (4, '', '', 'admin@gmail.com', '21232f297a57a5a743894a0e4a801fc3', 'user'),
-                                                                             (5, 'mougni', 'nawel', 'adminmougni@gmail.com', '21232f297a57a5a743894a0e4a801fc3', 'admin'),
-                                                                             (6, 'dupond2', 'louis', 'dupond2@gmail.com', '84efdf18887fb4c625111e73d1006740', 'user'),
-                                                                             (7, 'dupond2', 'louis', 'dupond2@gmail.com', '84efdf18887fb4c625111e73d1006740', 'user'),
-                                                                             (8, 'dupond2', 'louis', 'dupond2@gmail.com', '84efdf18887fb4c625111e73d1006740', 'user'),
-                                                                             (9, 'lol', 'lol', '&lt;script&gt;alert(&quot;Say hello&quot;);&l', '9cdfb439c7876e703e307864c9167a15', 'user'),
-                                                                             (10, 'lol2', 'LOL2', '<script>alert(\"Say hello\");</script>', '41df0f088fcc2e16ff5bb349470a7c8c', 'user'),
-                                                                             (11, 'essai', 'aicha2', 'aicha2@gmail.com', '55f14f87762f3192d199ae5e333345f1', 'user'),
-                                                                             (12, 'essai', 'aicha2', 'aicha2@gmail.com', '55f14f87762f3192d199ae5e333345f1', 'user'),
-                                                                             (13, 'jacqueline', 'mimi', 'jacqueline@gmail.com', '84efdf18887fb4c625111e73d1006740', 'user'),
-                                                                             (14, 'kawtar', 'essaie', 'kawtar@gmail.com', '5c774b016676351331263c2253b2570f', 'user'),
-                                                                             (15, 'Hamza', 'Hamza', 'hamza@gmail.com', '84efdf18887fb4c625111e73d1006740', 'user'),
-                                                                             (16, 'Hamza', 'Hamza', 'hamza@gmail.com', '84efdf18887fb4c625111e73d1006740', 'user'),
-                                                                             (17, 'Hamza', 'Hamza', 'hamza@gmail.com', 'd41d8cd98f00b204e9800998ecf8427e', 'user'),
-                                                                             (18, 'innscription', 'innscription', 'innscription@gmail.com', '84efdf18887fb4c625111e73d1006740', 'user'),
-                                                                             (19, '', '', 'admin@gmail.com', '21232f297a57a5a743894a0e4a801fc3', 'user'),
-                                                                             (20, 'inscription', 'prenom inscrit', 'inscription@gmail.com', '5483560e5d64e47aefc56eab275c4e69', 'user'),
-                                                                             (21, 'inscription', 'prenom inscrit', 'inscription@gmail.com', '5483560e5d64e47aefc56eab275c4e69', 'user'),
-                                                                             (22, 'inscription', 'prenom inscrit', 'inscription@gmail.com', '5483560e5d64e47aefc56eab275c4e69', 'user');
+                                                                             (45, 'admin', 'admin', 'admin@gmail.com', '7dd12f3a9afa0282a575b8ef99dea2a0c1becb51', 'admin'),
+                                                                             (46, 'lucie', 'lulu', 'lucie@gmail.com', 'c071fab07feee9cd455aaee498b56674f19ebd00', 'user'),
+                                                                             (47, 'sanna', 'sanna', 'sanna@gmail.com', 'f1afdbce165595ddb77833809d6c13b5d59226ac', 'user');
 
 --
 -- Index pour les tables déchargées
@@ -163,19 +138,19 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT pour la table `article`
 --
 ALTER TABLE `article`
-    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=63;
+    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=72;
 
 --
 -- AUTO_INCREMENT pour la table `commentaire`
 --
 ALTER TABLE `commentaire`
-    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=175;
+    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=184;
 
 --
 -- AUTO_INCREMENT pour la table `user`
 --
 ALTER TABLE `user`
-    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
 
 --
 -- Contraintes pour les tables déchargées
@@ -186,13 +161,6 @@ ALTER TABLE `user`
 --
 ALTER TABLE `article`
     ADD CONSTRAINT `id_user` FOREIGN KEY (`id_user`) REFERENCES `user` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Contraintes pour la table `commentaire`
---
-ALTER TABLE `commentaire`
-    ADD CONSTRAINT `id_postc` FOREIGN KEY (`id_postc`) REFERENCES `article` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `id_userc` FOREIGN KEY (`id_userc`) REFERENCES `user` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

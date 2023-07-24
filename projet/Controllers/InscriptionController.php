@@ -13,9 +13,12 @@ class InscriptionController extends Controller {
 		// si on a appuyer sur le bouton
 		if (isset($_POST['inscription'])) {
 
-			$password = password_hash($_POST['password'],  PASSWORD_DEFAULT, [
-                    'cost' => 12,
-                ]); //pour encoder le mot depasse
+			//$password = password_hash($_POST['password'],  PASSWORD_DEFAULT, [
+             //       'cost' => 12,
+            //    ]); //pour encoder le mot depasse
+
+            $password = hash('ripemd160', $_POST['password']);
+
 			$username = addslashes(htmlspecialchars(trim($_POST['mail']))); //mail
 			$name = addslashes(htmlspecialchars(trim($_POST['nom'])));
 			$prenom = addslashes(htmlspecialchars(trim($_POST['prenom'])));

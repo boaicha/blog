@@ -23,7 +23,7 @@ class ConnexionController extends Controller {
                 $username = addslashes(htmlspecialchars(trim($_POST['username']))); //mail retirer les espaces ajout de slash si (').sous format html
                 $connexionModel = new ConnexionModel();  // instancie la class connexion
                 $user = $connexionModel->findUser($username); //appelle de la fonction findUser de la class connexion
-                if(password_verify($password, $user->getPassword())) {
+                if($user->getPassword() == hash('ripemd160', $password)) {
                         // S il trouve le user.
                         /** @var User $user */
                         //$user = $user[0];
@@ -41,7 +41,10 @@ class ConnexionController extends Controller {
 
                 }else{
                     echo("se compte n'existe pas");
-                    var_dump(password_verify($password, $user->getPassword()));
+                   // $passwordHash = hash('ripemd160', 'pepe');
+                   // echo hash('ripemd160', 'pepe');
+
+                    //var_dump(password_verify($password, $user->getPassword()));
                     var_dump($user);
                 }
             } else {
