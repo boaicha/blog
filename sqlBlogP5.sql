@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mer. 14 juin 2023 à 20:22
+-- Généré le : lun. 31 juil. 2023 à 11:05
 -- Version du serveur : 10.4.25-MariaDB
 -- Version de PHP : 8.1.10
 
@@ -43,11 +43,16 @@ CREATE TABLE `article` (
 --
 
 INSERT INTO `article` (`id`, `titre`, `date_modif`, `img`, `id_user`, `chapo`, `date_mjr`, `descriptif`) VALUES
-
-                                                                                                             (58, 'la havane', '2023-06-13', 'lahavane.jpg', 2, '​Bienvenue à La Havane', '2023-05-22', 'Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l&#039;imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux d'),
-                                                                                                             (59, 'cuba', '2023-06-13', 'funchal.jpg', 2, 'Entre terre et mer', '2023-05-22', 'Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l&#039;imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux d'),
-                                                                                                             (60, 'Al hambra', '2023-06-13', 'funchal.jpg', 2, 'ESSA', '2023-05-25', 'Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l&#039;imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux d'),
-                                                                                                             (61, 'Funchal', '2023-06-13', 'funchal.jpg', 2, 'Madeir', '2023-06-01', 'Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l&#039;imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux d');
+                                                                                                             (82, 'ESPAGNE', '2023-07-31', 'hawai.jpg', 45, 'essai', '2023-07-31', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i'),
+                                                                                                             (83, 'PAYS BAS', '2023-07-31', 'montagne (3).jpg', 45, 'essai', '2023-07-31', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i'),
+                                                                                                             (84, 'Irlande', NULL, 'ireland.jpg', 45, 'Castles', '2023-07-31', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i'),
+                                                                                                             (85, 'Mexique', NULL, 'mexique.jpg', 45, 'Plage', '2023-07-31', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i'),
+                                                                                                             (86, 'Kenya', NULL, 'kenya.jpg', 45, 'Safari', '2023-07-31', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i'),
+                                                                                                             (87, 'Madere', NULL, 'madere.jpg', 45, 'Plage', '2023-07-31', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i'),
+                                                                                                             (88, 'Bureya Nature Reserve', NULL, 'Bureya Nature Reserve.jpg', 45, 'Reserve naturel', '2023-07-31', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i'),
+                                                                                                             (89, 'Parc National Biscayne', NULL, 'floride.jpg', 45, 'Floride', '2023-07-31', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i'),
+                                                                                                             (90, 'Grand Gaube', '2023-07-31', 'grand-gaube.jpg', 45, 'Ile maurice', '2023-07-31', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i'),
+                                                                                                             (91, 'Paje', NULL, 'zanzibar.jpg', 45, 'Zanzibar', '2023-07-31', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i');
 
 -- --------------------------------------------------------
 
@@ -63,25 +68,6 @@ CREATE TABLE `commentaire` (
                                `id_postc` int(11) DEFAULT NULL,
                                `verification` enum('en cours','validee') NOT NULL DEFAULT 'en cours'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Déchargement des données de la table `commentaire`
---
-
-INSERT INTO `commentaire` (`id`, `commentaire`, `date`, `id_userc`, `id_postc`, `verification`) VALUES
-                                                                                                    (148, 'Best view', '2025-12-22', 6, 21, 'validee'),
-                                                                                                    (155, 'ppp', '2001-01-23', 6, 25, 'en cours'),
-                                                                                                    (159, 'superbe plage', '2019-05-23', 13, 49, 'validee'),
-                                                                                                    (160, 'magnifique séjour', '2019-05-23', 13, 49, 'validee'),
-                                                                                                    (163, 'panorama exceptionnel', '2019-05-23', 13, 49, 'validee'),
-                                                                                                    (164, 'essai', '2019-05-23', 13, 48, 'validee'),
-                                                                                                    (167, 'ESSAIIIIIIIII', '2019-05-23', 6, 57, 'validee'),
-                                                                                                    (168, 'essai 22222', '2019-05-23', 6, 57, 'en cours'),
-                                                                                                    (169, 'excellent séjour', '2022-05-23', 13, 49, 'validee'),
-                                                                                                    (170, 'Malgré les difficultés du pays le voyage s es', '2022-05-23', 13, 58, 'validee'),
-                                                                                                    (171, 'super vacance', '2025-05-23', 6, 60, 'validee'),
-                                                                                                    (172, 'GENIAL', '2008-06-23', 6, 61, 'validee'),
-                                                                                                    (174, 'ESSAIE 2222', '2008-06-23', 6, 61, 'validee');
 
 -- --------------------------------------------------------
 
@@ -103,28 +89,9 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `nom`, `prenom`, `mail`, `password`, `statut`) VALUES
-                                                                             (1, 'dupond', 'michele', 'michou@gmail.com', '862752f50fa68ebf41d03f0b00bef0a8', 'user'),
-                                                                             (2, 'admin', 'admin', 'admin@gmail.com', '21232f297a57a5a743894a0e4a801fc3', 'admin'),
-                                                                             (3, 'bouhouch', 'zohra', 'zohra@gmail.com', 'bdc7f4fae58fa4d5b4b48226896aeea9', 'user'),
-                                                                             (4, '', '', 'admin@gmail.com', '21232f297a57a5a743894a0e4a801fc3', 'user'),
-                                                                             (5, 'mougni', 'nawel', 'adminmougni@gmail.com', '21232f297a57a5a743894a0e4a801fc3', 'admin'),
-                                                                             (6, 'dupond2', 'louis', 'dupond2@gmail.com', '84efdf18887fb4c625111e73d1006740', 'user'),
-                                                                             (7, 'dupond2', 'louis', 'dupond2@gmail.com', '84efdf18887fb4c625111e73d1006740', 'user'),
-                                                                             (8, 'dupond2', 'louis', 'dupond2@gmail.com', '84efdf18887fb4c625111e73d1006740', 'user'),
-                                                                             (9, 'lol', 'lol', '&lt;script&gt;alert(&quot;Say hello&quot;);&l', '9cdfb439c7876e703e307864c9167a15', 'user'),
-                                                                             (10, 'lol2', 'LOL2', '<script>alert(\"Say hello\");</script>', '41df0f088fcc2e16ff5bb349470a7c8c', 'user'),
-                                                                             (11, 'essai', 'aicha2', 'aicha2@gmail.com', '55f14f87762f3192d199ae5e333345f1', 'user'),
-                                                                             (12, 'essai', 'aicha2', 'aicha2@gmail.com', '55f14f87762f3192d199ae5e333345f1', 'user'),
-                                                                             (13, 'jacqueline', 'mimi', 'jacqueline@gmail.com', '84efdf18887fb4c625111e73d1006740', 'user'),
-                                                                             (14, 'kawtar', 'essaie', 'kawtar@gmail.com', '5c774b016676351331263c2253b2570f', 'user'),
-                                                                             (15, 'Hamza', 'Hamza', 'hamza@gmail.com', '84efdf18887fb4c625111e73d1006740', 'user'),
-                                                                             (16, 'Hamza', 'Hamza', 'hamza@gmail.com', '84efdf18887fb4c625111e73d1006740', 'user'),
-                                                                             (17, 'Hamza', 'Hamza', 'hamza@gmail.com', 'd41d8cd98f00b204e9800998ecf8427e', 'user'),
-                                                                             (18, 'innscription', 'innscription', 'innscription@gmail.com', '84efdf18887fb4c625111e73d1006740', 'user'),
-                                                                             (19, '', '', 'admin@gmail.com', '21232f297a57a5a743894a0e4a801fc3', 'user'),
-                                                                             (20, 'inscription', 'prenom inscrit', 'inscription@gmail.com', '5483560e5d64e47aefc56eab275c4e69', 'user'),
-                                                                             (21, 'inscription', 'prenom inscrit', 'inscription@gmail.com', '5483560e5d64e47aefc56eab275c4e69', 'user'),
-                                                                             (22, 'inscription', 'prenom inscrit', 'inscription@gmail.com', '5483560e5d64e47aefc56eab275c4e69', 'user');
+                                                                             (45, 'admin', 'admin', 'admin@gmail.com', '7dd12f3a9afa0282a575b8ef99dea2a0c1becb51', 'admin'),
+                                                                             (46, 'lucie', 'lulu', 'lucie@gmail.com', 'c071fab07feee9cd455aaee498b56674f19ebd00', 'user'),
+                                                                             (47, 'sanna', 'sanna', 'sanna@gmail.com', 'f1afdbce165595ddb77833809d6c13b5d59226ac', 'user');
 
 --
 -- Index pour les tables déchargées
@@ -159,19 +126,19 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT pour la table `article`
 --
 ALTER TABLE `article`
-    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=63;
+    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=92;
 
 --
 -- AUTO_INCREMENT pour la table `commentaire`
 --
 ALTER TABLE `commentaire`
-    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=175;
+    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=184;
 
 --
 -- AUTO_INCREMENT pour la table `user`
 --
 ALTER TABLE `user`
-    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
 
 --
 -- Contraintes pour les tables déchargées
@@ -182,13 +149,6 @@ ALTER TABLE `user`
 --
 ALTER TABLE `article`
     ADD CONSTRAINT `id_user` FOREIGN KEY (`id_user`) REFERENCES `user` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Contraintes pour la table `commentaire`
---
-ALTER TABLE `commentaire`
-    ADD CONSTRAINT `id_postc` FOREIGN KEY (`id_postc`) REFERENCES `article` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `id_userc` FOREIGN KEY (`id_userc`) REFERENCES `user` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
