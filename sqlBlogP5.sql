@@ -43,6 +43,7 @@ CREATE TABLE `article` (
 --
 
 INSERT INTO `article` (`id`, `titre`, `date_modif`, `img`, `id_user`, `chapo`, `date_mjr`, `descriptif`) VALUES
+
                                                                                                              (82, 'ESPAGNE', '2023-07-31', 'hawai.jpg', 45, 'essai', '2023-07-31', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i'),
                                                                                                              (83, 'PAYS BAS', '2023-07-31', 'montagne (3).jpg', 45, 'essai', '2023-07-31', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i'),
                                                                                                              (84, 'Irlande', NULL, 'ireland.jpg', 45, 'Castles', '2023-07-31', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i'),
@@ -53,6 +54,7 @@ INSERT INTO `article` (`id`, `titre`, `date_modif`, `img`, `id_user`, `chapo`, `
                                                                                                              (89, 'Parc National Biscayne', NULL, 'floride.jpg', 45, 'Floride', '2023-07-31', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i'),
                                                                                                              (90, 'Grand Gaube', '2023-07-31', 'grand-gaube.jpg', 45, 'Ile maurice', '2023-07-31', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i'),
                                                                                                              (91, 'Paje', NULL, 'zanzibar.jpg', 45, 'Zanzibar', '2023-07-31', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i');
+
 
 -- --------------------------------------------------------
 
