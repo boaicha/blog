@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : lun. 24 juil. 2023 à 12:41
+-- Généré le : lun. 31 juil. 2023 à 11:05
 -- Version du serveur : 10.4.25-MariaDB
 -- Version de PHP : 8.1.10
 
@@ -43,13 +43,16 @@ CREATE TABLE `article` (
 --
 
 INSERT INTO `article` (`id`, `titre`, `date_modif`, `img`, `id_user`, `chapo`, `date_mjr`, `descriptif`) VALUES
-                                                                                                             (64, 'Oman5', NULL, 'mescate.jpeg', 45, 'Mescate', '2023-07-24', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i'),
-                                                                                                             (65, 'Amsterdam', NULL, 'Amsterdam.jpg', 45, 'Pays bas', '2023-07-24', 'Les Pays-Bas, malgré leur petite taille, possèdent les atouts des grands états de ce monde. C’est une contrée généreuse aux canaux paisibles et aux champs fleuris. Ses moulins à vent, ses fromages, ses poissons marinés, ses sabots ainsi que sa porcelaine '),
-                                                                                                             (66, 'japon', NULL, 'japon.jpg', 45, 'Cerisier en fleur', '2023-07-24', 'Juillet marque le début des matsuri, les festivals d&#039;été au Japon. De nombreux hanabi (feux d&#039;artifice ?) ont régulièrement lieu dans les villes, au bord de l&#039;eau ou dans la montagne et de préférence les week-ends. Les Japonais profitent de'),
-                                                                                                             (67, 'Bahamas', '2023-07-24', '55491-Bahamas.jpg', 45, 'Séjour aux Bahamas ', '2023-07-24', 'Au sud de l’île de Grand Bahama, séjournez au Viva Wyndham Fortuna Beach, un véritable coin de paradis. La formule All-inclusive vous permettra de vous détendre et de profiter '),
-                                                                                                             (68, 'Floride', NULL, 'floride.jpeg', 45, 'Charme historique et plages sauvages', '2023-07-24', 'Amelia Island n’est pas vraiment une destination secrète, l’île ayant été classée parmi les plus belles au monde par les lecteurs du magazine Condé Nast. Elle est pourtant certainement l’une des destinations de vacances les moins mentionnées de Floride. C'),
-                                                                                                             (70, 'hawai', NULL, 'hawai.jpg', 45, 'La plage de Poʻipū est l&#039;un des meilleur', '2023-07-24', 'Concurrent surprise sur la liste, la plage de Poʻipū place Kauaʻi en tête de liste alors que les visiteurs continuent de se rassembler sur ses rives éblouissantes. L&#039;endroit idéal pour la plupart des activités océaniques, ici vous pouvez plonger avec'),
-                                                                                                             (71, 'Alhambra', NULL, 'alhambra.jpg', 45, 'Magnifique visite de plus de 3 heures à comme', '2023-07-24', 'Magnifique visite de plus de 3 heures à commencer tôt avec un guide. La mienne s appelle lola et parle un super français. Nous a inspiré de tout l art de ces palais et de leur histoire. Monument, décoration, jardins. ...tout est somptueux et le temps n à ');
+                                                                                                             (82, 'ESPAGNE', '2023-07-31', 'hawai.jpg', 45, 'essai', '2023-07-31', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i'),
+                                                                                                             (83, 'PAYS BAS', '2023-07-31', 'montagne (3).jpg', 45, 'essai', '2023-07-31', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i'),
+                                                                                                             (84, 'Irlande', NULL, 'ireland.jpg', 45, 'Castles', '2023-07-31', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i'),
+                                                                                                             (85, 'Mexique', NULL, 'mexique.jpg', 45, 'Plage', '2023-07-31', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i'),
+                                                                                                             (86, 'Kenya', NULL, 'kenya.jpg', 45, 'Safari', '2023-07-31', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i'),
+                                                                                                             (87, 'Madere', NULL, 'madere.jpg', 45, 'Plage', '2023-07-31', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i'),
+                                                                                                             (88, 'Bureya Nature Reserve', NULL, 'Bureya Nature Reserve.jpg', 45, 'Reserve naturel', '2023-07-31', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i'),
+                                                                                                             (89, 'Parc National Biscayne', NULL, 'floride.jpg', 45, 'Floride', '2023-07-31', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i'),
+                                                                                                             (90, 'Grand Gaube', '2023-07-31', 'grand-gaube.jpg', 45, 'Ile maurice', '2023-07-31', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i'),
+                                                                                                             (91, 'Paje', NULL, 'zanzibar.jpg', 45, 'Zanzibar', '2023-07-31', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i');
 
 -- --------------------------------------------------------
 
@@ -65,21 +68,6 @@ CREATE TABLE `commentaire` (
                                `id_postc` int(11) DEFAULT NULL,
                                `verification` enum('en cours','validee') NOT NULL DEFAULT 'en cours'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Déchargement des données de la table `commentaire`
---
-
-INSERT INTO `commentaire` (`id`, `commentaire`, `date`, `id_userc`, `id_postc`, `verification`) VALUES
-                                                                                                    (175, 'Juste WoW ! C’est magnifique ! Le détail des ', '2024-07-23', 47, 71, 'validee'),
-                                                                                                    (176, 'Un site magnifique et bien entretenu. Le circ', '2024-07-23', 46, 71, 'validee'),
-                                                                                                    (177, 'Arrive de Malaga. Pas possible de rentrer san', '2024-07-23', 47, 71, 'validee'),
-                                                                                                    (178, 'Hawaii est magique! Et pourtant, l&#039;archi', '2024-07-23', 47, 70, 'validee'),
-                                                                                                    (179, 'Lieu réputé pour ses très nombreux complexes ', '2024-07-23', 47, 68, 'validee'),
-                                                                                                    (180, 'Je me suis laissé tenté par Voyageurs du Mond', '2024-07-23', 47, 67, 'validee'),
-                                                                                                    (181, 'Le Japon est connu pour plusieurs choses:\r\n\r\n', '2024-07-23', 46, 66, 'validee'),
-                                                                                                    (182, 'C’est assez cliché certes, mais vous devez vr', '2024-07-23', 46, 65, 'validee'),
-                                                                                                    (183, 'Sublime et inoubliable voyage à Oman. Voyageu', '2024-07-23', 46, 64, 'validee');
 
 -- --------------------------------------------------------
 
@@ -138,7 +126,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT pour la table `article`
 --
 ALTER TABLE `article`
-    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=72;
+    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=92;
 
 --
 -- AUTO_INCREMENT pour la table `commentaire`
